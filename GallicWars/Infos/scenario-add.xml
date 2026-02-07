@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Entry>
+		<zType>SCENARIO_GALLIC_WARS_1</zType>
+		<Name>TEXT_SCENARIO_GALLIC_WARS_1</Name>
+		<SubTitle>TEXT_SCENARIO_GALLIC_WARS_1_SUB</SubTitle>
+		<ScenarioClass>SCENARIOCLASS_GALLIC_WARS</ScenarioClass>
+		<zMapFile>GallicWars1Map</zMapFile>
+		<zModName>GallicWars</zModName>
+		<Nation>NATION_ROME</Nation>
+		<ParametersInvalid>
+			<zValue>NumPlayers</zValue>
+			<zValue>NumTeams</zValue>
+			<zValue>Nation</zValue>
+			<zValue>MapSize</zValue>
+			<zValue>MapOptions</zValue>
+			<zValue>MapClass</zValue>
+			<zValue>MapPath</zValue>
+		</ParametersInvalid>
+	</Entry>
+</Root>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Entry>
+		<zType />
+		<en-US />
+	</Entry>
+	<Entry>
+		<zType>TEXT_SCENARIOCLASS_GALLIC_WARS</zType>
+		<en-US>The Gallic Wars</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_SCENARIO_GALLIC_WARS_1</zType>
+		<en-US>Chapter 1: The Helvetii and Ariovistus</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_SCENARIO_GALLIC_WARS_1_SUB</zType>
+		<en-US>58 BC</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_SCENARIO_GALLIC_WARS_1_DESC</zType>
+		<en-US>In 58 BC, Julius Caesar begins his campaign in Gaul. The Helvetii are migrating westward, threatening Roman allies, while the Germanic king Ariovistus has crossed the Rhine to seize Gallic lands. As Rome, secure your northern frontier and establish dominance over Gaul.</en-US>
+	</Entry>
+</Root>
