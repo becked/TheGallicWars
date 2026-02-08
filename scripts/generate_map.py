@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 """
+DEPRECATED: Superseded by extract_map.py, which extracts tiles from
+the Imperium Romanum map instead of generating them procedurally.
+Kept for reference on terrain zone definitions and river edge patterns.
+
 Generate the Gallic Wars Chapter 1 map XML.
 
 Geographic scope: Eastern Gaul from Aedui territory to the Rhine,
@@ -99,9 +103,9 @@ class Tile:
     height: str = FLAT
     vegetation: Optional[str] = None
     boundary: bool = False
-    river_w: int = 0
-    river_sw: int = 0
-    river_se: int = 0
+    river_w: Optional[int] = None
+    river_sw: Optional[int] = None
+    river_se: Optional[int] = None
     nation_site: Optional[str] = None
     city_site: Optional[str] = None
     element_name: Optional[str] = None
@@ -441,60 +445,72 @@ def apply_saone_floodplain(tiles: list[Tile], rng: random.Random) -> None:
 def apply_rivers(tiles: list[Tile]) -> None:
     """Place river edges for major waterways.
 
-    River edges use values: 0 = no river, 1 = river present.
-    Each tile owns 3 edges: W (west), SW (southwest), SE (southeast).
-
-    To make a river going visual-N to visual-S, Y decreases.
-    Zigzag between SE and SW edges.
+    Uses the validated pattern (confirmed via map editor on the Dubis):
+    - Every path tile gets W=1 (visible river on west edge)
+    - NE step connectivity: SW=1 on the destination tile
+    - NW step connectivity: bridge tile at (dest_x-1, dest_y) with SE=0
     """
     tile_map: dict[tuple[int, int], Tile] = {(t.x, t.y): t for t in tiles}
 
-    def set_river(x: int, y: int, edge: str) -> None:
+    def set_edge(x: int, y: int, edge: str, value: int) -> None:
         t = tile_map.get((x, y))
         if t and not t.boundary:
             if edge == "W":
-                t.river_w = 1
+                t.river_w = value
             elif edge == "SW":
-                t.river_sw = 1
+                t.river_sw = value
             elif edge == "SE":
-                t.river_se = 1
+                t.river_se = value
+
+    def place_river(path: list[tuple[int, int]]) -> None:
+        """Place river edges using the validated Dubis pattern.
+
+        Every path tile gets W=1. Connectivity between consecutive tiles:
+          NE step (B is NE of A): SW=1 on B
+          NW step (B is NW of A): bridge at (B.x-1, B.y) with SE=0
+
+        path: list of (x, y) coordinates from south to north.
+        """
+        for x, y in path:
+            set_edge(x, y, "W", 1)
+
+        for i in range(1, len(path)):
+            prev_x, prev_y = path[i - 1]
+            curr_x, curr_y = path[i]
+
+            # Compute NE/NW neighbors of previous tile
+            if prev_y % 2 == 0:  # even row
+                ne = (prev_x, prev_y + 1)
+                nw = (prev_x - 1, prev_y + 1)
+            else:  # odd row
+                ne = (prev_x + 1, prev_y + 1)
+                nw = (prev_x, prev_y + 1)
+
+            if (curr_x, curr_y) == ne:
+                set_edge(curr_x, curr_y, "SW", 1)
+            elif (curr_x, curr_y) == nw:
+                set_edge(curr_x - 1, curr_y, "SE", 0)
 
     # --- Saone (Arar) River ---
-    # Runs visual N-S along x=22, from y=31 (north) down to y=11 (south)
-    # In grid terms, Y decreases going south
-    for y in range(11, 31):
-        if y % 2 == 0:
-            set_river(22, y, "SE")
-        else:
-            set_river(22, y, "SW")
+    # x=22-23, y=11-30. Meanders between columns.
+    place_river([
+        (23, 11), (23, 12), (22, 13), (22, 14), (22, 15),
+        (22, 16), (22, 17), (23, 18), (23, 19), (23, 20),
+        (22, 21), (22, 22), (22, 23), (23, 24), (22, 25),
+        (22, 26), (22, 27), (23, 28), (22, 29), (22, 30),
+    ])
 
-    # --- Rhone River ---
-    # Flows from Lake Geneva (y=10) south toward Provincia (low Y)
-    rhone_path = [
-        (33, 10, "SW"),
-        (32, 9, "SE"),
-        (32, 8, "SW"),
-        (31, 7, "SE"),
-        (31, 6, "SW"),
-        (30, 5, "SE"),
-        (30, 4, "SW"),
-        (29, 3, "SE"),
-        (29, 2, "SW"),
-    ]
-    for x, y, edge in rhone_path:
-        set_river(x, y, edge)
+    # --- Rhone (Rhodanus) River ---
+    # x=30-32, y=4-9. Flows NE toward Lake Geneva.
+    place_river([
+        (30, 4), (30, 5), (31, 6), (31, 7), (32, 8), (32, 9),
+    ])
 
-    # --- Doubs River (loop around Vesontio) ---
-    # Small river loop near Vesontio (30, 28)
-    doubs_path = [
-        (29, 29, "SE"),
-        (30, 29, "SW"),
-        (30, 28, "SW"),
-        (29, 27, "SE"),
-        (30, 27, "W"),
-    ]
-    for x, y, edge in doubs_path:
-        set_river(x, y, edge)
+    # --- Doubs (Dubis) River ---
+    # x=32, y=26-30. Straight N-S near Vesontio.
+    place_river([
+        (32, 26), (32, 27), (32, 28), (32, 29), (32, 30),
+    ])
 
 
 def apply_special_tiles(tiles: list[Tile]) -> None:
@@ -553,10 +569,24 @@ def apply_special_tiles(tiles: list[Tile]) -> None:
     if t.height == MOUNTAIN:
         t.element_name = "TEXT_THE_ALPS"
 
-    # Lake Geneva
+    # Lacus Lemannus
     t = tile_map[(34, 10)]
     if t.height == LAKE:
         t.element_name = "TEXT_LAKE_GENEVA"
+
+    # --- River Labels ---
+
+    # Arar (Saone) - label at midpoint of river
+    t = tile_map[(22, 22)]
+    t.element_name = "TEXT_RIVER_ARAR"
+
+    # Rhodanus (Rhone) - label at midpoint of river
+    t = tile_map[(31, 6)]
+    t.element_name = "TEXT_RIVER_RHODANUS"
+
+    # Dubis (Doubs) - label near Vesontio
+    t = tile_map[(31, 28)]
+    t.element_name = "TEXT_RIVER_DUBIS"
 
     # --- Battle Sites ---
 
@@ -628,7 +658,7 @@ def write_xml(tiles: list[Tile], output_path: str) -> None:
         '<?xml version="1.0" encoding="utf-8"?>',
         '<Root',
         f'  MapWidth="{MAP_WIDTH}"',
-        '  MapEdgesSafe="False">',
+        '  MapEdgesSafe="True">',
     ]
 
     for t in tiles:
@@ -644,11 +674,11 @@ def write_xml(tiles: list[Tile], output_path: str) -> None:
         if t.vegetation:
             lines.append(f'    <Vegetation>{t.vegetation}</Vegetation>')
 
-        if t.river_w:
+        if t.river_w is not None:
             lines.append(f'    <RiverW>{t.river_w}</RiverW>')
-        if t.river_sw:
+        if t.river_sw is not None:
             lines.append(f'    <RiverSW>{t.river_sw}</RiverSW>')
-        if t.river_se:
+        if t.river_se is not None:
             lines.append(f'    <RiverSE>{t.river_se}</RiverSE>')
 
         if t.nation_site:
@@ -663,15 +693,12 @@ def write_xml(tiles: list[Tile], output_path: str) -> None:
         if t.resource:
             lines.append(f'    <Resource>{t.resource}</Resource>')
 
-        if t.boundary:
-            lines.append('    <Metadata>IsAutoBoundary=true</Metadata>')
-
         lines.append('  </Tile>')
 
     lines.append('</Root>')
     lines.append('')
 
-    with open(output_path, 'w', encoding='utf-8') as f:
+    with open(output_path, 'w', encoding='utf-8-sig') as f:
         f.write('\n'.join(lines))
 
     print(f"Wrote {len(tiles)} tiles to {output_path}")
@@ -717,7 +744,7 @@ def print_preview(tiles: list[Tile]) -> None:
                 ch = ':'
             else:
                 ch = '.'
-            if (t.river_w or t.river_sw or t.river_se) and ch == '.':
+            if any(v is not None and v > 0 for v in (t.river_w, t.river_sw, t.river_se)) and ch == '.':
                 ch = '~'
             row += ch
         # Add orientation labels

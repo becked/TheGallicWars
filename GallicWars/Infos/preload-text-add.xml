@@ -40,4 +40,16 @@
 		<zType>TEXT_LAKE_GENEVA</zType>
 		<en-US>Lacus Lemannus</en-US>
 	</Entry>
+	<Entry>
+		<zType>TEXT_RIVER_ARAR</zType>
+		<en-US>Arar</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_RIVER_RHODANUS</zType>
+		<en-US>Rhodanus</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_RIVER_DUBIS</zType>
+		<en-US>Dubis</en-US>
+	</Entry>
 </Root>
