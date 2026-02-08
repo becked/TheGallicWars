@@ -20,4 +20,24 @@
 		<zType>TEXT_SCENARIO_GALLIC_WARS_1_DESC</zType>
 		<en-US>In 58 BC, Julius Caesar begins his campaign in Gaul. The Helvetii are migrating westward, threatening Roman allies, while the Germanic king Ariovistus has crossed the Rhine to seize Gallic lands. As Rome, secure your northern frontier and establish dominance over Gaul.</en-US>
 	</Entry>
+	<Entry>
+		<zType>TEXT_CITYNAME_BIBRACTE</zType>
+		<en-US>Bibracte</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_CITYNAME_GENAVA</zType>
+		<en-US>Genava</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_JURA_MOUNTAINS</zType>
+		<en-US>Jura Mountains</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_VOSGES_MOUNTAINS</zType>
+		<en-US>Vosges Mountains</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_LAKE_GENEVA</zType>
+		<en-US>Lacus Lemannus</en-US>
+	</Entry>
 </Root>
