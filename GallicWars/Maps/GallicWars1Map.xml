@@ -3,7 +3,7 @@
   MapWidth="23"
   MapEdgesSafe="True"
   MapPath=""
-  GameId="893d0460-2e82-408f-806d-8154f5e7b5f2"
+  GameId="d72ebac8-f8e8-45f5-87f6-c11dbf387590"
   MapSize="MAPSIZE_SMALL"
   Scenario="SCENARIO_GALLIC_WARS_1"
   GameName=""
@@ -1968,9 +1968,8 @@
   <Tile
     ID="178">
     <Road />
-    <Terrain>TERRAIN_URBAN</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <ElementName>TEXT_CITYNAME_GENOA</ElementName>
     <Religion />
     <RevealedTurn />
   </Tile>
@@ -2495,11 +2494,10 @@
   <Tile
     ID="240">
     <Road />
-    <Terrain>TERRAIN_URBAN</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverW>1</RiverW>
     <RiverSW>1</RiverSW>
-    <ElementName>TEXT_CITYNAME_LUGDUNUM</ElementName>
     <CityTerritory>1</CityTerritory>
     <Religion />
     <RevealedTurn />
@@ -3574,9 +3572,8 @@
   <Tile
     ID="371">
     <Road />
-    <Terrain>TERRAIN_URBAN</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <ElementName>TEXT_CITYNAME_CAESARODUNUM</ElementName>
     <Religion />
     <RevealedTurn />
   </Tile>
@@ -3990,10 +3987,9 @@
   <Tile
     ID="423">
     <Road />
-    <Terrain>TERRAIN_URBAN</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSW>0</RiverSW>
-    <ElementName>TEXT_CITYNAME_DUROCRTORUM</ElementName>
     <Religion />
     <RevealedTurn />
   </Tile>
@@ -4919,9 +4915,8 @@
   <Tile
     ID="543">
     <Road />
-    <Terrain>TERRAIN_URBAN</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <ElementName>TEXT_CITYNAME_COLONIA</ElementName>
     <Religion />
     <RevealedTurn />
   </Tile>
@@ -5202,11 +5197,10 @@
   <Tile
     ID="579">
     <Road />
-    <Terrain>TERRAIN_URBAN</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSW>1</RiverSW>
     <RiverSE>1</RiverSE>
-    <ElementName>TEXT_CITYNAME_LONDINIUM</ElementName>
     <Religion />
     <RevealedTurn />
   </Tile>

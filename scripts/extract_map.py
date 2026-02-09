@@ -671,10 +671,16 @@ def write_tile(
             lines.append(f'    <Terrain>TERRAIN_URBAN</Terrain>')
             continue
         # Remove city sites that aren't needed for Chapter 1
-        if new_id in REMOVE_CITY_SITES and tag in ("CitySite", "Improvement"):
+        if new_id in REMOVE_CITY_SITES:
+            if tag == "CitySite":
+                continue
             if tag == "Improvement" and value == "IMPROVEMENT_CITY_SITE":
                 continue
-            if tag == "CitySite":
+            if tag == "ElementName":
+                continue
+            if tag == "Terrain" and value == "TERRAIN_URBAN":
+                terrain_value = "TERRAIN_LUSH"
+                lines.append('    <Terrain>TERRAIN_LUSH</Terrain>')
                 continue
         # Skip NationSite from source (we don't add it anymore)
         if tag == "NationSite":
