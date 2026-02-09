@@ -1,80 +1,45 @@
 #!/usr/bin/env python3
 """
-Extract a rectangular region from the Imperium Romanum map and generate
-a complete scenario map file for the Gallic Wars scenario.
+Generate a complete scenario map for the Gallic Wars scenario.
 
-Reads the source map XML, extracts tiles in the specified x,y range,
-remaps tile IDs to the new grid, marks edge tiles as boundary, and wraps
-everything in the scenario map format (Game/Player/Character/City blocks
-plus units embedded in tiles).
+Reads terrain data from data/base_terrain.xml (the frozen terrain file)
+and layers scenario state on top: game settings, player, characters,
+cities, units, territory, and revelation state.
 
 Usage:
-    python scripts/extract_map.py
+    python scripts/generate_scenario.py
     # Writes to GallicWars/Maps/GallicWars1Map.xml
 """
 
 import re
 import os
-import sys
 import uuid
 from dataclasses import dataclass, field
 from typing import Optional
 
 # ============================================================
-# Extraction Parameters
-# ============================================================
-
-SOURCE_MAP = os.path.expanduser(
-    "~/Library/Application Support/Steam/steamapps/common/Old World"
-    "/Maps/The Imperium Romanum.xml"
-)
-SOURCE_WIDTH = 127
-
-# Extraction region (inclusive). Y-offset MUST be even for hex parity.
-SRC_X_MIN = 20
-SRC_X_MAX = 42
-SRC_Y_MIN = 58
-SRC_Y_MAX = 86
-
-NEW_WIDTH = SRC_X_MAX - SRC_X_MIN + 1   # 23
-NEW_HEIGHT = SRC_Y_MAX - SRC_Y_MIN + 1  # 29
-
-# ============================================================
 # Scenario Constants
 # ============================================================
 
+BOUNDARY_WIDTH = 2  # tiles from each edge marked as boundary
+
 NARBO_X = 6
 NARBO_Y = 4
-NARBO_TILE_ID = NARBO_Y * NEW_WIDTH + NARBO_X  # 98
 
 GENAVA_X = 11
 GENAVA_Y = 12
-GENAVA_TILE_ID = GENAVA_Y * NEW_WIDTH + GENAVA_X  # 287
 
 BIBRACTE_X = 9
 BIBRACTE_Y = 13
-BIBRACTE_TILE_ID = BIBRACTE_Y * NEW_WIDTH + BIBRACTE_X  # 308
 
 VESONTIO_X = 14
 VESONTIO_Y = 15
-VESONTIO_TILE_ID = VESONTIO_Y * NEW_WIDTH + VESONTIO_X  # 359
 
-# City sites to remove (not relevant to Chapter 1)
-REMOVE_CITY_SITES: set[int] = {
-    10 * NEW_WIDTH + 10,  # 240 - Lugdunum
-    18 * NEW_WIDTH + 9,   # 423 - Durocortorum
-    7 * NEW_WIDTH + 17,   # 178 - Genua
-    17 * NEW_WIDTH + 20,  # 411 - Augusta Vindelicorum
-    23 * NEW_WIDTH + 14,  # 543 - Colonia
-    25 * NEW_WIDTH + 4,   # 579 - Londinium
-    16 * NEW_WIDTH + 3,   # 371 - Caesarodunum/Tours
-}
-
-# City definitions: (city_id, tile_id, name, player, family, tribe, is_capital)
+# City definitions
 @dataclass
 class CityDef:
     city_id: int
-    tile_id: int
+    tile_id: int  # computed from width at load time
     name: str
     player: int        # -1 for tribe-owned
     family: str        # "NONE" for tribe-owned
@@ -83,23 +48,28 @@ class CityDef:
     citizens: int
     x: int
     y: int
-    territory_x_min: Optional[int] = None  # min x for territory tiles
-    territory_x_max: Optional[int] = None  # max x for territory tiles
-    territory_y_min: Optional[int] = None  # min y for territory tiles
-    territory_y_max: Optional[int] = None  # max y for territory tiles
+    territory_x_min: Optional[int] = None
+    territory_x_max: Optional[int] = None
+    territory_y_min: Optional[int] = None
+    territory_y_max: Optional[int] = None
 
-CITIES: list[CityDef] = [
-    CityDef(0, NARBO_TILE_ID, "Narbo", 0, "FAMILY_JULIUS", "NONE",
-            True, 3, NARBO_X, NARBO_Y),
-    CityDef(1, GENAVA_TILE_ID, "Genava", 0, "FAMILY_JULIUS", "NONE",
-            False, 1, GENAVA_X, GENAVA_Y, territory_x_min=10, territory_y_max=12),
-    CityDef(2, BIBRACTE_TILE_ID, "Bibracte", -1, "NONE", "TRIBE_AEDUI",
-            False, 1, BIBRACTE_X, BIBRACTE_Y),
-    CityDef(3, VESONTIO_TILE_ID, "Vesontio", -1, "NONE", "TRIBE_SEQUANI",
-            False, 1, VESONTIO_X, VESONTIO_Y),
-]
 
-# Units to pre-place: (new_x, new_y, unit_type)
+def make_cities(width: int) -> list[CityDef]:
+    """Build the CITIES list with tile IDs computed from map width."""
+    return [
+        CityDef(0, NARBO_Y * width + NARBO_X, "Narbo", 0, "FAMILY_JULIUS",
+                "NONE", True, 3, NARBO_X, NARBO_Y),
+        CityDef(1, GENAVA_Y * width + GENAVA_X, "Genava", 0, "FAMILY_JULIUS",
+                "NONE", False, 1, GENAVA_X, GENAVA_Y,
+                territory_x_min=10, territory_y_max=12),
+        CityDef(2, BIBRACTE_Y * width + BIBRACTE_X, "Bibracte", -1, "NONE",
+                "TRIBE_AEDUI", False, 1, BIBRACTE_X, BIBRACTE_Y),
+        CityDef(3, VESONTIO_Y * width + VESONTIO_X, "Vesontio", -1, "NONE",
+                "TRIBE_SEQUANI", False, 1, VESONTIO_X, VESONTIO_Y),
+    ]
+
+
+# Units to pre-place: (x, y, unit_type)
 STARTING_UNITS: list[tuple[int, int, str]] = [
     (5, 4, "UNIT_HASTATUS"),
     (6, 3, "UNIT_BALEARIC_SLINGER"),
@@ -107,113 +77,59 @@ STARTING_UNITS: list[tuple[int, int, str]] = [
     (5, 5, "UNIT_WORKER"),
 ]
 
-# Pre-placed improvements: (x, y) -> improvement_type
-PLACED_IMPROVEMENTS: dict[tuple[int, int], str] = {
-    (7, 5): "IMPROVEMENT_GARRISON_1",
-    (7, 2): "IMPROVEMENT_NETS",
-    (7, 4): "IMPROVEMENT_NETS",
-    (5, 5): "IMPROVEMENT_MINE",
-    (6, 6): "IMPROVEMENT_MINE",
-    (7, 6): "IMPROVEMENT_MINE",
-    (4, 5): "IMPROVEMENT_QUARRY",
-    (6, 3): "IMPROVEMENT_QUARRY",
-    (5, 2): "IMPROVEMENT_QUARRY",
-    # Farms near Genava
-    (10, 12): "IMPROVEMENT_FARM",
-    (11, 11): "IMPROVEMENT_FARM",
-    (12, 11): "IMPROVEMENT_FARM",
-    (10, 10): "IMPROVEMENT_FARM",
-    (11, 10): "IMPROVEMENT_FARM",
-    (12, 10): "IMPROVEMENT_FARM",
-}
-
 NUM_UNITS = len(STARTING_UNITS)
 NUM_CHARACTERS = 2  # Caesar + Calpurnia
-NUM_CITIES = len(CITIES)
 
-# Fields to drop from extracted tiles
-DROP_FIELDS = {"Metadata", "TribeSite"}
 
 # ============================================================
-# Parsing
+# Terrain Parsing
 # ============================================================
 
 @dataclass
 class TileData:
-    """Raw tile data parsed from XML. Preserves all fields as-is."""
-    src_id: int
-    src_x: int
-    src_y: int
+    """Tile data parsed from the frozen terrain file."""
+    tile_id: int
     fields: list[tuple[str, Optional[str]]] = field(default_factory=list)
 
 
-def parse_tiles(path: str) -> dict[int, TileData]:
-    """Parse all tiles from the source map XML."""
-    tiles: dict[int, TileData] = {}
+def parse_frozen_terrain(
+    path: str,
+) -> tuple[int, int, list[tuple[int, TileData]]]:
+    """Parse the frozen terrain file.
 
+    Returns (width, height, tiles) where tiles is
+    [(tile_id, tile_data), ...] sorted by tile_id.
+    """
     with open(path, 'r', encoding='utf-8-sig') as f:
         content = f.read()
 
+    # Extract MapWidth from Root element
+    m = re.search(r'MapWidth="(\d+)"', content)
+    if m is None:
+        raise ValueError(f"No MapWidth found in {path}")
+    width = int(m.group(1))
+
+    # Parse tiles
+    tiles: list[tuple[int, TileData]] = []
     tile_blocks = re.split(r'<Tile\s*\n?\s*ID="(\d+)">', content)
 
     for i in range(1, len(tile_blocks), 2):
         tile_id = int(tile_blocks[i])
         block = tile_blocks[i + 1].split('</Tile>')[0]
 
-        src_x = tile_id % SOURCE_WIDTH
-        src_y = tile_id // SOURCE_WIDTH
+        tile = TileData(tile_id=tile_id)
 
-        tile = TileData(src_id=tile_id, src_x=src_x, src_y=src_y)
+        for fm in re.finditer(r'<(\w+)\s*/>', block):
+            tile.fields.append((fm.group(1), None))
 
-        for m in re.finditer(r'<(\w+)\s*/>', block):
-            tile.fields.append((m.group(1), None))
+        for fm in re.finditer(r'<(\w+)>([^<]*)</(\w+)>', block):
+            if fm.group(1) == fm.group(3):
+                tile.fields.append((fm.group(1), fm.group(2)))
 
-        for m in re.finditer(r'<(\w+)>([^<]*)</(\w+)>', block):
-            if m.group(1) == m.group(3):
-                tile.fields.append((m.group(1), m.group(2)))
+        tiles.append((tile_id, tile))
 
-        tiles[tile_id] = tile
-
-    return tiles
-
-
-# ============================================================
-# Extraction
-# ============================================================
-
-def extract_region(
-    tiles: dict[int, TileData],
-) -> list[tuple[int, TileData, bool]]:
-    """Extract tiles in the region and compute new IDs.
-
-    Returns list of (new_id, tile_data, is_boundary) sorted by new_id.
-    """
-    result: list[tuple[int, TileData, bool]] = []
-
-    for new_y in range(NEW_HEIGHT):
-        for new_x in range(NEW_WIDTH):
-            src_x = SRC_X_MIN + new_x
-            src_y = SRC_Y_MIN + new_y
-            src_id = src_y * SOURCE_WIDTH + src_x
-
-            new_id = new_y * NEW_WIDTH + new_x
-
-            tile = tiles.get(src_id)
-            if tile is None:
-                tile = TileData(src_id=src_id, src_x=src_x, src_y=src_y)
-                tile.fields = [
-                    ("Terrain", "TERRAIN_WATER"),
-                    ("Height", "HEIGHT_OCEAN"),
-                ]
-
-            is_boundary = (
-                new_x <= 1 or new_x >= NEW_WIDTH - 2 or
-                new_y <= 1 or new_y >= NEW_HEIGHT - 2
-            )
-
-            result.append((new_id, tile, is_boundary))
-
-    return result
+    height = len(tiles) // width
+    return width, height, tiles
 
 
 # ============================================================
@@ -239,14 +155,21 @@ def hex_distance(x1: int, y1: int, x2: int, y2: int) -> int:
 # Scenario Preamble Generation
 # ============================================================
 
-def generate_preamble(game_id: str) -> list[str]:
+def generate_preamble(
+    width: int,
+    cities: list[CityDef],
+    game_id: str,
+) -> list[str]:
     """Generate the full scenario map preamble (Root attrs through City)."""
+    num_cities = len(cities)
+    narbo_tile_id = NARBO_Y * width + NARBO_X
+
     lines: list[str] = []
 
     # Root element with scenario attributes
     lines.append('<?xml version="1.0" encoding="utf-8"?>')
     lines.append('<Root')
-    lines.append(f'  MapWidth="{NEW_WIDTH}"')
+    lines.append(f'  MapWidth="{width}"')
     lines.append('  MapEdgesSafe="True"')
     lines.append('  MapPath=""')
     lines.append(f'  GameId="{game_id}"')
@@ -308,7 +231,7 @@ def generate_preamble(game_id: str) -> list[str]:
     lines.append('  <Game>')
     lines.append('    <Seed>666877878369320307</Seed>')
     lines.append(f'    <NextUnitID>{NUM_UNITS}</NextUnitID>')
-    lines.append(f'    <NextCityID>{NUM_CITIES}</NextCityID>')
+    lines.append(f'    <NextCityID>{num_cities}</NextCityID>')
     lines.append(f'    <NextCharacterID>{NUM_CHARACTERS}</NextCharacterID>')
     lines.append('    <NextOccurrenceID>0</NextOccurrenceID>')
     lines.append('    <MapSize>MAPSIZE_SMALL</MapSize>')
@@ -402,7 +325,7 @@ def generate_preamble(game_id: str) -> list[str]:
     lines.append('    <Founded />')
     lines.append('    <SuccessionGender>SUCCESSIONGENDER_ABSOLUTE_COGNATIC</SuccessionGender>')
     lines.append(f'    <StartingTileIDs>')
-    lines.append(f'      <Tile>{NARBO_TILE_ID}</Tile>')
+    lines.append(f'      <Tile>{narbo_tile_id}</Tile>')
     lines.append(f'    </StartingTileIDs>')
     lines.append('    <YieldStockpile>')
     lines.append('      <YIELD_CIVICS>3000</YIELD_CIVICS>')
@@ -541,7 +464,7 @@ def generate_preamble(game_id: str) -> list[str]:
     lines.append('  </Character>')
 
     # City blocks
-    for city in CITIES:
+    for city in cities:
         lines.append('  <City')
         lines.append(f'    ID="{city.city_id}"')
         lines.append(f'    TileID="{city.tile_id}"')
@@ -593,11 +516,11 @@ def generate_preamble(game_id: str) -> list[str]:
 # Tile Output
 # ============================================================
 
-def build_unit_map() -> dict[int, list[tuple[int, str]]]:
+def build_unit_map(width: int) -> dict[int, list[tuple[int, str]]]:
     """Build a mapping of tile_id -> [(unit_id, unit_type), ...]."""
     unit_map: dict[int, list[tuple[int, str]]] = {}
     for unit_id, (ux, uy, unit_type) in enumerate(STARTING_UNITS):
-        tile_id = uy * NEW_WIDTH + ux
+        tile_id = uy * width + ux
         unit_map.setdefault(tile_id, []).append((unit_id, unit_type))
     return unit_map
 
@@ -625,42 +548,35 @@ def write_unit(unit_id: int, unit_type: str) -> list[str]:
     return lines
 
 
-def build_city_tile_map() -> dict[int, CityDef]:
+def build_city_tile_map(cities: list[CityDef]) -> dict[int, CityDef]:
     """Build a mapping of tile_id -> CityDef for all cities."""
-    return {city.tile_id: city for city in CITIES}
-
-
-def build_improvement_map() -> dict[int, str]:
-    """Build a mapping of tile_id -> improvement_type for pre-placed improvements."""
-    return {y * NEW_WIDTH + x: imp for (x, y), imp in PLACED_IMPROVEMENTS.items()}
+    return {city.tile_id: city for city in cities}
 
 
 def write_tile(
-    new_id: int,
+    tile_id: int,
     tile: TileData,
     is_boundary: bool,
+    width: int,
+    cities: list[CityDef],
     unit_map: dict[int, list[tuple[int, str]]],
     city_map: dict[int, CityDef],
-    improvement_map: dict[int, str],
 ) -> list[str]:
-    """Generate XML lines for a single tile."""
+    """Generate XML lines for a single tile with scenario state."""
     lines: list[str] = []
-    new_x = new_id % NEW_WIDTH
-    new_y = new_id // NEW_WIDTH
+    new_x = tile_id % width
+    new_y = tile_id // width
 
-    city = city_map.get(new_id)
-    has_units = new_id in unit_map
-    placed_improvement = improvement_map.get(new_id)
-    # Reveal tiles that have units or are a player city
+    city = city_map.get(tile_id)
+    has_units = tile_id in unit_map
     is_revealed = has_units or (city is not None and city.player >= 0)
 
     # Check if this tile is in any player-owned city's territory
     city_territory_id: Optional[int] = None
-    for c in CITIES:
+    for c in cities:
         if c.player >= 0 and not is_boundary:
             dist = hex_distance(new_x, new_y, c.x, c.y)
             if dist <= 2:
-                # Apply optional territory bounds
                 if c.territory_x_min is not None and new_x < c.territory_x_min:
                     continue
                 if c.territory_x_max is not None and new_x > c.territory_x_max:
@@ -673,22 +589,17 @@ def write_tile(
                 break
 
     lines.append(f'  <Tile')
-    lines.append(f'    ID="{new_id}">')
+    lines.append(f'    ID="{tile_id}">')
 
     if is_boundary:
         lines.append('    <Boundary />')
 
-    # Track whether source tile already has CitySite
+    # Track terrain for RevealedTerrain
     terrain_value: Optional[str] = None
     source_has_citysite = any(tag == "CitySite" for tag, _ in tile.fields)
-    source_has_improvement = any(tag == "Improvement" for tag, _ in tile.fields)
 
-    # Write tile fields from source, preserving order
+    # Write tile fields from frozen terrain, with city overrides
     for tag, value in tile.fields:
-        if tag in DROP_FIELDS:
-            continue
-        if tag == "Boundary":
-            continue
         # On city tiles, change CitySite from ACTIVE to USED
         if city is not None and tag == "CitySite":
             lines.append('    <CitySite>USED</CitySite>')
@@ -696,29 +607,9 @@ def write_tile(
         # On city tiles, override terrain to URBAN
         if city is not None and tag == "Terrain":
             terrain_value = "TERRAIN_URBAN"
-            lines.append(f'    <Terrain>TERRAIN_URBAN</Terrain>')
+            lines.append('    <Terrain>TERRAIN_URBAN</Terrain>')
             continue
-        # Remove city sites that aren't needed for Chapter 1
-        if new_id in REMOVE_CITY_SITES:
-            if tag == "CitySite":
-                continue
-            if tag == "Improvement" and value == "IMPROVEMENT_CITY_SITE":
-                if placed_improvement is not None:
-                    lines.append(f'    <Improvement>{placed_improvement}</Improvement>')
-                continue
-            if tag == "ElementName":
-                continue
-            if tag == "Terrain" and value == "TERRAIN_URBAN":
-                terrain_value = "TERRAIN_LUSH"
-                lines.append('    <Terrain>TERRAIN_LUSH</Terrain>')
-                continue
-        # Override Improvement if this tile has a pre-placed one
-        if tag == "Improvement" and placed_improvement is not None:
-            lines.append(f'    <Improvement>{placed_improvement}</Improvement>')
-            continue
-        # Skip NationSite from source (we don't add it anymore)
-        if tag == "NationSite":
-            continue
+        # Pass through everything else as-is
         if tag == "Terrain":
             terrain_value = value
         if value is None:
@@ -726,15 +617,11 @@ def write_tile(
         else:
             lines.append(f'    <{tag}>{value}</{tag}>')
 
-    # For new city tiles that didn't have CitySite in source, add it
+    # For city tiles that didn't have CitySite in terrain, add it
     if city is not None and not source_has_citysite:
         lines.append('    <CitySite>USED</CitySite>')
 
-    # Add pre-placed improvement if source tile had none
-    if placed_improvement is not None and not source_has_improvement:
-        lines.append(f'    <Improvement>{placed_improvement}</Improvement>')
-
-    # Add revealed state for tiles near player cities
+    # Revealed state for tiles with units or player cities
     if is_revealed and not is_boundary:
         if city_territory_id is not None:
             lines.append('    <RevealedCityTerritory>')
@@ -749,7 +636,7 @@ def write_tile(
             lines.append('      <Team>0</Team>')
             lines.append('    </RevealedCity>')
 
-    # City territory for tiles near player-owned cities
+    # City territory
     if city_territory_id is not None:
         lines.append(f'    <CityTerritory>{city_territory_id}</CityTerritory>')
     if city is not None and city.player >= 0:
@@ -757,7 +644,7 @@ def write_tile(
 
     # Embed units
     if has_units:
-        for unit_id, unit_type in unit_map[new_id]:
+        for unit_id, unit_type in unit_map[tile_id]:
             lines.extend(write_unit(unit_id, unit_type))
 
     # Standard scenario map tags on every tile
@@ -777,58 +664,34 @@ def write_tile(
 # Output
 # ============================================================
 
-def write_bare_xml(
-    extracted: list[tuple[int, TileData, bool]],
-    output_path: str,
-) -> None:
-    """Write a bare tile-only map XML (old format, for debugging)."""
-    lines: list[str] = []
-    lines.append('<?xml version="1.0" encoding="utf-8"?>')
-    lines.append(f'<Root MapWidth="{NEW_WIDTH}" MapEdgesSafe="True">')
-
-    for new_id, tile, is_boundary in extracted:
-        lines.append(f'  <Tile')
-        lines.append(f'    ID="{new_id}">')
-        if is_boundary:
-            lines.append('    <Boundary />')
-        for tag, value in tile.fields:
-            if tag in DROP_FIELDS or tag == "Boundary" or tag == "NationSite":
-                continue
-            if value is None:
-                lines.append(f'    <{tag} />')
-            else:
-                lines.append(f'    <{tag}>{value}</{tag}>')
-        lines.append('  </Tile>')
-
-    lines.append('</Root>')
-    lines.append('')
-
-    os.makedirs(os.path.dirname(output_path), exist_ok=True)
-    with open(output_path, 'w', encoding='utf-8-sig') as f:
-        f.write('\n'.join(lines))
-
-    print(f"Generated BARE map: {output_path}")
-    print(f"  Tiles: {len(extracted)}")
-
-
 def write_xml(
-    extracted: list[tuple[int, TileData, bool]],
+    width: int,
+    height: int,
+    tiles: list[tuple[int, TileData]],
     output_path: str,
 ) -> None:
     """Write the complete scenario map XML."""
     game_id = str(uuid.uuid4())
-    unit_map = build_unit_map()
-    city_map = build_city_tile_map()
-    imp_map = build_improvement_map()
+    cities = make_cities(width)
+    unit_map = build_unit_map(width)
+    city_map = build_city_tile_map(cities)
 
     lines: list[str] = []
 
     # Preamble: Root attributes, Game, Player, Characters, City
-    lines.extend(generate_preamble(game_id))
+    lines.extend(generate_preamble(width, cities, game_id))
 
     # Tiles
-    for new_id, tile, is_boundary in extracted:
-        lines.extend(write_tile(new_id, tile, is_boundary, unit_map, city_map, imp_map))
+    for tile_id, tile in tiles:
+        new_x = tile_id % width
+        new_y = tile_id // width
+        is_boundary = (
+            new_x < BOUNDARY_WIDTH or new_x >= width - BOUNDARY_WIDTH or
+            new_y < BOUNDARY_WIDTH or new_y >= height - BOUNDARY_WIDTH
+        )
+        lines.extend(write_tile(
+            tile_id, tile, is_boundary, width, cities, unit_map, city_map,
+        ))
 
     lines.append('</Root>')
     lines.append('')
@@ -838,14 +701,13 @@ def write_xml(
         f.write('\n'.join(lines))
 
     print(f"Generated scenario map: {output_path}")
-    print(f"  Source region: x=[{SRC_X_MIN},{SRC_X_MAX}], y=[{SRC_Y_MIN},{SRC_Y_MAX}]")
-    print(f"  Dimensions: {NEW_WIDTH} x {NEW_HEIGHT} = {NEW_WIDTH * NEW_HEIGHT} tiles")
-    print(f"  Cities: {NUM_CITIES}")
-    for c in CITIES:
+    print(f"  Terrain source: data/base_terrain.xml")
+    print(f"  Dimensions: {width} x {height} = {width * height} tiles")
+    print(f"  Cities: {len(cities)}")
+    for c in cities:
         owner = f"Player {c.player}" if c.player >= 0 else c.tribe
         print(f"    {c.name} at tile {c.tile_id} ({c.x},{c.y}) [{owner}]")
     print(f"  Units: {NUM_UNITS} pre-placed")
-    print(f"  Improvements: {len(PLACED_IMPROVEMENTS)} pre-placed")
     print(f"  Characters: {NUM_CHARACTERS} (Caesar + Calpurnia)")
     print(f"  GameId: {game_id}")
 
@@ -855,25 +717,18 @@ def write_xml(
 # ============================================================
 
 def main() -> None:
-    bare_mode = "--bare" in sys.argv
-
-    print(f"Reading source map: {SOURCE_MAP}")
-    tiles = parse_tiles(SOURCE_MAP)
-    print(f"  Parsed {len(tiles)} tiles (source map: {SOURCE_WIDTH} wide)")
-
-    extracted = extract_region(tiles)
-    print(f"  Extracted {len(extracted)} tiles")
-
     script_dir = os.path.dirname(os.path.abspath(__file__))
     project_dir = os.path.dirname(script_dir)
+    terrain_path = os.path.join(project_dir, "data", "base_terrain.xml")
     output_path = os.path.join(
         project_dir, "GallicWars", "Maps", "GallicWars1Map.xml"
     )
 
-    if bare_mode:
-        write_bare_xml(extracted, output_path)
-    else:
-        write_xml(extracted, output_path)
+    print(f"Reading terrain: {terrain_path}")
+    width, height, tiles = parse_frozen_terrain(terrain_path)
+    print(f"  {width} x {height} = {len(tiles)} tiles")
+
+    write_xml(width, height, tiles, output_path)
 
 
 if __name__ == "__main__":

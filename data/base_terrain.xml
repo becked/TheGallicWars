@@ -1,849 +1,296 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Root
-  MapWidth="23"
-  MapEdgesSafe="True"
-  MapPath=""
-  GameId="8007b09d-3034-4ab5-bb72-362d16e8406f"
-  MapSize="MAPSIZE_SMALL"
-  Scenario="SCENARIO_GALLIC_WARS_1"
-  GameName=""
-  FirstSeed="58000001"
-  MapSeed="58000001"
-  GameMode="SINGLE_PLAYER"
-  TurnStyle="TURNSTYLE_STRICT"
-  TurnTimer="TURNTIMER_NONE"
-  OpponentLevel="OPPONENTLEVEL_AGGRESSIVE"
-  TribeLevel="TRIBELEVEL_STRONG"
-  Development="DEVELOPMENT_FLEDGLING"
-  HumanDevelopment="DEVELOPMENT_FLEDGLING"
-  Advantage="ADVANTAGE_NONE"
-  SuccessionGender="SUCCESSIONGENDER_ABSOLUTE_COGNATIC"
-  SuccessionOrder="SUCCESSIONORDER_PRIMOGENITURE"
-  Mortality="MORTALITY_STANDARD"
-  TurnScale="TURNSCALE_YEAR"
-  TeamNation="TEAMNATION_GAME_UNIQUE"
-  ForceMarch="FORCEMARCH_UNLIMITED"
-  EventLevel="EVENTLEVEL_MODERATE"
-  NumAutosaves="10">
-  <Team>
-    <PlayerTeam>0</PlayerTeam>
-  </Team>
-  <Difficulty>
-    <PlayerDifficulty>DIFFICULTY_GREAT</PlayerDifficulty>
-  </Difficulty>
-  <Development>
-    <PlayerDevelopment>DEVELOPMENT_FLEDGLING</PlayerDevelopment>
-  </Development>
-  <Nation>
-    <PlayerNation>NATION_ROME</PlayerNation>
-  </Nation>
-  <Dynasty>
-    <PlayerDynasty>DYNASTY_JULIUS_CAESAR</PlayerDynasty>
-  </Dynasty>
-  <Archetype>
-    <LeaderArchetype>TRAIT_PRESET_ARCHETYPE</LeaderArchetype>
-  </Archetype>
-  <Humans>
-    <PlayerHuman>0</PlayerHuman>
-  </Humans>
-  <StartingPlayerOptions>
-    <PLAYEROPTION_NO_TUTORIAL>0</PLAYEROPTION_NO_TUTORIAL>
-  </StartingPlayerOptions>
-  <GameOptions />
-  <OccurrenceLevels />
-  <VictoryEnabled />
-  <GameContent />
-  <MapMultiOptions />
-  <MapSingleOptions />
-  <Game>
-    <Seed>666877878369320307</Seed>
-    <NextUnitID>4</NextUnitID>
-    <NextCityID>4</NextCityID>
-    <NextCharacterID>2</NextCharacterID>
-    <NextOccurrenceID>0</NextOccurrenceID>
-    <MapSize>MAPSIZE_SMALL</MapSize>
-    <NoFogOfWar />
-    <Turn>1</Turn>
-    <TurnTime>0</TurnTime>
-    <TeamTurn>0</TeamTurn>
-    <PlayerTurn>0</PlayerTurn>
-    <YieldPrice>
-      <YIELD_ORDERS>200000</YIELD_ORDERS>
-      <YIELD_FOOD>40000</YIELD_FOOD>
-      <YIELD_IRON>40000</YIELD_IRON>
-      <YIELD_STONE>40000</YIELD_STONE>
-      <YIELD_WOOD>40000</YIELD_WOOD>
-    </YieldPrice>
-    <YieldPriceTurn>
-      <YIELD_ORDERS>200000</YIELD_ORDERS>
-      <YIELD_FOOD>40000</YIELD_FOOD>
-      <YIELD_IRON>40000</YIELD_IRON>
-      <YIELD_STONE>40000</YIELD_STONE>
-      <YIELD_WOOD>40000</YIELD_WOOD>
-    </YieldPriceTurn>
-    <YieldPriceHistory />
-    <ReligionFounded />
-    <ReligionHeadID />
-    <ReligionHolyCity />
-    <ImprovementDisabled />
-    <EventStoryMaxPriority />
-    <ReligionFounder />
-    <TeamAlliance />
-    <FamilyClass>
-      <FAMILY_FABIUS>FAMILYCLASS_CHAMPIONS</FAMILY_FABIUS>
-      <FAMILY_CLAUDIUS>FAMILYCLASS_LANDOWNERS</FAMILY_CLAUDIUS>
-      <FAMILY_VALERIUS>FAMILYCLASS_PATRONS</FAMILY_VALERIUS>
-      <FAMILY_JULIUS>FAMILYCLASS_STATESMEN</FAMILY_JULIUS>
-    </FamilyClass>
-    <TribeConflictTurn />
-    <TribeDiplomacyTurn />
-    <TribeDiplomacyBlock />
-    <TribeWarScore />
-    <TeamConflictTurn />
-    <TeamDiplomacyTurn />
-    <TeamDiplomacyBlock />
-    <TeamWarScore />
-    <ReligionTheology />
-    <TribeContact />
-    <TeamContact>
-      <T.0.0 />
-    </TeamContact>
-    <TribeDiplomacy>
-      <TRIBE_REBELS.0>DIPLOMACY_WAR</TRIBE_REBELS.0>
-      <TRIBE_ANARCHY.0>DIPLOMACY_WAR</TRIBE_ANARCHY.0>
-      <TRIBE_RAIDERS.0>DIPLOMACY_WAR</TRIBE_RAIDERS.0>
-      <TRIBE_BARBARIANS.0>DIPLOMACY_WAR</TRIBE_BARBARIANS.0>
-      <TRIBE_BOII.0>DIPLOMACY_WAR</TRIBE_BOII.0>
-      <TRIBE_GAULS.0>DIPLOMACY_TRUCE</TRIBE_GAULS.0>
-      <TRIBE_VANDALS.0>DIPLOMACY_TRUCE</TRIBE_VANDALS.0>
-      <TRIBE_DANES.0>DIPLOMACY_TRUCE</TRIBE_DANES.0>
-      <TRIBE_THRACIANS.0>DIPLOMACY_TRUCE</TRIBE_THRACIANS.0>
-      <TRIBE_SCYTHIANS.0>DIPLOMACY_TRUCE</TRIBE_SCYTHIANS.0>
-      <TRIBE_NUMIDIANS.0>DIPLOMACY_TRUCE</TRIBE_NUMIDIANS.0>
-      <TRIBE_HELVETII.0>DIPLOMACY_TRUCE</TRIBE_HELVETII.0>
-      <TRIBE_SUEBI.0>DIPLOMACY_TRUCE</TRIBE_SUEBI.0>
-      <TRIBE_AEDUI.0>DIPLOMACY_TRUCE</TRIBE_AEDUI.0>
-      <TRIBE_SEQUANI.0>DIPLOMACY_TRUCE</TRIBE_SEQUANI.0>
-    </TribeDiplomacy>
-    <TeamDiplomacy>
-      <T.0.0>DIPLOMACY_TEAM</T.0.0>
-    </TeamDiplomacy>
-  </Game>
-  <Player
-    ID="0"
-    Name=""
-    Email=""
-    OnlineID=""
-    CustomReminder=""
-    Language="LANGUAGE_ENGLISH"
-    Nation="NATION_ROME"
-    Dynasty="DYNASTY_JULIUS_CAESAR"
-    AIControlledToTurn="0">
-    <OriginalCapitalCityID>0</OriginalCapitalCityID>
-    <FounderID>0</FounderID>
-    <ChosenHeirID>-1</ChosenHeirID>
-    <LastDoTurn>0</LastDoTurn>
-    <TimeStockpile>0</TimeStockpile>
-    <Legitimacy>16</Legitimacy>
-    <RecruitLegitimacy>0</RecruitLegitimacy>
-    <AmbitionDelay>1</AmbitionDelay>
-    <BuyTileCount>0</BuyTileCount>
-    <StateReligionChangeCount>0</StateReligionChangeCount>
-    <TribeMercenaryCount>0</TribeMercenaryCount>
-    <StartTurnCities>0</StartTurnCities>
-    <Founded />
-    <SuccessionGender>SUCCESSIONGENDER_ABSOLUTE_COGNATIC</SuccessionGender>
-    <StartingTileIDs>
-      <Tile>98</Tile>
-    </StartingTileIDs>
-    <YieldStockpile>
-      <YIELD_CIVICS>3000</YIELD_CIVICS>
-      <YIELD_TRAINING>3000</YIELD_TRAINING>
-      <YIELD_MONEY>500</YIELD_MONEY>
-      <YIELD_ORDERS>80</YIELD_ORDERS>
-      <YIELD_FOOD>2000</YIELD_FOOD>
-      <YIELD_IRON>2000</YIELD_IRON>
-      <YIELD_STONE>2000</YIELD_STONE>
-      <YIELD_WOOD>2000</YIELD_WOOD>
-    </YieldStockpile>
-    <TechProgress />
-    <TechCount>
-      <TECH_IRONWORKING>1</TECH_IRONWORKING>
-      <TECH_STONECUTTING>1</TECH_STONECUTTING>
-      <TECH_LABOR_FORCE>1</TECH_LABOR_FORCE>
-      <TECH_TRAPPING>1</TECH_TRAPPING>
-    </TechCount>
-    <LawClassChangeCount />
-    <TheologyEstablishedCount />
-    <ResourceRevealed />
-    <GoalStartedCount />
-    <BonusCount />
-    <AmbitionDecisions />
-    <GoalsFailed />
-    <AllEventStoryTurn />
-    <EventClassTurn />
-    <UnitsProduced />
-    <UnitsProducedTurn />
-    <CouncilCharacter />
-    <FamilySeatCityID>
-      <FAMILY_JULIUS>0</FAMILY_JULIUS>
-    </FamilySeatCityID>
-    <FamilyHeadID />
-    <TechAvailable />
-    <TechPassed />
-    <TechTrashed />
-    <TechTarget />
-    <ActiveLaw>
-      <LAWCLASS_ORDER>LAW_PRIMOGENITURE</LAWCLASS_ORDER>
-    </ActiveLaw>
-    <FamilyReligion />
-    <FamilyLawOpinion />
-    <FamilyLuxuryTurn />
-    <FamilyEventStoryTurn />
-    <ReligionEventStoryTurn />
-    <TribeLuxuryTurn />
-    <TribeEventStoryTurn />
-    <PlayerLuxuryTurn />
-    <PlayerEventStoryTurn />
-    <FamilyEventStoryOption />
-    <ReligionEventStoryOption />
-    <TribeEventStoryOption />
-    <PlayerEventStoryOption />
-    <Leaders>
-      <ID>0</ID>
-    </Leaders>
-    <Families>
-      <FAMILY_JULIUS />
-    </Families>
-    <IgnoreCouncilReminder />
-    <PlayerOptions>
-      <PLAYEROPTION_NO_TUTORIAL />
-    </PlayerOptions>
-    <MemoryPlayerList />
-    <MemoryFamilyList />
-    <MilitaryPowerHistory />
-    <PointsHistory />
-    <YieldRateHistory />
-    <FamilyOpinionHistory />
-    <AI />
-  </Player>
-  <Character
-    ID="0"
-    BirthTurn="-34"
-    Player="0"
-    Character="CHARACTER_JULIUS_CAESAR_LEADER"
-    Gender="GENDER_MALE"
-    FirstName="NAME_JULIUS_CAESAR"
-    Seed="58100000000000001">
-    <Portrait>CHARACTER_PORTRAIT_JULIUS_CAESAR</Portrait>
-    <NameType>NAME_JULIUS_CAESAR</NameType>
-    <Level>1</Level>
-    <LeaderTurn>1</LeaderTurn>
-    <Royal />
-    <Nation>NATION_ROME</Nation>
-    <Family>FAMILY_JULIUS</Family>
-    <Cognomen>COGNOMEN_GOOD</Cognomen>
-    <Rating>
-      <RATING_WISDOM>2</RATING_WISDOM>
-      <RATING_CHARISMA>3</RATING_CHARISMA>
-      <RATING_COURAGE>4</RATING_COURAGE>
-      <RATING_DISCIPLINE>2</RATING_DISCIPLINE>
-    </Rating>
-    <Stat />
-    <Trait>
-      <TRAIT_COMMANDER_ARCHETYPE />
-      <TRAIT_EXPANSIONIST />
-    </Trait>
-    <CognomenHistory>
-      <T1>1</T1>
-    </CognomenHistory>
-  </Character>
-  <Character
-    ID="1"
-    BirthTurn="-20"
-    Player="0"
-    Character="CHARACTER_CALPURNIA"
-    Gender="GENDER_FEMALE"
-    FirstName="NAME_CALPURNIA"
-    Seed="58100000000000002">
-    <Portrait>CHARACTER_PORTRAIT_ROME_LEADER_FEMALE_11</Portrait>
-    <NameType>NAME_CALPURNIA</NameType>
-    <Level>1</Level>
-    <SpouseID>0</SpouseID>
-    <Royal />
-    <Nation>NATION_ROME</Nation>
-    <Family>FAMILY_JULIUS</Family>
-    <Rating>
-      <RATING_WISDOM>1</RATING_WISDOM>
-      <RATING_CHARISMA>0</RATING_CHARISMA>
-      <RATING_COURAGE>0</RATING_COURAGE>
-      <RATING_DISCIPLINE>1</RATING_DISCIPLINE>
-    </Rating>
-    <Stat />
-    <Trait>
-      <TRAIT_JUDGE_ARCHETYPE />
-      <TRAIT_HUMBLE />
-      <TRAIT_SUPERSTITIOUS />
-    </Trait>
-  </Character>
-  <City
-    ID="0"
-    TileID="98"
-    Player="0"
-    Family="FAMILY_JULIUS"
-    Founded="1">
-    <Name>Narbo</Name>
-    <Citizens>3</Citizens>
-    <Capital />
-    <FirstPlayer>0</FirstPlayer>
-    <LastPlayer>0</LastPlayer>
-    <YieldProgress />
-    <YieldOverflow />
-    <ProjectCount />
-    <LuxuryTurn />
-    <AgentCharacterID />
-    <TeamCultureStep />
-    <TeamDiscontentLevel />
-    <TeamDiscontentLevelHighest />
-    <Religion />
-    <PlayerFamily>
-      <P.0>FAMILY_JULIUS</P.0>
-    </PlayerFamily>
-    <TeamCulture>
-      <T.0>CULTURE_WEAK</T.0>
-    </TeamCulture>
-    <BuildQueue>
-      <QueueInfo>
-        <Build>BUILD_PROJECT</Build>
-        <Type>PROJECT_COUNCIL_1</Type>
-        <Data>-1</Data>
-        <Progress>0</Progress>
-        <Repeat />
-        <YieldCost />
-      </QueueInfo>
-    </BuildQueue>
-  </City>
-  <City
-    ID="1"
-    TileID="287"
-    Player="0"
-    Family="FAMILY_JULIUS"
-    Founded="1">
-    <Name>Genava</Name>
-    <Citizens>1</Citizens>
-    <FirstPlayer>0</FirstPlayer>
-    <LastPlayer>0</LastPlayer>
-    <YieldProgress />
-    <YieldOverflow />
-    <ProjectCount />
-    <LuxuryTurn />
-    <AgentCharacterID />
-    <TeamCultureStep />
-    <TeamDiscontentLevel />
-    <TeamDiscontentLevelHighest />
-    <Religion />
-    <PlayerFamily>
-      <P.0>FAMILY_JULIUS</P.0>
-    </PlayerFamily>
-    <TeamCulture>
-      <T.0>CULTURE_WEAK</T.0>
-    </TeamCulture>
-  </City>
-  <City
-    ID="2"
-    TileID="308"
-    Player="-1"
-    Family="NONE"
-    Founded="1">
-    <Name>Bibracte</Name>
-    <Citizens>1</Citizens>
-    <FirstPlayer>0</FirstPlayer>
-    <LastPlayer>0</LastPlayer>
-    <Tribe>TRIBE_AEDUI</Tribe>
-    <YieldProgress />
-    <YieldOverflow />
-    <ProjectCount />
-    <LuxuryTurn />
-    <AgentCharacterID />
-    <TeamCultureStep />
-    <Religion />
-    <PlayerFamily>
-    </PlayerFamily>
-    <TeamCulture>
-      <T.0>CULTURE_WEAK</T.0>
-    </TeamCulture>
-  </City>
-  <City
-    ID="3"
-    TileID="359"
-    Player="-1"
-    Family="NONE"
-    Founded="1">
-    <Name>Vesontio</Name>
-    <Citizens>1</Citizens>
-    <FirstPlayer>0</FirstPlayer>
-    <LastPlayer>0</LastPlayer>
-    <Tribe>TRIBE_SEQUANI</Tribe>
-    <YieldProgress />
-    <YieldOverflow />
-    <ProjectCount />
-    <LuxuryTurn />
-    <AgentCharacterID />
-    <TeamCultureStep />
-    <Religion />
-    <PlayerFamily>
-    </PlayerFamily>
-    <TeamCulture>
-      <T.0>CULTURE_WEAK</T.0>
-    </TeamCulture>
-  </City>
+<Root MapWidth="23">
   <Tile
     ID="0">
-    <Boundary />
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
     <RiverSW>1</RiverSW>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="1">
-    <Boundary />
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverW>0</RiverW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="2">
-    <Boundary />
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Resource>RESOURCE_HORSE</Resource>
     <RiverW>1</RiverW>
     <RiverSW>1</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="3">
-    <Boundary />
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="4">
-    <Boundary />
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="5">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
     <Resource>RESOURCE_DYE</Resource>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="6">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="7">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="8">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="9">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="10">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="11">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="12">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="13">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="14">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="15">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="16">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="17">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="18">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
     <Resource>RESOURCE_DYE</Resource>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="19">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="20">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="21">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="22">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="23">
-    <Boundary />
     <Terrain>TERRAIN_ARID</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="24">
-    <Boundary />
     <Terrain>TERRAIN_ARID</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverW>1</RiverW>
     <RiverSW>1</RiverSW>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="25">
-    <Boundary />
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSW>1</RiverSW>
     <RiverSE>0</RiverSE>
     <ElementName>TEXT_IBERUS_RIVER</ElementName>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="26">
-    <Boundary />
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverW>1</RiverW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="27">
-    <Boundary />
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="28">
-    <Boundary />
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="29">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="30">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="31">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="32">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="33">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="34">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="35">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="36">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="37">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="38">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="39">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="40">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="41">
-    <Boundary />
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="42">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="43">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="44">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="45">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
     <Resource>RESOURCE_CRAB</Resource>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="46">
-    <Boundary />
     <Terrain>TERRAIN_ARID</Terrain>
     <Height>HEIGHT_HILL</Height>
     <RiverSW>1</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="47">
-    <Boundary />
     <Terrain>TERRAIN_ARID</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="48">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_HILL</Height>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="49">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_HILL</Height>
     <RiverW>1</RiverW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="50">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="51">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Improvement>IMPROVEMENT_QUARRY</Improvement>
-    <CityTerritory>0</CityTerritory>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="52">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <CityTerritory>0</CityTerritory>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="53">
@@ -851,80 +298,57 @@
     <Height>HEIGHT_COAST</Height>
     <Resource>RESOURCE_DYE</Resource>
     <Improvement>IMPROVEMENT_NETS</Improvement>
-    <CityTerritory>0</CityTerritory>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="54">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="55">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="56">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="57">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="58">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="59">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="60">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="61">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="62">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="63">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="64">
@@ -932,282 +356,176 @@
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
     <RiverSW>1</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="65">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="66">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="67">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="68">
-    <Boundary />
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="69">
-    <Boundary />
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="70">
-    <Boundary />
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="71">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="72">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="73">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
     <RiverW>1</RiverW>
-    <CityTerritory>0</CityTerritory>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="74">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
-    <CityTerritory>0</CityTerritory>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="75">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Improvement>IMPROVEMENT_QUARRY</Improvement>
-    <RevealedCityTerritory>
-      <Team
-        CityTerritory="0">0</Team>
-    </RevealedCityTerritory>
-    <Revealed>
-      <Team>0</Team>
-    </Revealed>
-    <CityTerritory>0</CityTerritory>
-    <Unit
-      ID="1"
-      Type="UNIT_BALEARIC_SLINGER"
-      Player="0"
-      Tribe="NONE"
-      Seed="58100000000000101">
-      <CreateTurn>1</CreateTurn>
-      <Facing>NE</Facing>
-      <OriginalPlayer>0</OriginalPlayer>
-      <RaidTurn />
-      <PlayerFamily>
-        <P.0>FAMILY_JULIUS</P.0>
-      </PlayerFamily>
-      <QueueList />
-      <AI />
-    </Unit>
-    <Religion />
-    <RevealedTerrain>
-      <Team
-        Terrain="TERRAIN_LUSH">0</Team>
-    </RevealedTerrain>
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="76">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <CityTerritory>0</CityTerritory>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="77">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
     <Resource>RESOURCE_DYE</Resource>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="78">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="79">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="80">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="81">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="82">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="83">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="84">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="85">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
     <Resource>RESOURCE_FISH</Resource>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="86">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="87">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="88">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="89">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
     <Resource>RESOURCE_CRAB</Resource>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="90">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="91">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="92">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="93">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="94">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
     <ElementName>TEXT_PYRENEES</ElementName>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="95">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="96">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
-    <CityTerritory>0</CityTerritory>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="97">
@@ -1216,36 +534,6 @@
     <Vegetation>VEGETATION_SCRUB</Vegetation>
     <RiverSW>1</RiverSW>
     <RiverSE>1</RiverSE>
-    <RevealedCityTerritory>
-      <Team
-        CityTerritory="0">0</Team>
-    </RevealedCityTerritory>
-    <Revealed>
-      <Team>0</Team>
-    </Revealed>
-    <CityTerritory>0</CityTerritory>
-    <Unit
-      ID="0"
-      Type="UNIT_HASTATUS"
-      Player="0"
-      Tribe="NONE"
-      Seed="58100000000000100">
-      <CreateTurn>1</CreateTurn>
-      <Facing>NE</Facing>
-      <OriginalPlayer>0</OriginalPlayer>
-      <RaidTurn />
-      <PlayerFamily>
-        <P.0>FAMILY_JULIUS</P.0>
-      </PlayerFamily>
-      <QueueList />
-      <AI />
-    </Unit>
-    <Religion />
-    <RevealedTerrain>
-      <Team
-        Terrain="TERRAIN_LUSH">0</Team>
-    </RevealedTerrain>
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="98">
@@ -1254,27 +542,9 @@
     <Height>HEIGHT_FLAT</Height>
     <RiverSW>1</RiverSW>
     <RiverSE>1</RiverSE>
-    <CitySite>USED</CitySite>
+    <CitySite>ACTIVE</CitySite>
     <Improvement>IMPROVEMENT_CITY_SITE</Improvement>
     <ElementName>TEXT_CITYNAME_NARBO</ElementName>
-    <RevealedCityTerritory>
-      <Team
-        CityTerritory="0">0</Team>
-    </RevealedCityTerritory>
-    <Revealed>
-      <Team>0</Team>
-    </Revealed>
-    <RevealedCity>
-      <Team>0</Team>
-    </RevealedCity>
-    <CityTerritory>0</CityTerritory>
-    <OrigUrbanOwner>0</OrigUrbanOwner>
-    <Religion />
-    <RevealedTerrain>
-      <Team
-        Terrain="TERRAIN_URBAN">0</Team>
-    </RevealedTerrain>
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="99">
@@ -1282,155 +552,109 @@
     <Height>HEIGHT_COAST</Height>
     <Resource>RESOURCE_DYE</Resource>
     <Improvement>IMPROVEMENT_NETS</Improvement>
-    <CityTerritory>0</CityTerritory>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="100">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <CityTerritory>0</CityTerritory>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="101">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="102">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="103">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="104">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="105">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="106">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="107">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="108">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="109">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="110">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="111">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="112">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="113">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="114">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
     <RiverSW>1</RiverSW>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="115">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="116">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="117">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="118">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="119">
@@ -1439,9 +663,6 @@
     <Vegetation>VEGETATION_SCRUB</Vegetation>
     <RiverW>0</RiverW>
     <Improvement>IMPROVEMENT_QUARRY</Improvement>
-    <CityTerritory>0</CityTerritory>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="120">
@@ -1449,279 +670,159 @@
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
     <Improvement>IMPROVEMENT_MINE</Improvement>
-    <RevealedCityTerritory>
-      <Team
-        CityTerritory="0">0</Team>
-    </RevealedCityTerritory>
-    <Revealed>
-      <Team>0</Team>
-    </Revealed>
-    <CityTerritory>0</CityTerritory>
-    <Unit
-      ID="3"
-      Type="UNIT_WORKER"
-      Player="0"
-      Tribe="NONE"
-      Seed="58100000000000103">
-      <CreateTurn>1</CreateTurn>
-      <Facing>NE</Facing>
-      <OriginalPlayer>0</OriginalPlayer>
-      <RaidTurn />
-      <PlayerFamily>
-        <P.0>FAMILY_JULIUS</P.0>
-      </PlayerFamily>
-      <QueueList />
-      <AI />
-    </Unit>
-    <Religion />
-    <RevealedTerrain>
-      <Team
-        Terrain="TERRAIN_LUSH">0</Team>
-    </RevealedTerrain>
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="121">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <RevealedCityTerritory>
-      <Team
-        CityTerritory="0">0</Team>
-    </RevealedCityTerritory>
-    <Revealed>
-      <Team>0</Team>
-    </Revealed>
-    <CityTerritory>0</CityTerritory>
-    <Unit
-      ID="2"
-      Type="UNIT_NOMAD_SKIRMISHER_2"
-      Player="0"
-      Tribe="NONE"
-      Seed="58100000000000102">
-      <CreateTurn>1</CreateTurn>
-      <Facing>NE</Facing>
-      <OriginalPlayer>0</OriginalPlayer>
-      <RaidTurn />
-      <PlayerFamily>
-        <P.0>FAMILY_JULIUS</P.0>
-      </PlayerFamily>
-      <QueueList />
-      <AI />
-    </Unit>
-    <Religion />
-    <RevealedTerrain>
-      <Team
-        Terrain="TERRAIN_TEMPERATE">0</Team>
-    </RevealedTerrain>
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="122">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Improvement>IMPROVEMENT_GARRISON_1</Improvement>
-    <CityTerritory>0</CityTerritory>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="123">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="124">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="125">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverW>1</RiverW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="126">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="127">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="128">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="129">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="130">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
     <Resource>RESOURCE_PEARL</Resource>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="131">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
     <Resource>RESOURCE_PEARL</Resource>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="132">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="133">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="134">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
     <Resource>RESOURCE_DYE</Resource>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="135">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="136">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="137">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
     <ElementName>TEXT_ITALIA</ElementName>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="138">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Resource>RESOURCE_BARLEY</Resource>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="139">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="140">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="141">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="142">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverW>0</RiverW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="143">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <CityTerritory>0</CityTerritory>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="144">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Improvement>IMPROVEMENT_MINE</Improvement>
-    <CityTerritory>0</CityTerritory>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="145">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Improvement>IMPROVEMENT_MINE</Improvement>
-    <CityTerritory>0</CityTerritory>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="146">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Resource>RESOURCE_HONEY</Resource>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="147">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="148">
@@ -1729,132 +830,94 @@
     <Height>HEIGHT_FLAT</Height>
     <Resource>RESOURCE_HORSE</Resource>
     <RiverW>1</RiverW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="149">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="150">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="151">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="152">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="153">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="154">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
     <Resource>RESOURCE_PEARL</Resource>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="155">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="156">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="157">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="158">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="159">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="160">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="161">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="162">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="163">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="164">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="165">
@@ -1862,44 +925,32 @@
     <Height>HEIGHT_FLAT</Height>
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="166">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="167">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="168">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="169">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="170">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="171">
@@ -1907,116 +958,82 @@
     <Height>HEIGHT_FLAT</Height>
     <RiverW>1</RiverW>
     <RiverSW>1</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="172">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="173">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="174">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="175">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="176">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="177">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="178">
     <Road />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="179">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="180">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="181">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="182">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="183">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="184">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="185">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="186">
@@ -2026,8 +1043,6 @@
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="187">
@@ -2035,8 +1050,6 @@
     <Height>HEIGHT_FLAT</Height>
     <RiverW>1</RiverW>
     <RiverSW>0</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="188">
@@ -2044,23 +1057,17 @@
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
     <ElementName>TEXT_TARNIS_RIVER</ElementName>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="189">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="190">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="191">
@@ -2069,16 +1076,12 @@
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="192">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="193">
@@ -2086,8 +1089,6 @@
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="194">
@@ -2095,37 +1096,27 @@
     <Height>HEIGHT_FLAT</Height>
     <RiverW>1</RiverW>
     <ElementName>TEXT_RHODANUS_RIVER</ElementName>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="195">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="196">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="197">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="198">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="199">
@@ -2133,8 +1124,6 @@
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="200">
@@ -2142,75 +1131,53 @@
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
     <RiverW>0</RiverW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="201">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="202">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="203">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="204">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="205">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="206">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="207">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="208">
-    <Boundary />
     <Road />
     <Terrain>TERRAIN_URBAN</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <CitySite>ACTIVE</CitySite>
     <Improvement>IMPROVEMENT_CITY_SITE</Improvement>
     <ElementName>TEXT_CITYNAME_BURDIGALA</ElementName>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="209">
@@ -2218,16 +1185,12 @@
     <Height>HEIGHT_FLAT</Height>
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="210">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="211">
@@ -2235,8 +1198,6 @@
     <Height>HEIGHT_FLAT</Height>
     <RiverSW>0</RiverSW>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="212">
@@ -2245,8 +1206,6 @@
     <Resource>RESOURCE_HONEY</Resource>
     <RiverSW>0</RiverSW>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="213">
@@ -2255,16 +1214,12 @@
     <Vegetation>VEGETATION_SCRUB</Vegetation>
     <RiverSW>0</RiverSW>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="214">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <RiverSW>0</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="215">
@@ -2272,15 +1227,11 @@
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
     <ElementName>TEXT_GALLIA</ElementName>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="216">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="217">
@@ -2288,46 +1239,34 @@
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="218">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverW>1</RiverW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="219">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="220">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="221">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
     <ElementName>TEXT_ALPES</ElementName>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="222">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="223">
@@ -2336,8 +1275,6 @@
     <RiverW>1</RiverW>
     <RiverSW>1</RiverSW>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="224">
@@ -2345,8 +1282,6 @@
     <Height>HEIGHT_FLAT</Height>
     <RiverSW>1</RiverSW>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="225">
@@ -2355,8 +1290,6 @@
     <RiverW>1</RiverW>
     <RiverSW>1</RiverSW>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="226">
@@ -2365,8 +1298,6 @@
     <Resource>RESOURCE_HORSE</Resource>
     <RiverSW>1</RiverSW>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="227">
@@ -2375,102 +1306,74 @@
     <RiverSW>1</RiverSW>
     <RiverSE>1</RiverSE>
     <ElementName>TEXT_PADUS_RIVER</ElementName>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="228">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverW>1</RiverW>
     <RiverSW>1</RiverSW>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="229">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Resource>RESOURCE_BARLEY</Resource>
     <RiverSW>1</RiverSW>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="230">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="231">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="232">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <ElementName>TEXT_GALLIA</ElementName>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="233">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="234">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="235">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="236">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="237">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Resource>RESOURCE_ORE</Resource>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="238">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="239">
@@ -2478,8 +1381,6 @@
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
     <RiverW>0</RiverW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="240">
@@ -2489,18 +1390,12 @@
     <RiverW>1</RiverW>
     <RiverSW>1</RiverSW>
     <Improvement>IMPROVEMENT_FARM</Improvement>
-    <CityTerritory>1</CityTerritory>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="241">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Improvement>IMPROVEMENT_FARM</Improvement>
-    <CityTerritory>1</CityTerritory>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="242">
@@ -2508,24 +1403,17 @@
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
     <Improvement>IMPROVEMENT_FARM</Improvement>
-    <CityTerritory>1</CityTerritory>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="243">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="244">
     <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="245">
@@ -2534,15 +1422,11 @@
     <Vegetation>VEGETATION_TREES</Vegetation>
     <RiverW>1</RiverW>
     <RiverSW>1</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="246">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="247">
@@ -2550,125 +1434,89 @@
     <Height>HEIGHT_HILL</Height>
     <RiverW>1</RiverW>
     <RiverSW>1</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="248">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="249">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="250">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_LAKE</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="251">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="252">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="253">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="254">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSW>0</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="255">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="256">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Resource>RESOURCE_HONEY</Resource>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="257">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="258">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="259">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="260">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="261">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="262">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="263">
@@ -2677,9 +1525,6 @@
     <Vegetation>VEGETATION_TREES</Vegetation>
     <RiverW>0</RiverW>
     <RiverSE>0</RiverSE>
-    <CityTerritory>1</CityTerritory>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="264">
@@ -2689,9 +1534,6 @@
     <RiverSW>0</RiverSW>
     <RiverSE>0</RiverSE>
     <Improvement>IMPROVEMENT_FARM</Improvement>
-    <CityTerritory>1</CityTerritory>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="265">
@@ -2700,47 +1542,34 @@
     <RiverSW>0</RiverSW>
     <RiverSE>0</RiverSE>
     <Improvement>IMPROVEMENT_FARM</Improvement>
-    <CityTerritory>1</CityTerritory>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="266">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <RiverW>1</RiverW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="267">
     <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="268">
     <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
     <RiverSW>1</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="269">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="270">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="271">
@@ -2748,87 +1577,61 @@
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
     <RiverW>1</RiverW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="272">
     <Terrain>TERRAIN_URBAN</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Improvement>IMPROVEMENT_ANCIENT_RUINS</Improvement>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="273">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="274">
-    <Boundary />
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="275">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="276">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Resource>RESOURCE_HORSE</Resource>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="277">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="278">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="279">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Resource>RESOURCE_HONEY</Resource>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="280">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="281">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="282">
@@ -2836,22 +1639,16 @@
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
     <RiverW>0</RiverW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="283">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="284">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="285">
@@ -2859,8 +1656,6 @@
     <Height>HEIGHT_HILL</Height>
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="286">
@@ -2868,71 +1663,37 @@
     <Height>HEIGHT_FLAT</Height>
     <RiverSE>0</RiverSE>
     <Improvement>IMPROVEMENT_FARM</Improvement>
-    <CityTerritory>1</CityTerritory>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="287">
-    <Terrain>TERRAIN_URBAN</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <RiverW>1</RiverW>
-    <CitySite>USED</CitySite>
-    <RevealedCityTerritory>
-      <Team
-        CityTerritory="1">0</Team>
-    </RevealedCityTerritory>
-    <Revealed>
-      <Team>0</Team>
-    </Revealed>
-    <RevealedCity>
-      <Team>0</Team>
-    </RevealedCity>
-    <CityTerritory>1</CityTerritory>
-    <OrigUrbanOwner>0</OrigUrbanOwner>
-    <Religion />
-    <RevealedTerrain>
-      <Team
-        Terrain="TERRAIN_URBAN">0</Team>
-    </RevealedTerrain>
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="288">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_LAKE</Height>
-    <CityTerritory>1</CityTerritory>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="289">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_LAKE</Height>
-    <CityTerritory>1</CityTerritory>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="290">
     <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="291">
     <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="292">
     <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="293">
@@ -2940,82 +1701,56 @@
     <Height>HEIGHT_MOUNTAIN</Height>
     <RiverW>1</RiverW>
     <RiverSW>1</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="294">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="295">
     <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="296">
     <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="297">
-    <Boundary />
     <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="298">
-    <Boundary />
     <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="299">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="300">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="301">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="302">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="303">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="304">
@@ -3025,47 +1760,34 @@
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="305">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSW>0</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="306">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="307">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="308">
-    <Terrain>TERRAIN_URBAN</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
-    <CitySite>USED</CitySite>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="309">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="310">
@@ -3074,123 +1796,87 @@
     <Resource>RESOURCE_HORSE</Resource>
     <RiverW>1</RiverW>
     <RiverSW>1</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="311">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="312">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="313">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="314">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="315">
     <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
     <ElementName>TEXT_ALPES</ElementName>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="316">
     <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="317">
     <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="318">
     <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="319">
     <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="320">
-    <Boundary />
     <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="321">
-    <Boundary />
     <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
     <ElementName>TEXT_ALPES</ElementName>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="322">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="323">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="324">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="325">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="326">
@@ -3199,30 +1885,22 @@
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
     <ElementName>TEXT_LIGERA_RIVER</ElementName>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="327">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="328">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="329">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Resource>RESOURCE_MARBLE</Resource>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="330">
@@ -3230,23 +1908,17 @@
     <Height>HEIGHT_FLAT</Height>
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="331">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="332">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="333">
@@ -3254,8 +1926,6 @@
     <Height>HEIGHT_FLAT</Height>
     <RiverSW>0</RiverSW>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="334">
@@ -3263,109 +1933,77 @@
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
     <RiverW>1</RiverW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="335">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="336">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="337">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="338">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="339">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="340">
     <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="341">
     <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="342">
     <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="343">
-    <Boundary />
     <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
     <RiverW>0</RiverW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="344">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="345">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
     <Resource>RESOURCE_PIG</Resource>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="346">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="347">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="348">
@@ -3374,8 +2012,6 @@
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="349">
@@ -3383,8 +2019,6 @@
     <Height>HEIGHT_FLAT</Height>
     <RiverSW>0</RiverSW>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="350">
@@ -3392,8 +2026,6 @@
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
     <RiverW>1</RiverW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="351">
@@ -3401,15 +2033,11 @@
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
     <Resource>RESOURCE_PIG</Resource>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="352">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="353">
@@ -3417,37 +2045,27 @@
     <Height>HEIGHT_HILL</Height>
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="354">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="355">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="356">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="357">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="358">
@@ -3455,24 +2073,17 @@
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
     <RiverW>1</RiverW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="359">
-    <Terrain>TERRAIN_URBAN</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <CitySite>USED</CitySite>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="360">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="361">
@@ -3481,8 +2092,6 @@
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="362">
@@ -3490,96 +2099,70 @@
     <Height>HEIGHT_HILL</Height>
     <RiverSW>0</RiverSW>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="363">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_LAKE</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="364">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="365">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="366">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="367">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
     <RiverSW>1</RiverSW>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="368">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSW>0</RiverSW>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="369">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSW>0</RiverSW>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="370">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSW>0</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="371">
     <Road />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="372">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="373">
@@ -3588,8 +2171,6 @@
     <Vegetation>VEGETATION_TREES</Vegetation>
     <RiverSW>0</RiverSW>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="374">
@@ -3598,8 +2179,6 @@
     <Vegetation>VEGETATION_TREES</Vegetation>
     <RiverSW>0</RiverSW>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="375">
@@ -3607,22 +2186,16 @@
     <Height>HEIGHT_FLAT</Height>
     <Resource>RESOURCE_ELEPHANT</Resource>
     <RiverSW>0</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="376">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="377">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="378">
@@ -3630,29 +2203,21 @@
     <Height>HEIGHT_FLAT</Height>
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="379">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="380">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="381">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="382">
@@ -3660,8 +2225,6 @@
     <Height>HEIGHT_HILL</Height>
     <RiverW>0</RiverW>
     <ElementName>TEXT_RHENUS_RIVER</ElementName>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="383">
@@ -3669,138 +2232,98 @@
     <Height>HEIGHT_FLAT</Height>
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="384">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="385">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="386">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="387">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="388">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="389">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="390">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="391">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="392">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="393">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="394">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="395">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="396">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="397">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <ElementName>TEXT_GALLIA</ElementName>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="398">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="399">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="400">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="401">
@@ -3808,29 +2331,21 @@
     <Height>HEIGHT_FLAT</Height>
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="402">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="403">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="404">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="405">
@@ -3839,46 +2354,34 @@
     <Vegetation>VEGETATION_SCRUB</Vegetation>
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="406">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="407">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverW>0</RiverW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="408">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="409">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="410">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="411">
@@ -3886,76 +2389,52 @@
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <RiverW>0</RiverW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="412">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="413">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="414">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="415">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="416">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="417">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="418">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="419">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="420">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="421">
@@ -3965,8 +2444,6 @@
     <RiverSW>0</RiverSW>
     <RiverSE>0</RiverSE>
     <ElementName>TEXT_SEQUANA_RIVER</ElementName>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="422">
@@ -3974,8 +2451,6 @@
     <Height>HEIGHT_FLAT</Height>
     <RiverSW>0</RiverSW>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="423">
@@ -3983,30 +2458,22 @@
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSW>0</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="424">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="425">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Resource>RESOURCE_HORSE</Resource>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="426">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="427">
@@ -4015,54 +2482,40 @@
     <Resource>RESOURCE_HONEY</Resource>
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="428">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="429">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="430">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverW>0</RiverW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="431">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="432">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="433">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="434">
@@ -4070,71 +2523,49 @@
     <Height>HEIGHT_FLAT</Height>
     <RiverSW>1</RiverSW>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="435">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSW>1</RiverSW>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="436">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverW>0</RiverW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="437">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="438">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="439">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="440">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="441">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="442">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="443">
@@ -4143,82 +2574,60 @@
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="444">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSW>0</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="445">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="446">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="447">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="448">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="449">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="450">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="451">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverW>0</RiverW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="452">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="453">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="454">
@@ -4226,77 +2635,53 @@
     <Height>HEIGHT_FLAT</Height>
     <Resource>RESOURCE_WHEAT</Resource>
     <RiverW>0</RiverW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="455">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="456">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="457">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="458">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <ElementName>TEXT_RAETIA</ElementName>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="459">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="460">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="461">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="462">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="463">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="464">
@@ -4305,66 +2690,48 @@
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="465">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSW>0</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="466">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="467">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Resource>RESOURCE_HORSE</Resource>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="468">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="469">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="470">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="471">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="472">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="473">
@@ -4372,31 +2739,23 @@
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="474">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <RiverW>0</RiverW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="475">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="476">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="477">
@@ -4404,159 +2763,113 @@
     <Height>HEIGHT_FLAT</Height>
     <Resource>RESOURCE_WHEAT</Resource>
     <RiverW>0</RiverW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="478">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="479">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="480">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="481">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="482">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="483">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="484">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Resource>RESOURCE_HONEY</Resource>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="485">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="486">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="487">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSW>0</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="488">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Resource>RESOURCE_HONEY</Resource>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="489">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="490">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="491">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="492">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="493">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="494">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <ElementName>TEXT_BELGICA</ElementName>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="495">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="496">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="497">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="498">
@@ -4564,8 +2877,6 @@
     <Height>HEIGHT_FLAT</Height>
     <Resource>RESOURCE_WHEAT</Resource>
     <RiverW>0</RiverW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="499">
@@ -4574,159 +2885,113 @@
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="500">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSW>0</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="501">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Resource>RESOURCE_WHEAT</Resource>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="502">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="503">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="504">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="505">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
     <RiverW>0</RiverW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="506">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="507">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="508">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="509">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="510">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="511">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="512">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="513">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="514">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="515">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="516">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="517">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="518">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="519">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="520">
@@ -4734,8 +2999,6 @@
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="521">
@@ -4744,174 +3007,124 @@
     <Vegetation>VEGETATION_SCRUB</Vegetation>
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="522">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="523">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="524">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="525">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverW>0</RiverW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="526">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="527">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="528">
-    <Boundary />
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="529">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="530">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="531">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="532">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="533">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="534">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="535">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="536">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="537">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="538">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="539">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="540">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="541">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="542">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="543">
     <Road />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="544">
@@ -4919,30 +3132,22 @@
     <Height>HEIGHT_FLAT</Height>
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="545">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="546">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="547">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="548">
@@ -4950,133 +3155,93 @@
     <Height>HEIGHT_FLAT</Height>
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="549">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="550">
-    <Boundary />
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="551">
-    <Boundary />
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverW>0</RiverW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="552">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="553">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="554">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="555">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="556">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="557">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="558">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="559">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="560">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="561">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="562">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="563">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="564">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="565">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="566">
@@ -5085,8 +3250,6 @@
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="567">
@@ -5094,22 +3257,16 @@
     <Height>HEIGHT_FLAT</Height>
     <RiverSW>0</RiverSW>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="568">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="569">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="570">
@@ -5117,64 +3274,44 @@
     <Height>HEIGHT_FLAT</Height>
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="571">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Resource>RESOURCE_HONEY</Resource>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="572">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="573">
-    <Boundary />
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="574">
-    <Boundary />
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverW>0</RiverW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="575">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="576">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="577">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="578">
@@ -5184,8 +3321,6 @@
     <RiverW>1</RiverW>
     <RiverSW>1</RiverSW>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="579">
@@ -5194,65 +3329,47 @@
     <Height>HEIGHT_FLAT</Height>
     <RiverSW>1</RiverSW>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="580">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="581">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="582">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="583">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="584">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
     <Resource>RESOURCE_DYE</Resource>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="585">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="586">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="587">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="588">
@@ -5260,8 +3377,6 @@
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
     <ElementName>TEXT_RHENUS_RIVER</ElementName>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="589">
@@ -5269,90 +3384,64 @@
     <Height>HEIGHT_FLAT</Height>
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="590">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="591">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="592">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="593">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="594">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverW>0</RiverW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="595">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Resource>RESOURCE_HONEY</Resource>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="596">
-    <Boundary />
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="597">
-    <Boundary />
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
     <ElementName>TEXT_ALBIS_RIVER</ElementName>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="598">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverW>1</RiverW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="599">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="600">
@@ -5360,58 +3449,42 @@
     <Height>HEIGHT_FLAT</Height>
     <RiverSW>1</RiverSW>
     <ElementName>TEXT_TAMESIS_RIVER</ElementName>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="601">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="602">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="603">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Resource>RESOURCE_HORSE</Resource>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="604">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="605">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="606">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="607">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="608">
@@ -5419,8 +3492,6 @@
     <Height>HEIGHT_FLAT</Height>
     <RiverSW>0</RiverSW>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="609">
@@ -5428,8 +3499,6 @@
     <Height>HEIGHT_FLAT</Height>
     <RiverSW>0</RiverSW>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="610">
@@ -5437,8 +3506,6 @@
     <Height>HEIGHT_FLAT</Height>
     <RiverSW>0</RiverSW>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="611">
@@ -5446,30 +3513,22 @@
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
     <RiverSW>0</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="612">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="613">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="614">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="615">
@@ -5478,443 +3537,291 @@
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="616">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSW>0</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="617">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="618">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Resource>RESOURCE_HONEY</Resource>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="619">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="620">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="621">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="622">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverW>1</RiverW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="623">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="624">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="625">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="626">
-    <Boundary />
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="627">
-    <Boundary />
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="628">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="629">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="630">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="631">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="632">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="633">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
     <Resource>RESOURCE_PEARL</Resource>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="634">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="635">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="636">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="637">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="638">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSE>1</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="639">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverW>0</RiverW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="640">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="641">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <ElementName>TEXT_GERMANIA</ElementName>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="642">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="643">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="644">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
     <RiverSE>0</RiverSE>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="645">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
     <Resource>RESOURCE_GAME</Resource>
     <RiverW>1</RiverW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="646">
-    <Boundary />
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="647">
-    <Boundary />
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="648">
-    <Boundary />
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="649">
-    <Boundary />
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="650">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="651">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="652">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="653">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="654">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="655">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="656">
-    <Boundary />
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="657">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Resource>RESOURCE_MARBLE</Resource>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="658">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="659">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="660">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="661">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="662">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="663">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="664">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Resource>RESOURCE_HORSE</Resource>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="665">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
-    <Religion />
-    <RevealedTurn />
   </Tile>
   <Tile
     ID="666">
-    <Boundary />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Religion />
-    <RevealedTurn />
   </Tile>
 </Root>

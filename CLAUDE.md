@@ -8,11 +8,13 @@ A scenario campaign mod for Old World based on Caesar's *Commentarii de Bello Ga
 GallicWars/              # The mod (deployed to Old World's Mods directory)
   ModInfo.xml            # Mod manifest (scenario=true)
   Infos/                 # XML data: scenario, scenarioClass, tribe, unit, text, genderedText
-  Maps/                  # Map XML files
+  Maps/                  # Map XML files (generated)
+data/
+  base_terrain.xml       # Authored terrain data (frozen from Imperium Romanum, now editable)
 scripts/
-  extract_map.py         # Extracts map region from Imperium Romanum
+  generate_scenario.py   # Reads frozen terrain, generates scenario map
+  freeze_terrain.py      # One-time: extract + freeze terrain from Imperium Romanum
   deploy.sh              # Copies mod to game's Mods path
-  generate_map.py        # DEPRECATED - old procedural map generator
   screenshot_map.sh      # Automated in-game screenshot tool
 docs/                    # Design docs, milestones, modding reference
 Reference/               # Symlink to game's XML (for looking up base game data)
@@ -20,10 +22,13 @@ Reference/               # Symlink to game's XML (for looking up base game data)
 
 ## Build & Test Workflow
 
-1. `python3 scripts/extract_map.py` - extract map from Imperium Romanum
+1. `python3 scripts/generate_scenario.py` - generate scenario map from frozen terrain
 2. `./scripts/deploy.sh` - copy mod to game's Mods directory
 3. **Full app restart required** - in-game restart does NOT reload map files
 4. Check logs: `~/Library/Logs/MohawkGames/OldWorld/Player.log`
+
+To re-extract terrain from Imperium Romanum (one-time, rarely needed):
+`python3 scripts/freeze_terrain.py` - writes `data/base_terrain.xml`
 
 Requires `.env` with `OLDWORLD_MODS_PATH` set (see `.env.example`).
 
@@ -31,7 +36,6 @@ Requires `.env` with `OLDWORLD_MODS_PATH` set (see `.env.example`).
 
 - **preload-text-add.xml MUST have UTF-8 BOM** (EF BB BF). Game silently ignores text without it.
 - **NEVER add text keys that already exist in base game** - causes crash. Always check `Reference/XML/Infos/text-*.xml` first.
-- **Map extraction Y-offset must be EVEN** to preserve hex row parity. Odd-row-right hex grids flip neighbor geometry on odd Y shifts, breaking rivers and terrain adjacency.
 - **Map XML must have UTF-8 BOM** (`encoding='utf-8-sig'` in Python) and `MapEdgesSafe="True"`.
 - Mod files use `-add.xml` suffix (additive modding).
 - `<zModName>` in scenario XML must match the mod folder name exactly: `GallicWars`.
@@ -42,13 +46,12 @@ Requires `.env` with `OLDWORLD_MODS_PATH` set (see `.env.example`).
 
 ## Map
 
-Extracted from the Imperium Romanum map (127x105 tiles). Source at:
-`~/Library/Application Support/Steam/steamapps/common/Old World/Maps/The Imperium Romanum.xml`
+Terrain is authored in `data/base_terrain.xml` (originally extracted from the Imperium Romanum map, now independent). The scenario generator reads this file and layers game state on top.
 
-- Extraction region: x=[20,42], y=[58,86] -> 23 x 29 = 667 tiles
-- Tiles copied 1:1 with remapped IDs, outer 2 rows/columns marked as boundaries
-- Dropped fields: Metadata (Improvement, Road, TribeSite preserved)
-- Map uses scenario/save-file format with Game/Player/Character/City blocks and embedded units
+- Dimensions: 23 x 29 = 667 tiles (editable — change MapWidth and add/remove tiles)
+- Terrain fields: Terrain, Height, Vegetation, Resource, Road, Rivers, ElementName, CitySite, Improvement
+- Boundary tiles computed by the generator (outer 2 rows/columns)
+- Output uses scenario/save-file format with Game/Player/Character/City blocks and embedded units
 
 ## Current Milestone
 
