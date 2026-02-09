@@ -107,6 +107,26 @@ STARTING_UNITS: list[tuple[int, int, str]] = [
     (5, 5, "UNIT_WORKER"),
 ]
 
+# Pre-placed improvements: (x, y) -> improvement_type
+PLACED_IMPROVEMENTS: dict[tuple[int, int], str] = {
+    (7, 5): "IMPROVEMENT_GARRISON_1",
+    (7, 2): "IMPROVEMENT_NETS",
+    (7, 4): "IMPROVEMENT_NETS",
+    (5, 5): "IMPROVEMENT_MINE",
+    (6, 6): "IMPROVEMENT_MINE",
+    (7, 6): "IMPROVEMENT_MINE",
+    (4, 5): "IMPROVEMENT_QUARRY",
+    (6, 3): "IMPROVEMENT_QUARRY",
+    (5, 2): "IMPROVEMENT_QUARRY",
+    # Farms near Genava
+    (10, 12): "IMPROVEMENT_FARM",
+    (11, 11): "IMPROVEMENT_FARM",
+    (12, 11): "IMPROVEMENT_FARM",
+    (10, 10): "IMPROVEMENT_FARM",
+    (11, 10): "IMPROVEMENT_FARM",
+    (12, 10): "IMPROVEMENT_FARM",
+}
+
 NUM_UNITS = len(STARTING_UNITS)
 NUM_CHARACTERS = 2  # Caesar + Calpurnia
 NUM_CITIES = len(CITIES)
@@ -610,12 +630,18 @@ def build_city_tile_map() -> dict[int, CityDef]:
     return {city.tile_id: city for city in CITIES}
 
 
+def build_improvement_map() -> dict[int, str]:
+    """Build a mapping of tile_id -> improvement_type for pre-placed improvements."""
+    return {y * NEW_WIDTH + x: imp for (x, y), imp in PLACED_IMPROVEMENTS.items()}
+
+
 def write_tile(
     new_id: int,
     tile: TileData,
     is_boundary: bool,
     unit_map: dict[int, list[tuple[int, str]]],
     city_map: dict[int, CityDef],
+    improvement_map: dict[int, str],
 ) -> list[str]:
     """Generate XML lines for a single tile."""
     lines: list[str] = []
@@ -624,6 +650,7 @@ def write_tile(
 
     city = city_map.get(new_id)
     has_units = new_id in unit_map
+    placed_improvement = improvement_map.get(new_id)
     # Reveal tiles that have units or are a player city
     is_revealed = has_units or (city is not None and city.player >= 0)
 
@@ -654,6 +681,7 @@ def write_tile(
     # Track whether source tile already has CitySite
     terrain_value: Optional[str] = None
     source_has_citysite = any(tag == "CitySite" for tag, _ in tile.fields)
+    source_has_improvement = any(tag == "Improvement" for tag, _ in tile.fields)
 
     # Write tile fields from source, preserving order
     for tag, value in tile.fields:
@@ -675,6 +703,8 @@ def write_tile(
             if tag == "CitySite":
                 continue
             if tag == "Improvement" and value == "IMPROVEMENT_CITY_SITE":
+                if placed_improvement is not None:
+                    lines.append(f'    <Improvement>{placed_improvement}</Improvement>')
                 continue
             if tag == "ElementName":
                 continue
@@ -682,6 +712,10 @@ def write_tile(
                 terrain_value = "TERRAIN_LUSH"
                 lines.append('    <Terrain>TERRAIN_LUSH</Terrain>')
                 continue
+        # Override Improvement if this tile has a pre-placed one
+        if tag == "Improvement" and placed_improvement is not None:
+            lines.append(f'    <Improvement>{placed_improvement}</Improvement>')
+            continue
         # Skip NationSite from source (we don't add it anymore)
         if tag == "NationSite":
             continue
@@ -695,6 +729,10 @@ def write_tile(
     # For new city tiles that didn't have CitySite in source, add it
     if city is not None and not source_has_citysite:
         lines.append('    <CitySite>USED</CitySite>')
+
+    # Add pre-placed improvement if source tile had none
+    if placed_improvement is not None and not source_has_improvement:
+        lines.append(f'    <Improvement>{placed_improvement}</Improvement>')
 
     # Add revealed state for tiles near player cities
     if is_revealed and not is_boundary:
@@ -781,6 +819,7 @@ def write_xml(
     game_id = str(uuid.uuid4())
     unit_map = build_unit_map()
     city_map = build_city_tile_map()
+    imp_map = build_improvement_map()
 
     lines: list[str] = []
 
@@ -789,7 +828,7 @@ def write_xml(
 
     # Tiles
     for new_id, tile, is_boundary in extracted:
-        lines.extend(write_tile(new_id, tile, is_boundary, unit_map, city_map))
+        lines.extend(write_tile(new_id, tile, is_boundary, unit_map, city_map, imp_map))
 
     lines.append('</Root>')
     lines.append('')
@@ -806,6 +845,7 @@ def write_xml(
         owner = f"Player {c.player}" if c.player >= 0 else c.tribe
         print(f"    {c.name} at tile {c.tile_id} ({c.x},{c.y}) [{owner}]")
     print(f"  Units: {NUM_UNITS} pre-placed")
+    print(f"  Improvements: {len(PLACED_IMPROVEMENTS)} pre-placed")
     print(f"  Characters: {NUM_CHARACTERS} (Caesar + Calpurnia)")
     print(f"  GameId: {game_id}")
 
