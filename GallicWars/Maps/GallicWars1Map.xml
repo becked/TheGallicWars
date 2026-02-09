@@ -3,7 +3,7 @@
   MapWidth="23"
   MapEdgesSafe="True"
   MapPath=""
-  GameId="ea6b9557-dac4-440d-834d-a081f3082121"
+  GameId="1a03f684-4670-4be3-b4c4-d2947c6a715b"
   MapSize="MAPSIZE_SMALL"
   Scenario="SCENARIO_GALLIC_WARS_1"
   GameName=""
@@ -46,7 +46,9 @@
   <Humans>
     <PlayerHuman>0</PlayerHuman>
   </Humans>
-  <StartingPlayerOptions />
+  <StartingPlayerOptions>
+    <PLAYEROPTION_NO_TUTORIAL>0</PLAYEROPTION_NO_TUTORIAL>
+  </StartingPlayerOptions>
   <GameOptions />
   <OccurrenceLevels />
   <VictoryEnabled />
@@ -214,6 +216,9 @@
       <FAMILY_JULIUS />
     </Families>
     <IgnoreCouncilReminder />
+    <PlayerOptions>
+      <PLAYEROPTION_NO_TUTORIAL />
+    </PlayerOptions>
     <MemoryPlayerList />
     <MemoryFamilyList />
     <MilitaryPowerHistory />

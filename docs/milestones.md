@@ -11,16 +11,25 @@
 - Rome starts at Narbo (6,4)
 - Outer 2 tiles marked as boundaries
 
-## Milestone 3: Map Customization (PENDING)
-- Restore/configure dropped tile fields (TribeSite, Improvement, Road)
-- Add missing historical locations not on the source map (Bibracte, Vesontio, Genava)
-- Add custom text keys for new map features
+## Milestone 3: Map Customization (COMPLETE)
+- Pre-founded historical cities: Narbo and Genava (Rome), Bibracte (Aedui), Vesontio (Sequani)
+- Removed irrelevant city sites (Genua, Lugdunum, Durocortorum, Tours, Colonia, Londinium, Augusta Vindelicorum)
+- Genava territory bounded (x_min=10, y_max=12) to avoid overlap with Bibracte
+- Improvements preserved from source map; Roads not present in source region
+- TribeSites dropped (tribes represented as city owners instead)
 
-## Milestone 4: Scenario Gameplay (PENDING)
-- Configure nations and tribes with starting positions
-- Lock dynasty to Julius Caesar
-- Set up diplomacy relationships
-- Define victory conditions for Book 1
+## Milestone 4: Scenario Gameplay (IN PROGRESS)
+### Done
+- Dynasty locked to Julius Caesar (Wonders & Dynasties DLC)
+- Caesar and Calpurnia as starting characters
+- 5 custom tribes defined: Helvetii, Suebi, Aedui, Sequani, Boii
+- TribeDiplomacy configured (Boii at war, others at truce)
+- Starting units: Hastatus, Balearic Slinger, Nomad Skirmisher, Worker near Narbo
+
+### Remaining
+- Victory conditions for Book 1
+- Tribe starting units / army placement (Helvetii migration force, Ariovistus warband)
+- Gameplay balance tuning (resource stockpiles, tech state, difficulty settings)
 
 ## Milestone 5: Book 1 Narrative Content (PENDING)
 - Helvetii migration events
