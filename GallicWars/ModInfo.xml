@@ -4,4 +4,5 @@
 	<singlePlayer>true</singlePlayer>
 	<multiplayer>false</multiplayer>
 	<scenario>true</scenario>
+	<gameContentRequired>WONDERS_DYNASTIES</gameContentRequired>
 </ModInfo>

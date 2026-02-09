@@ -8,6 +8,7 @@
 		<zMapFile>GallicWars1Map</zMapFile>
 		<zModName>GallicWars</zModName>
 		<Nation>NATION_ROME</Nation>
+		<Difficulty>DIFFICULTY_GREAT</Difficulty>
 		<ParametersInvalid>
 			<zValue>NumPlayers</zValue>
 			<zValue>NumTeams</zValue>

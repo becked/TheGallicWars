@@ -36,6 +36,9 @@ Requires `.env` with `OLDWORLD_MODS_PATH` set (see `.env.example`).
 - Mod files use `-add.xml` suffix (additive modding).
 - `<zModName>` in scenario XML must match the mod folder name exactly: `GallicWars`.
 - `<zMapFile>` is without file extension: `GallicWars1Map` (not `GallicWars1Map.xml`).
+- **scenario-add.xml MUST have `<Difficulty>` or `<DifficultyDisabled>`** - without this, the game skips loading the mod's Maps directory entirely.
+- **TribeDiplomacy in save-format maps must list ALL tribes** - empty `<TribeDiplomacy />` causes NullReferenceException at startup.
+- **Deploy with clean target** - `rm -rf` the deployed mod directory before `cp -r`, since `cp -r` doesn't remove stale files.
 
 ## Map
 
@@ -44,8 +47,8 @@ Extracted from the Imperium Romanum map (127x105 tiles). Source at:
 
 - Extraction region: x=[20,42], y=[58,86] -> 23 x 29 = 667 tiles
 - Tiles copied 1:1 with remapped IDs, outer 2 rows/columns marked as boundaries
-- Dropped fields: Metadata, Improvement, TribeSite, Road (to be restored later)
-- NationSite for NATION_ROME at Narbo (6,4)
+- Dropped fields: Metadata, TribeSite (Improvement and Road preserved)
+- Map uses scenario/save-file format with Game/Player/Character/City blocks and embedded units
 
 ## Current Milestone
 

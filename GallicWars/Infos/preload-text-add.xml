@@ -52,4 +52,88 @@
 		<zType>TEXT_RIVER_DUBIS</zType>
 		<en-US>Dubis</en-US>
 	</Entry>
+	<Entry>
+		<zType>TEXT_UNIT_BALEARIC_SLINGER</zType>
+		<en-US>Balearic Slinger</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_HELVETII</zType>
+		<en-US>Helvetii~Helvetian~a Helvetian~Helvetii~Helvetian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_HELVETII_F</zType>
+		<en-US>Helvetii~Helvetian~a Helvetian~Helvetii~Helvetian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_HELVETII_NICK</zType>
+		<en-US>the Helvetian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_HELVETII_NICK_F</zType>
+		<en-US>the Helvetian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_SUEBI</zType>
+		<en-US>Suebi~Suebian~a Suebian~Suebi~Suebian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_SUEBI_F</zType>
+		<en-US>Suebi~Suebian~a Suebian~Suebi~Suebian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_SUEBI_NICK</zType>
+		<en-US>the Suebian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_SUEBI_NICK_F</zType>
+		<en-US>the Suebian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_AEDUI</zType>
+		<en-US>Aedui~Aeduan~an Aeduan~Aedui~Aeduan</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_AEDUI_F</zType>
+		<en-US>Aedui~Aeduan~an Aeduan~Aedui~Aeduan</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_AEDUI_NICK</zType>
+		<en-US>the Aeduan</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_AEDUI_NICK_F</zType>
+		<en-US>the Aeduan</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_SEQUANI</zType>
+		<en-US>Sequani~Sequanian~a Sequanian~Sequani~Sequanian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_SEQUANI_F</zType>
+		<en-US>Sequani~Sequanian~a Sequanian~Sequani~Sequanian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_SEQUANI_NICK</zType>
+		<en-US>the Sequanian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_SEQUANI_NICK_F</zType>
+		<en-US>the Sequanian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_BOII</zType>
+		<en-US>Boii~Boian~a Boian~Boii~Boian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_BOII_F</zType>
+		<en-US>Boii~Boian~a Boian~Boii~Boian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_BOII_NICK</zType>
+		<en-US>the Boian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_BOII_NICK_F</zType>
+		<en-US>the Boian</en-US>
+	</Entry>
 </Root>
