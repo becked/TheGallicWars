@@ -7,7 +7,7 @@ A scenario campaign mod for Old World based on Caesar's *Commentarii de Bello Ga
 ```
 GallicWars/              # The mod (deployed to Old World's Mods directory)
   ModInfo.xml            # Mod manifest (scenario=true)
-  Infos/                 # XML data: scenario, scenarioClass, text
+  Infos/                 # XML data: scenario, scenarioClass, tribe, unit, text, genderedText
   Maps/                  # Map XML files
 scripts/
   extract_map.py         # Extracts map region from Imperium Romanum
@@ -47,16 +47,17 @@ Extracted from the Imperium Romanum map (127x105 tiles). Source at:
 
 - Extraction region: x=[20,42], y=[58,86] -> 23 x 29 = 667 tiles
 - Tiles copied 1:1 with remapped IDs, outer 2 rows/columns marked as boundaries
-- Dropped fields: Metadata, TribeSite (Improvement and Road preserved)
+- Dropped fields: Metadata (Improvement, Road, TribeSite preserved)
 - Map uses scenario/save-file format with Game/Player/Character/City blocks and embedded units
 
 ## Current Milestone
 
-See `docs/milestones.md` for full roadmap. Milestones 1-2 (MVP scenario + accurate map) are complete. Currently working on Milestone 3 (map customization).
+See `docs/milestones.md` for full roadmap. Milestones 1-3 complete. Currently working on Milestone 4 (scenario gameplay).
 
 ## Key Docs
 
 - `docs/gallic-wars-scenario-design.md` - Full scenario design: narrative events, tribes, characters, goals, victory tiers
 - `docs/modding-lessons-learned.md` - XML format rules, event system patterns, debugging tips
 - `docs/modding-guide.md` - C# modding reference (GameFactory, Harmony)
+- `docs/save-file-format.md` - Scenario/save-file XML format reference
 - `docs/milestones.md` - Project milestones and status

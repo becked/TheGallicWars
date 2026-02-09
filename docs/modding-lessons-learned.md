@@ -1,6 +1,6 @@
 # Old World Modding Lessons Learned
 
-This document captures troubleshooting findings from developing the Aristocratic Republic mod.
+Troubleshooting findings and hard-won knowledge from Old World modding. Originally from the Aristocratic Republic mod, expanded with lessons from The Gallic Wars scenario mod.
 
 ## Critical: UTF-8 BOM Required for Text Files
 
@@ -299,6 +299,119 @@ To make multiple events share a cooldown (e.g., 15 election variants), use `aeEv
 
 Each event must list all OTHER events. One-way linking does NOT work.
 
+## Scenario Map Format (Save-File Format)
+
+Scenario maps use the **same XML format as save files**. The game loads them via `initFromSaveFile()`. This means you need full Player, Character, City, and Game blocks — not just tiles.
+
+### Required Blocks
+
+A minimal scenario map needs (in order):
+1. Root attributes (`MapWidth`, `MapEdgesSafe`, `Scenario`, etc.)
+2. `<Team>`, `<Difficulty>`, `<Nation>`, `<Dynasty>` blocks
+3. `<Game>` block (NextUnitID, NextCityID, NextCharacterID, TribeDiplomacy, FamilyClass, etc.)
+4. `<Player>` blocks (nation, dynasty, resources, starting tiles)
+5. `<Character>` blocks (leader, spouse, etc.)
+6. `<City>` blocks (pre-founded cities with citizens, build queue)
+7. `<Tile>` blocks (with `<Religion />` and `<RevealedTurn />` on every tile)
+8. `<Unit>` blocks embedded inside their tile
+
+### scenario-add.xml Must Have Difficulty
+
+**CRITICAL**: `scenario-add.xml` MUST have `<Difficulty>` or `<DifficultyDisabled>` entries. Without these, `ScenarioSetupScreenPanel.OnScenarioChanged()` skips `UpdateScenarioMods()`, so the mod never gets added to active mods and the map file can't be found.
+
+### TribeDiplomacy Must Be Complete
+
+`<TribeDiplomacy>` in the Game block must list **ALL tribes × ALL players**. An empty `<TribeDiplomacy />` causes `NullReferenceException` in `calculateCharacterOpinionEthnicityTribe`.
+
+Use `DIPLOMACY_WAR` for hostile system tribes (REBELS, ANARCHY, RAIDERS, BARBARIANS) and `DIPLOMACY_TRUCE` for others.
+
+### StartingPlayerOptions Values Are Player Indices
+
+`<StartingPlayerOptions>` values are **player indices**, not booleans. The C# code does:
+```csharp
+int.TryParse(pChildNode.InnerText, out int iPlayer);
+lPlayerParameters[iPlayer].sePlayerOptions.Add(eOption);
+```
+
+For a single-player scenario, use `0`:
+```xml
+<StartingPlayerOptions>
+  <PLAYEROPTION_NO_TUTORIAL>0</PLAYEROPTION_NO_TUTORIAL>
+</StartingPlayerOptions>
+```
+
+Using `1` in a single-player map causes `ArgumentOutOfRangeException`.
+
+### Valid Enum Values
+
+- `DIFFICULTY_GREAT` (not `THE_GREAT`)
+- `DEVELOPMENT_FLEDGLING` (not `DEVELOPING`)
+
+### gameContentRequired
+
+`gameContentRequired` in ModInfo.xml only enforces for internal (DLC) mods, not external user mods. Setting it has no practical effect.
+
+## Map Extraction
+
+### Y-Offset Must Be Even
+
+When extracting a region from a source map, the Y-offset **must be even** to preserve hex row parity. Odd-row-right hex grids flip neighbor geometry on odd Y shifts, breaking rivers and terrain adjacency.
+
+### Map XML Encoding
+
+Map XML files must have:
+- UTF-8 BOM (`encoding='utf-8-sig'` in Python)
+- `MapEdgesSafe="True"` on the Root element
+
+### River Tags
+
+Only three river XML tags exist: `RiverW`, `RiverSW`, `RiverSE`. There are no `RiverNW`, `RiverNE`, or `RiverE` tags.
+
+River connectivity: the game groups adjacent tiles with ANY river XML field (even `=0`) into connected rivers.
+
+## City and Tile Knowledge
+
+### City Names
+
+The `<Name>` field in City blocks uses plain strings (`"Narbo"`) or `CITYNAME_*` enum IDs — **NOT** `TEXT_CITYNAME_*` text keys. The `CITYNAME_*` enums are defined in `cityName.xml`.
+
+### Duplicate Text Keys Crash the Game
+
+**NEVER add text keys that already exist in base game** — this causes a crash at load time. Always check `Reference/XML/Infos/text-*.xml` first. For example, `TEXT_CITYNAME_VESONTIO` already exists in the base game.
+
+### Tribe-Owned Cities
+
+Cities owned by tribes (not by a player) use `Player="-1"`, `Family="NONE"`, and `<Tribe>TRIBE_X</Tribe>` inside the City block.
+
+### Removing a City Site
+
+Removing a city site from a tile requires stripping four things:
+1. `CitySite` tag
+2. `IMPROVEMENT_CITY_SITE` improvement
+3. `TERRAIN_URBAN` (change to `TERRAIN_LUSH` or appropriate terrain)
+4. `ElementName` label
+
+### Gendered Text for Tribes
+
+Custom tribes need entries in both `preload-text-add.xml` and `genderedText-add.xml`. Each tribe needs 4 text entries (`TEXT_TRIBE_X`, `TEXT_TRIBE_X_F`, `TEXT_TRIBE_X_NICK`, `TEXT_TRIBE_X_NICK_F`) and 2 gendered text entries (`GENDERED_TEXT_TRIBE_X`, `GENDERED_TEXT_TRIBE_X_NICK`).
+
+## Deployment
+
+### Clean Target Before Deploying
+
+`cp -r` doesn't remove stale files from the target. Always `rm -rf` the deployed mod directory before copying:
+```bash
+rm -rf "$TARGET" && cp -r "$SOURCE" "$TARGET"
+```
+
+### Full App Restart Required
+
+In-game restart does **NOT** reload map files. A full quit-and-relaunch of Old World is required after deploying map changes.
+
+### Keep .bak Files Out
+
+`.bak` files in the mod directory get copied by deploy scripts. Keep backup files outside the mod directory.
+
 ## Common Pitfalls
 
 1. **Missing BOM on text file** - Events silently fail
@@ -309,3 +422,8 @@ Each event must list all OTHER events. One-way linking does NOT work.
 6. **Extra directories in mod** - Can cause loading errors (keep only `Infos/`, `ModInfo.xml`, images)
 7. **Mixing inline and separate event options** - Can cause bonuses to apply to wrong subjects
 8. **One-way cooldown linking** - Must be bidirectional for shared cooldowns to work
+9. **Duplicate text keys** - Adding a key that exists in base game crashes at load
+10. **Empty TribeDiplomacy** - NullReferenceException at startup
+11. **Missing Difficulty in scenario-add.xml** - Mod's Maps directory silently not loaded
+12. **StartingPlayerOptions value = 1 in single-player** - ArgumentOutOfRangeException
+13. **Odd Y-offset in map extraction** - Rivers and terrain adjacency break silently
