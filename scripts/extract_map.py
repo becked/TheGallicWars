@@ -59,15 +59,12 @@ VESONTIO_X = 14
 VESONTIO_Y = 15
 VESONTIO_TILE_ID = VESONTIO_Y * NEW_WIDTH + VESONTIO_X  # 359
 
-AUGUSTA_X = 20
-AUGUSTA_Y = 17
-AUGUSTA_TILE_ID = AUGUSTA_Y * NEW_WIDTH + AUGUSTA_X  # 411
-
 # City sites to remove (not relevant to Chapter 1)
 REMOVE_CITY_SITES: set[int] = {
     10 * NEW_WIDTH + 10,  # 240 - Lugdunum
     18 * NEW_WIDTH + 9,   # 423 - Durocortorum
     7 * NEW_WIDTH + 17,   # 178 - Genua
+    17 * NEW_WIDTH + 20,  # 411 - Augusta Vindelicorum
     23 * NEW_WIDTH + 14,  # 543 - Colonia
     25 * NEW_WIDTH + 4,   # 579 - Londinium
     16 * NEW_WIDTH + 3,   # 371 - Caesarodunum/Tours
@@ -100,8 +97,6 @@ CITIES: list[CityDef] = [
             False, 1, BIBRACTE_X, BIBRACTE_Y),
     CityDef(3, VESONTIO_TILE_ID, "Vesontio", -1, "NONE", "TRIBE_SEQUANI",
             False, 1, VESONTIO_X, VESONTIO_Y),
-    CityDef(4, AUGUSTA_TILE_ID, "Augusta Vindelicorum", -1, "NONE", "TRIBE_SUEBI",
-            False, 1, AUGUSTA_X, AUGUSTA_Y),
 ]
 
 # Units to pre-place: (new_x, new_y, unit_type)

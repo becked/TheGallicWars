@@ -3,7 +3,7 @@
   MapWidth="23"
   MapEdgesSafe="True"
   MapPath=""
-  GameId="d72ebac8-f8e8-45f5-87f6-c11dbf387590"
+  GameId="ea6b9557-dac4-440d-834d-a081f3082121"
   MapSize="MAPSIZE_SMALL"
   Scenario="SCENARIO_GALLIC_WARS_1"
   GameName=""
@@ -56,7 +56,7 @@
   <Game>
     <Seed>666877878369320307</Seed>
     <NextUnitID>4</NextUnitID>
-    <NextCityID>5</NextCityID>
+    <NextCityID>4</NextCityID>
     <NextCharacterID>2</NextCharacterID>
     <NextOccurrenceID>0</NextOccurrenceID>
     <MapSize>MAPSIZE_SMALL</MapSize>
@@ -379,30 +379,6 @@
     <FirstPlayer>0</FirstPlayer>
     <LastPlayer>0</LastPlayer>
     <Tribe>TRIBE_SEQUANI</Tribe>
-    <YieldProgress />
-    <YieldOverflow />
-    <ProjectCount />
-    <LuxuryTurn />
-    <AgentCharacterID />
-    <TeamCultureStep />
-    <Religion />
-    <PlayerFamily>
-    </PlayerFamily>
-    <TeamCulture>
-      <T.0>CULTURE_WEAK</T.0>
-    </TeamCulture>
-  </City>
-  <City
-    ID="4"
-    TileID="411"
-    Player="-1"
-    Family="NONE"
-    Founded="1">
-    <Name>Augusta Vindelicorum</Name>
-    <Citizens>1</Citizens>
-    <FirstPlayer>0</FirstPlayer>
-    <LastPlayer>0</LastPlayer>
-    <Tribe>TRIBE_SUEBI</Tribe>
     <YieldProgress />
     <YieldOverflow />
     <ProjectCount />
@@ -3887,12 +3863,9 @@
   <Tile
     ID="411">
     <Road />
-    <Terrain>TERRAIN_URBAN</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <RiverW>0</RiverW>
-    <CitySite>USED</CitySite>
-    <Improvement>IMPROVEMENT_CITY_SITE</Improvement>
-    <ElementName>TEXT_CITYNAME_AUGUSTA_VINDELICORUM</ElementName>
     <Religion />
     <RevealedTurn />
   </Tile>
