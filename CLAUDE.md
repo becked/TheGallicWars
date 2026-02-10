@@ -43,6 +43,7 @@ Requires `.env` with `OLDWORLD_MODS_PATH` set (see `.env.example`).
 - **scenario-add.xml MUST have `<Difficulty>` or `<DifficultyDisabled>`** - without this, the game skips loading the mod's Maps directory entirely.
 - **TribeDiplomacy in save-format maps must list ALL tribes** - empty `<TribeDiplomacy />` causes NullReferenceException at startup.
 - **Deploy with clean target** - `rm -rf` the deployed mod directory before `cp -r`, since `cp -r` doesn't remove stale files.
+- **Row shifts must be even** - Inserting/deleting an odd number of rows flips hex row parity, breaking all river edges (RiverSW/RiverSE) in the shifted region. This applies to `insert_rows.py --count`, `freeze_terrain.py` Y-offset, and any future row operations.
 
 ## Map
 
