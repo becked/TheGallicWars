@@ -24,8 +24,7 @@ Reference/               # Symlink to game's XML (for looking up base game data)
 
 1. `python3 scripts/generate_scenario.py` - generate scenario map from frozen terrain
 2. `./scripts/deploy.sh` - copy mod to game's Mods directory
-3. **Full app restart required** - in-game restart does NOT reload map files
-4. Check logs: `~/Library/Logs/MohawkGames/OldWorld/Player.log`
+3. Check logs: `~/Library/Logs/MohawkGames/OldWorld/Player.log`
 
 To re-extract terrain from Imperium Romanum (one-time, rarely needed):
 `python3 scripts/freeze_terrain.py` - writes `data/base_terrain.xml`
