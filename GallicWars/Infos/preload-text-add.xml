@@ -30,15 +30,15 @@
 	</Entry>
 	<Entry>
 		<zType>TEXT_JURA_MOUNTAINS</zType>
-		<en-US>Jura Mountains</en-US>
+		<en-US>Jura</en-US>
 	</Entry>
 	<Entry>
 		<zType>TEXT_VOSGES_MOUNTAINS</zType>
-		<en-US>Vosges Mountains</en-US>
+		<en-US>Vosges</en-US>
 	</Entry>
 	<Entry>
 		<zType>TEXT_LAKE_GENEVA</zType>
-		<en-US>Lacus Lemannus</en-US>
+		<en-US>Lacus</en-US>
 	</Entry>
 	<Entry>
 		<zType>TEXT_RIVER_ARAR</zType>

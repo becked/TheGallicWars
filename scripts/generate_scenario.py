@@ -33,7 +33,7 @@ BIBRACTE_X = 9
 BIBRACTE_Y = 13
 
 VESONTIO_X = 14
-VESONTIO_Y = 15
+VESONTIO_Y = 21
 
 # City definitions
 @dataclass

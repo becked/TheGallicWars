@@ -64,3 +64,4 @@ See `docs/milestones.md` for full roadmap. Milestones 1-3 complete. Currently wo
 - `docs/modding-guide.md` - C# modding reference (GameFactory, Harmony)
 - `docs/save-file-format.md` - Scenario/save-file XML format reference
 - `docs/milestones.md` - Project milestones and status
+- `docs/river-placement.md` - Hex river edge connectivity, vertex rules, placement patterns
