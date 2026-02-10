@@ -675,6 +675,7 @@
     ID="121">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <Improvement>IMPROVEMENT_PASTURE</Improvement>
   </Tile>
   <Tile
     ID="122">
@@ -687,18 +688,21 @@
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
+    <Improvement>IMPROVEMENT_BARRACKS</Improvement>
   </Tile>
   <Tile
     ID="124">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
+    <Improvement>IMPROVEMENT_GARRISON_2</Improvement>
   </Tile>
   <Tile
     ID="125">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverW>1</RiverW>
+    <Improvement>IMPROVEMENT_BARRACKS</Improvement>
   </Tile>
   <Tile
     ID="126">
@@ -830,6 +834,7 @@
     <Height>HEIGHT_FLAT</Height>
     <Resource>RESOURCE_HORSE</Resource>
     <RiverW>1</RiverW>
+    <Improvement>IMPROVEMENT_PASTURE</Improvement>
   </Tile>
   <Tile
     ID="149">
@@ -1525,6 +1530,7 @@
     <Vegetation>VEGETATION_TREES</Vegetation>
     <RiverW>0</RiverW>
     <RiverSE>0</RiverSE>
+    <Improvement>IMPROVEMENT_LUMBERMILL</Improvement>
   </Tile>
   <Tile
     ID="264">
@@ -1796,12 +1802,14 @@
     <Resource>RESOURCE_HORSE</Resource>
     <RiverW>1</RiverW>
     <RiverSW>1</RiverSW>
+    <Improvement>IMPROVEMENT_PASTURE</Improvement>
   </Tile>
   <Tile
     ID="311">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
+    <Improvement>IMPROVEMENT_LUMBERMILL</Improvement>
   </Tile>
   <Tile
     ID="312">

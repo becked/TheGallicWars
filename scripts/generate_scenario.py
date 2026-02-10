@@ -48,6 +48,10 @@ class CityDef:
     citizens: int
     x: int
     y: int
+    culture: str = "CULTURE_WEAK"
+    build_queue: Optional[list[tuple[str, str]]] = None  # [(build_type, unit/project), ...]
+    extra_territory: Optional[list[tuple[int, int]]] = None  # extra (x,y) tiles
+    territory_radius: int = 2
     territory_x_min: Optional[int] = None
     territory_x_max: Optional[int] = None
     territory_y_min: Optional[int] = None
@@ -58,9 +62,13 @@ def make_cities(width: int) -> list[CityDef]:
     """Build the CITIES list with tile IDs computed from map width."""
     return [
         CityDef(0, NARBO_Y * width + NARBO_X, "Narbo", 0, "FAMILY_JULIUS",
-                "NONE", True, 3, NARBO_X, NARBO_Y),
+                "NONE", True, 3, NARBO_X, NARBO_Y,
+                culture="CULTURE_DEVELOPING",
+                build_queue=[("BUILD_UNIT", "UNIT_HASTATUS")],
+                extra_territory=[(8, 5), (9, 5), (10, 5), (11, 5), (9, 6), (10, 6)]),
         CityDef(1, GENAVA_Y * width + GENAVA_X, "Genava", 0, "FAMILY_JULIUS",
                 "NONE", False, 1, GENAVA_X, GENAVA_Y,
+                build_queue=[("BUILD_UNIT", "UNIT_WARRIOR")],
                 territory_x_min=10, territory_y_max=12),
         CityDef(2, BIBRACTE_Y * width + BIBRACTE_X, "Bibracte", -1, "NONE",
                 "TRIBE_AEDUI", False, 1, BIBRACTE_X, BIBRACTE_Y),
@@ -507,18 +515,18 @@ def generate_preamble(
             lines.append(f'      <P.{city.player}>{city.family}</P.{city.player}>')
         lines.append('    </PlayerFamily>')
         lines.append('    <TeamCulture>')
-        lines.append('      <T.0>CULTURE_WEAK</T.0>')
+        lines.append(f'      <T.0>{city.culture}</T.0>')
         lines.append('    </TeamCulture>')
-        if city.is_capital:
+        if city.build_queue:
             lines.append('    <BuildQueue>')
-            lines.append('      <QueueInfo>')
-            lines.append('        <Build>BUILD_PROJECT</Build>')
-            lines.append('        <Type>PROJECT_COUNCIL_1</Type>')
-            lines.append('        <Data>-1</Data>')
-            lines.append('        <Progress>0</Progress>')
-            lines.append('        <Repeat />')
-            lines.append('        <YieldCost />')
-            lines.append('      </QueueInfo>')
+            for build_type, item_type in city.build_queue:
+                lines.append('      <QueueInfo>')
+                lines.append(f'        <Build>{build_type}</Build>')
+                lines.append(f'        <Type>{item_type}</Type>')
+                lines.append('        <Data>-1</Data>')
+                lines.append('        <Progress>0</Progress>')
+                lines.append('        <YieldCost />')
+                lines.append('      </QueueInfo>')
             lines.append('    </BuildQueue>')
         lines.append('  </City>')
 
@@ -588,16 +596,19 @@ def write_tile(
     city_territory_id: Optional[int] = None
     for c in cities:
         if c.player >= 0 and not is_boundary:
+            in_extra = (c.extra_territory is not None
+                        and (new_x, new_y) in c.extra_territory)
             dist = hex_distance(new_x, new_y, c.x, c.y)
-            if dist <= 2:
-                if c.territory_x_min is not None and new_x < c.territory_x_min:
-                    continue
-                if c.territory_x_max is not None and new_x > c.territory_x_max:
-                    continue
-                if c.territory_y_min is not None and new_y < c.territory_y_min:
-                    continue
-                if c.territory_y_max is not None and new_y > c.territory_y_max:
-                    continue
+            if in_extra or dist <= c.territory_radius:
+                if not in_extra:
+                    if c.territory_x_min is not None and new_x < c.territory_x_min:
+                        continue
+                    if c.territory_x_max is not None and new_x > c.territory_x_max:
+                        continue
+                    if c.territory_y_min is not None and new_y < c.territory_y_min:
+                        continue
+                    if c.territory_y_max is not None and new_y > c.territory_y_max:
+                        continue
                 city_territory_id = c.city_id
                 break
 

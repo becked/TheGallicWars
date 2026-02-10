@@ -3,7 +3,7 @@
   MapWidth="23"
   MapEdgesSafe="True"
   MapPath=""
-  GameId="e4c046e8-9271-4f61-bfff-d337b8b86b85"
+  GameId="9857d267-f013-41ad-8d71-a8dc8dc4eb64"
   MapSize="MAPSIZE_SMALL"
   Scenario="SCENARIO_GALLIC_WARS_1"
   GameName=""
@@ -242,7 +242,7 @@
   </Player>
   <Character
     ID="0"
-    BirthTurn="-41"
+    BirthTurn="-42"
     Player="0"
     Character="CHARACTER_JULIUS_CAESAR_LEADER"
     Gender="GENDER_MALE"
@@ -323,15 +323,14 @@
       <P.0>FAMILY_JULIUS</P.0>
     </PlayerFamily>
     <TeamCulture>
-      <T.0>CULTURE_WEAK</T.0>
+      <T.0>CULTURE_DEVELOPING</T.0>
     </TeamCulture>
     <BuildQueue>
       <QueueInfo>
-        <Build>BUILD_PROJECT</Build>
-        <Type>PROJECT_COUNCIL_1</Type>
+        <Build>BUILD_UNIT</Build>
+        <Type>UNIT_HASTATUS</Type>
         <Data>-1</Data>
         <Progress>0</Progress>
-        <Repeat />
         <YieldCost />
       </QueueInfo>
     </BuildQueue>
@@ -361,6 +360,15 @@
     <TeamCulture>
       <T.0>CULTURE_WEAK</T.0>
     </TeamCulture>
+    <BuildQueue>
+      <QueueInfo>
+        <Build>BUILD_UNIT</Build>
+        <Type>UNIT_WARRIOR</Type>
+        <Data>-1</Data>
+        <Progress>0</Progress>
+        <YieldCost />
+      </QueueInfo>
+    </BuildQueue>
   </City>
   <City
     ID="2"
@@ -1497,6 +1505,7 @@
     ID="121">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <Improvement>IMPROVEMENT_PASTURE</Improvement>
     <RevealedCityTerritory>
       <Team
         CityTerritory="0">0</Team>
@@ -1542,6 +1551,8 @@
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
+    <Improvement>IMPROVEMENT_BARRACKS</Improvement>
+    <CityTerritory>0</CityTerritory>
     <Religion />
     <RevealedTurn />
   </Tile>
@@ -1550,6 +1561,8 @@
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
+    <Improvement>IMPROVEMENT_GARRISON_2</Improvement>
+    <CityTerritory>0</CityTerritory>
     <Religion />
     <RevealedTurn />
   </Tile>
@@ -1558,6 +1571,8 @@
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverW>1</RiverW>
+    <Improvement>IMPROVEMENT_BARRACKS</Improvement>
+    <CityTerritory>0</CityTerritory>
     <Religion />
     <RevealedTurn />
   </Tile>
@@ -1565,6 +1580,7 @@
     ID="126">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <CityTerritory>0</CityTerritory>
     <Religion />
     <RevealedTurn />
   </Tile>
@@ -1733,6 +1749,7 @@
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSE>0</RiverSE>
+    <CityTerritory>0</CityTerritory>
     <Religion />
     <RevealedTurn />
   </Tile>
@@ -1742,6 +1759,8 @@
     <Height>HEIGHT_FLAT</Height>
     <Resource>RESOURCE_HORSE</Resource>
     <RiverW>1</RiverW>
+    <Improvement>IMPROVEMENT_PASTURE</Improvement>
+    <CityTerritory>0</CityTerritory>
     <Religion />
     <RevealedTurn />
   </Tile>
@@ -2690,6 +2709,7 @@
     <Vegetation>VEGETATION_TREES</Vegetation>
     <RiverW>0</RiverW>
     <RiverSE>0</RiverSE>
+    <Improvement>IMPROVEMENT_LUMBERMILL</Improvement>
     <CityTerritory>1</CityTerritory>
     <Religion />
     <RevealedTurn />
@@ -3087,6 +3107,7 @@
     <Resource>RESOURCE_HORSE</Resource>
     <RiverW>1</RiverW>
     <RiverSW>1</RiverSW>
+    <Improvement>IMPROVEMENT_PASTURE</Improvement>
     <Religion />
     <RevealedTurn />
   </Tile>
@@ -3095,6 +3116,7 @@
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
+    <Improvement>IMPROVEMENT_LUMBERMILL</Improvement>
     <Religion />
     <RevealedTurn />
   </Tile>
