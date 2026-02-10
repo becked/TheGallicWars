@@ -1,6 +1,6 @@
 # The Gallic Wars - Old World Scenario Mod
 
-A scenario campaign mod for Old World based on Caesar's *Commentarii de Bello Gallico*. The player controls Rome as Julius Caesar. Chapter 1 (58 BC) covers the Helvetii migration and Ariovistus campaigns.
+A scenario campaign mod for Old World based on Caesar's *Commentarii de Bello Gallico*. The player controls Rome as Julius Caesar. Chapter 1 (58 BCE) covers the Helvetii migration and Ariovistus campaigns.
 
 ## Project Layout
 

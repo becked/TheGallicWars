@@ -229,7 +229,7 @@
   </Player>
   <Character
     ID="0"
-    BirthTurn="-34"
+    BirthTurn="-42"
     Player="0"
     Character="CHARACTER_JULIUS_CAESAR_LEADER"
     Gender="GENDER_MALE"

@@ -7,7 +7,7 @@ Kept for reference on terrain zone definitions and river edge patterns.
 Generate the Gallic Wars Chapter 1 map XML.
 
 Geographic scope: Eastern Gaul from Aedui territory to the Rhine,
-covering Caesar's campaigns against the Helvetii and Ariovistus (58 BC).
+covering Caesar's campaigns against the Helvetii and Ariovistus (58 BCE).
 
 Map: 50 tiles wide x 40 tiles tall = 2,000 tiles
 Coordinate system: X = column (0=west, 49=east), Y = row
@@ -40,7 +40,7 @@ from typing import Optional
 MAP_WIDTH = 50
 MAP_HEIGHT = 40
 TOTAL_TILES = MAP_WIDTH * MAP_HEIGHT
-SEED = 58  # 58 BC :)
+SEED = 58  # 58 BCE :)
 
 # Terrain types
 WATER = "TERRAIN_WATER"

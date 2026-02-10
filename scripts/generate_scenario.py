@@ -403,7 +403,7 @@ def generate_preamble(
     # Caesar
     lines.append('  <Character')
     lines.append('    ID="0"')
-    lines.append('    BirthTurn="-34"')
+    lines.append('    BirthTurn="-42"')
     lines.append('    Player="0"')
     lines.append('    Character="CHARACTER_JULIUS_CAESAR_LEADER"')
     lines.append('    Gender="GENDER_MALE"')

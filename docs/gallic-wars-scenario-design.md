@@ -4,17 +4,17 @@
 
 A scenario campaign mod for Old World based on Julius Caesar's *Commentarii de Bello Gallico*. The player controls Rome as Julius Caesar, playing through scenario chapters that mirror the real-life events and battles described in the book.
 
-This document covers **Chapter 1: The Helvetii and Ariovistus** (Book I, 58 BC) - the initial release.
+This document covers **Chapter 1: The Helvetii and Ariovistus** (Book I, 58 BCE) - the initial release.
 
 ### Campaign Vision (Future Chapters)
 
 | Chapter | Title | Book | Year | Focus |
 |---------|-------|------|------|-------|
-| 1 | The Helvetii and Ariovistus | I | 58 BC | Helvetii migration, Ariovistus invasion |
-| 2 | Terror of the Belgae | II | 57 BC | Belgian confederation, Battle of the Sabis |
-| 3 | Beyond the Known World | III-IV | 56-55 BC | Veneti naval campaign, Rhine bridge, Britain |
-| 4 | Revolt of Ambiorix | V-VI | 54-53 BC | Legion destroyed, siege of Cicero's camp |
-| 5 | Vercingetorix and Alesia | VII | 52 BC | Great revolt, Gergovia, siege of Alesia |
+| 1 | The Helvetii and Ariovistus | I | 58 BCE | Helvetii migration, Ariovistus invasion |
+| 2 | Terror of the Belgae | II | 57 BCE | Belgian confederation, Battle of the Sabis |
+| 3 | Beyond the Known World | III-IV | 56-55 BCE | Veneti naval campaign, Rhine bridge, Britain |
+| 4 | Revolt of Ambiorix | V-VI | 54-53 BCE | Legion destroyed, siege of Cicero's camp |
+| 5 | Vercingetorix and Alesia | VII | 52 BCE | Great revolt, Gergovia, siege of Alesia |
 
 ---
 
@@ -83,7 +83,7 @@ All chapters share one `zModName: GallicWars`. The game loads all XML when any c
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <displayName>The Gallic Wars</displayName>
   <description>Play through Caesar's Commentarii de Bello Gallico.
-Chapter 1: The Helvetii and Ariovistus (58 BC).</description>
+Chapter 1: The Helvetii and Ariovistus (58 BCE).</description>
   <author>Jeff</author>
   <modversion>0.1.0</modversion>
   <tags>Scenario</tags>
@@ -157,14 +157,14 @@ Chapter 1: The Helvetii and Ariovistus (58 BC).</description>
 
 - **Nation**: NATION_ROME (player controls Caesar)
 - **Turn Scale**: Weekly (custom TURNSCALE_WEEK, `iDivisions=52`), 35 turns total
-- **Time Frame**: March-October 58 BC (the campaign season)
+- **Time Frame**: March-October 58 BCE (the campaign season)
 - **No AI nations**: All non-player factions are tribes
 
 ---
 
 ## Turn Scale
 
-Weekly turns at 35 turns for the campaign season (March through October 58 BC). Each turn represents roughly one week.
+Weekly turns at 35 turns for the campaign season (March through October 58 BCE). Each turn represents roughly one week.
 
 Custom turn scale definition:
 - `zType`: TURNSCALE_WEEK
@@ -214,7 +214,7 @@ All non-player factions are tribes (no AI nations). 5 new tribes + 1 existing ba
 
 ### Roman Side (Player's Generals & Leaders)
 
-| Character ID | Name | Role | Age (58 BC) | Traits/Notes |
+| Character ID | Name | Role | Age (58 BCE) | Traits/Notes |
 |-------------|------|------|-------------|--------------|
 | CHARACTER_CAESAR | Julius Caesar | Player leader | 42 | Protagonist. Ambitious, brilliant. High stats across the board. |
 | CHARACTER_LABIENUS | Titus Labienus | Senior legate | ~40 | Caesar's best general. Commands independently at the Arar ambush and Bibracte's left wing. High military rating. |
@@ -228,7 +228,7 @@ All non-player factions are tribes (no AI nations). 5 new tribes + 1 existing ba
 | Character ID | Name | Faction | Role |
 |-------------|------|---------|------|
 | CHARACTER_ORGETORIX | Orgetorix | Helvetii | Nobleman who planned the migration. Conspired with Casticus and Dumnorix for pan-Gallic power grab. Dies (suicide or murder) before the migration starts. Intro events only. |
-| CHARACTER_DIVICO | Divico | Helvetii | Elderly war chief. Led the Helvetii when they defeated Rome in 107 BC. Meets Caesar for negotiations after the Arar - arrogant, reminds Caesar of the old defeat. |
+| CHARACTER_DIVICO | Divico | Helvetii | Elderly war chief. Led the Helvetii when they defeated Rome in 107 BCE. Meets Caesar for negotiations after the Arar - arrogant, reminds Caesar of the old defeat. |
 | CHARACTER_DUMNORIX | Dumnorix | Aedui | Brother of Diviciacus. Secretly anti-Roman. Married to a Helvetian noblewoman. Sabotages Caesar's cavalry and Aedui grain supplies. Eventually exposed and placed under surveillance. |
 | CHARACTER_ARIOVISTUS | Ariovistus | Suebi | Germanic king. Previously named "Friend of Rome" by the Senate. Demands half of Gaul. Refuses to meet Caesar on Caesar's terms. Huge, intimidating warriors. |
 | CHARACTER_CASTICUS | Casticus | Sequani | Son of a former Sequani king. Co-conspirator with Orgetorix. Minor event role. |
@@ -250,7 +250,7 @@ All non-player factions are tribes (no AI nations). 5 new tribes + 1 existing ba
 
 #### Intro Event: The Migration Begins
 - **Trigger**: EVENTTRIGGER_START_GAME
-- **Narrative**: Caesar receives word that the Helvetii, a powerful Gallic people hemmed in by mountains, the Rhine, and the Rhone, have burned their twelve towns and four hundred villages. Under the influence of the nobleman Orgetorix (now dead - executed or suicide after his conspiracy was discovered), 368,000 men, women, and children march west seeking new lands. Caesar recalls that the Helvetii defeated consul Lucius Cassius Longinus in 107 BC. Rome has a score to settle.
+- **Narrative**: Caesar receives word that the Helvetii, a powerful Gallic people hemmed in by mountains, the Rhine, and the Rhone, have burned their twelve towns and four hundred villages. Under the influence of the nobleman Orgetorix (now dead - executed or suicide after his conspiracy was discovered), 368,000 men, women, and children march west seeking new lands. Caesar recalls that the Helvetii defeated consul Lucius Cassius Longinus in 107 BCE. Rome has a score to settle.
 - **Subjects**: Caesar, Helvetii
 - **Options**: "Continue" (single option - sets the stage)
 - **Bonuses**: Activates Act 1 goals
@@ -287,7 +287,7 @@ All non-player factions are tribes (no AI nations). 5 new tribes + 1 existing ba
 
 #### Ambush at the Arar (Saone River)
 - **Trigger**: EventLink or player's army reaches the Arar zone
-- **Narrative**: Roman scouts report that three-quarters of the Helvetii have crossed the Saone, but one quarter - the Tigurini clan - remain on the near bank. The Tigurini are the very clan that killed consul Cassius and sent a Roman army under the yoke in 107 BC. Caesar sees his chance for revenge.
+- **Narrative**: Roman scouts report that three-quarters of the Helvetii have crossed the Saone, but one quarter - the Tigurini clan - remain on the near bank. The Tigurini are the very clan that killed consul Cassius and sent a Roman army under the yoke in 107 BCE. Caesar sees his chance for revenge.
 - **Goal**: "Blitz at the Arar" - defeat the Tigurini/Helvetii units at the river crossing
 - **Options**: "Attack at the third watch of the night" (single option - launches the battle)
 - **Bonuses**: Combat bonus for the initial attack (surprise)
@@ -295,7 +295,7 @@ All non-player factions are tribes (no AI nations). 5 new tribes + 1 existing ba
 
 #### Divico's Embassy
 - **Trigger**: EventLink after Arar battle
-- **Narrative**: The elderly war chief Divico, the same man who defeated Rome in 107 BC, rides to Caesar's camp to negotiate. He is arrogant despite his defeat: "If Rome makes peace, the Helvetii will go wherever Caesar directs them. But if Caesar insists on war, he should remember what happened before. Let him not be so confident that this place becomes famous for Roman disaster." Caesar replies that he remembers the old defeat well - which is precisely why he will not let it happen again.
+- **Narrative**: The elderly war chief Divico, the same man who defeated Rome in 107 BCE, rides to Caesar's camp to negotiate. He is arrogant despite his defeat: "If Rome makes peace, the Helvetii will go wherever Caesar directs them. But if Caesar insists on war, he should remember what happened before. Let him not be so confident that this place becomes famous for Roman disaster." Caesar replies that he remembers the old defeat well - which is precisely why he will not let it happen again.
 - **Options**: "Rome remembers its defeats" (single option - negotiations fail, the campaign continues)
 
 #### Supply Crisis and March to Bibracte
@@ -422,13 +422,13 @@ The map covers a roughly 350-mile west-to-east corridor from Bibracte to the Rhi
 ### Reference Maps
 
 - **Overall Gaul with tribal territories**: [Map of Gaul in the Time of Caesar](https://www.emersonkent.com/map_archive/gaul_1st_cent_bc.htm) - Shows all tribal territories, major oppida, and rivers.
-- **Campaign route & Ariovistus battle**: [Caesar's Campaign in Gaul, 58 BC](https://www.emersonkent.com/map_archive/caesar_gaul.htm) - US Military Academy map showing the Helvetii route and the battle at Mulhouse.
+- **Campaign route & Ariovistus battle**: [Caesar's Campaign in Gaul, 58 BCE](https://www.emersonkent.com/map_archive/caesar_gaul.htm) - US Military Academy map showing the Helvetii route and the battle at Mulhouse.
 - **Detailed maps from T.A. Dodge**: [Dickinson College - Gallic War Maps](https://dcc.dickinson.edu/subjects/gallic-war-maps?page=16) - The Rhone wall, both Helvetii migration routes, and Ariovistus battle.
 - **Digital Maps of the Ancient World**: [Book I Maps](https://digitalmapsoftheancientworld.com/ancient-literature/the-gallic-war/the-gallic-war-book-i/) - Gaul overview, Bibracte battle, and Vosges battle maps.
 
 #### Direct Image Links
 
-- Gaul 1st Century BC overview: `https://digitalmapsoftheancientworld.com/wp-content/uploads/2021/05/gaul_1st_century_bc.gif`
+- Gaul 1st Century BCE overview: `https://digitalmapsoftheancientworld.com/wp-content/uploads/2021/05/gaul_1st_century_bc.gif`
 - Battle of Bibracte: `https://digitalmapsoftheancientworld.com/wp-content/uploads/2021/05/bataille_bibracte_-58.png`
 - Battle of Vosges / Ariovistus: `https://digitalmapsoftheancientworld.com/wp-content/uploads/2021/05/1280px-battaglia_ariovisto_mulhouse_png.png`
 
