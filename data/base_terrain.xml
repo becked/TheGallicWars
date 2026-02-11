@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Root MapWidth="27">
+<Root MapWidth="31">
   <Tile
     ID="0">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
@@ -111,18 +111,17 @@
   <Tile
     ID="20">
     <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
+    <Height>HEIGHT_OCEAN</Height>
   </Tile>
   <Tile
     ID="21">
     <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
+    <Height>HEIGHT_OCEAN</Height>
   </Tile>
   <Tile
     ID="22">
     <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
-    <Resource>RESOURCE_DYE</Resource>
+    <Height>HEIGHT_OCEAN</Height>
   </Tile>
   <Tile
     ID="23">
@@ -132,26 +131,47 @@
   <Tile
     ID="24">
     <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_OCEAN</Height>
+    <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
     ID="25">
     <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_OCEAN</Height>
+    <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
     ID="26">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
+    <Resource>RESOURCE_DYE</Resource>
   </Tile>
   <Tile
     ID="27">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
+  </Tile>
+  <Tile
+    ID="28">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
+  </Tile>
+  <Tile
+    ID="29">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
+  </Tile>
+  <Tile
+    ID="30">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
+  </Tile>
+  <Tile
+    ID="31">
     <Terrain>TERRAIN_ARID</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
-    ID="28">
+    ID="32">
     <Terrain>TERRAIN_ARID</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverW>1</RiverW>
@@ -159,7 +179,7 @@
     <RiverSE>1</RiverSE>
   </Tile>
   <Tile
-    ID="29">
+    ID="33">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSW>1</RiverSW>
@@ -167,51 +187,31 @@
     <ElementName>TEXT_IBERUS_RIVER</ElementName>
   </Tile>
   <Tile
-    ID="30">
+    ID="34">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverW>1</RiverW>
   </Tile>
   <Tile
-    ID="31">
+    ID="35">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
-    ID="32">
+    ID="36">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
-    ID="33">
+    ID="37">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
   </Tile>
   <Tile
-    ID="34">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
-  </Tile>
-  <Tile
-    ID="35">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_OCEAN</Height>
-  </Tile>
-  <Tile
-    ID="36">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_OCEAN</Height>
-  </Tile>
-  <Tile
-    ID="37">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_OCEAN</Height>
-  </Tile>
-  <Tile
     ID="38">
     <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_OCEAN</Height>
+    <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
     ID="39">
@@ -256,24 +256,22 @@
   <Tile
     ID="47">
     <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
+    <Height>HEIGHT_OCEAN</Height>
   </Tile>
   <Tile
     ID="48">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
   </Tile>
   <Tile
     ID="49">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
   </Tile>
   <Tile
     ID="50">
     <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
+    <Height>HEIGHT_OCEAN</Height>
   </Tile>
   <Tile
     ID="51">
@@ -283,101 +281,103 @@
   <Tile
     ID="52">
     <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
+    <Height>HEIGHT_OCEAN</Height>
   </Tile>
   <Tile
     ID="53">
     <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
-    <Resource>RESOURCE_CRAB</Resource>
+    <Height>HEIGHT_OCEAN</Height>
   </Tile>
   <Tile
     ID="54">
-    <Terrain>TERRAIN_ARID</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <RiverSW>1</RiverSW>
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
   </Tile>
   <Tile
     ID="55">
-    <Terrain>TERRAIN_ARID</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
     ID="56">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <RiverSE>0</RiverSE>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="57">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <RiverW>1</RiverW>
+    <Vegetation>VEGETATION_TREES</Vegetation>
   </Tile>
   <Tile
     ID="58">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
     ID="59">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Improvement>IMPROVEMENT_QUARRY</Improvement>
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
   </Tile>
   <Tile
     ID="60">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
     ID="61">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Resource>RESOURCE_DYE</Resource>
-    <Improvement>IMPROVEMENT_NETS</Improvement>
+    <Resource>RESOURCE_CRAB</Resource>
   </Tile>
   <Tile
     ID="62">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_OCEAN</Height>
+    <Terrain>TERRAIN_ARID</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <RiverSW>1</RiverSW>
   </Tile>
   <Tile
     ID="63">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_OCEAN</Height>
+    <Terrain>TERRAIN_ARID</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="64">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_OCEAN</Height>
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <RiverSE>0</RiverSE>
   </Tile>
   <Tile
     ID="65">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_OCEAN</Height>
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <RiverW>1</RiverW>
   </Tile>
   <Tile
     ID="66">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_OCEAN</Height>
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="67">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_OCEAN</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <Improvement>IMPROVEMENT_QUARRY</Improvement>
   </Tile>
   <Tile
     ID="68">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_OCEAN</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
   </Tile>
   <Tile
     ID="69">
     <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_OCEAN</Height>
+    <Height>HEIGHT_COAST</Height>
+    <Resource>RESOURCE_DYE</Resource>
+    <Improvement>IMPROVEMENT_NETS</Improvement>
   </Tile>
   <Tile
     ID="70">
@@ -397,167 +397,165 @@
   <Tile
     ID="73">
     <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
+    <Height>HEIGHT_OCEAN</Height>
   </Tile>
   <Tile
     ID="74">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
+  </Tile>
+  <Tile
+    ID="75">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
+  </Tile>
+  <Tile
+    ID="76">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
+  </Tile>
+  <Tile
+    ID="77">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
+  </Tile>
+  <Tile
+    ID="78">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
+  </Tile>
+  <Tile
+    ID="79">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
+  </Tile>
+  <Tile
+    ID="80">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
+  </Tile>
+  <Tile
+    ID="81">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
+  </Tile>
+  <Tile
+    ID="82">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
+  </Tile>
+  <Tile
+    ID="83">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
+  </Tile>
+  <Tile
+    ID="84">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
+  </Tile>
+  <Tile
+    ID="85">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
+  </Tile>
+  <Tile
+    ID="86">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
-    ID="75">
+    ID="87">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
     <RiverSE>1</RiverSE>
   </Tile>
   <Tile
-    ID="76">
+    ID="88">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
     <RiverSW>1</RiverSW>
   </Tile>
   <Tile
-    ID="77">
+    ID="89">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
-    ID="78">
+    ID="90">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
-    ID="79">
+    ID="91">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
-    ID="80">
+    ID="92">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
-    ID="81">
+    ID="93">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
-    ID="82">
+    ID="94">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
-    ID="83">
+    ID="95">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
-    ID="84">
+    ID="96">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
     <RiverSE>0</RiverSE>
   </Tile>
   <Tile
-    ID="85">
+    ID="97">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
     <RiverW>1</RiverW>
   </Tile>
   <Tile
-    ID="86">
+    ID="98">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
-    ID="87">
+    ID="99">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Improvement>IMPROVEMENT_QUARRY</Improvement>
   </Tile>
   <Tile
-    ID="88">
+    ID="100">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
-  </Tile>
-  <Tile
-    ID="89">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
-    <Resource>RESOURCE_DYE</Resource>
-  </Tile>
-  <Tile
-    ID="90">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_OCEAN</Height>
-  </Tile>
-  <Tile
-    ID="91">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_OCEAN</Height>
-  </Tile>
-  <Tile
-    ID="92">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
-  </Tile>
-  <Tile
-    ID="93">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
-  </Tile>
-  <Tile
-    ID="94">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
-  </Tile>
-  <Tile
-    ID="95">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_OCEAN</Height>
-  </Tile>
-  <Tile
-    ID="96">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_OCEAN</Height>
-  </Tile>
-  <Tile
-    ID="97">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_OCEAN</Height>
-  </Tile>
-  <Tile
-    ID="98">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_OCEAN</Height>
-  </Tile>
-  <Tile
-    ID="99">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_OCEAN</Height>
-  </Tile>
-  <Tile
-    ID="100">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_OCEAN</Height>
   </Tile>
   <Tile
     ID="101">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Resource>RESOURCE_FISH</Resource>
+    <Resource>RESOURCE_DYE</Resource>
   </Tile>
   <Tile
     ID="102">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
   </Tile>
   <Tile
     ID="103">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
   </Tile>
   <Tile
     ID="104">
@@ -568,47 +566,129 @@
     ID="105">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Resource>RESOURCE_CRAB</Resource>
   </Tile>
   <Tile
     ID="106">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
     ID="107">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
+  </Tile>
+  <Tile
+    ID="108">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
+  </Tile>
+  <Tile
+    ID="109">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
+  </Tile>
+  <Tile
+    ID="110">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
+  </Tile>
+  <Tile
+    ID="111">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
+  </Tile>
+  <Tile
+    ID="112">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
+  </Tile>
+  <Tile
+    ID="113">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
+  </Tile>
+  <Tile
+    ID="114">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
+  </Tile>
+  <Tile
+    ID="115">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
+  </Tile>
+  <Tile
+    ID="116">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
+  </Tile>
+  <Tile
+    ID="117">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
+    <Resource>RESOURCE_FISH</Resource>
+  </Tile>
+  <Tile
+    ID="118">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+  </Tile>
+  <Tile
+    ID="119">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
-    ID="108">
+    ID="120">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
+  </Tile>
+  <Tile
+    ID="121">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
+    <Resource>RESOURCE_CRAB</Resource>
+  </Tile>
+  <Tile
+    ID="122">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="123">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
+  </Tile>
+  <Tile
+    ID="124">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
-    ID="109">
+    ID="125">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
-    ID="110">
+    ID="126">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
     <ElementName>TEXT_PYRENEES</ElementName>
   </Tile>
   <Tile
-    ID="111">
+    ID="127">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
-    ID="112">
+    ID="128">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
-    ID="113">
+    ID="129">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
@@ -616,7 +696,7 @@
     <RiverSE>1</RiverSE>
   </Tile>
   <Tile
-    ID="114">
+    ID="130">
     <Road />
     <Terrain>TERRAIN_URBAN</Terrain>
     <Height>HEIGHT_FLAT</Height>
@@ -627,106 +707,126 @@
     <ElementName>TEXT_CITYNAME_NARBO</ElementName>
   </Tile>
   <Tile
-    ID="115">
+    ID="131">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
     <Resource>RESOURCE_DYE</Resource>
     <Improvement>IMPROVEMENT_NETS</Improvement>
   </Tile>
   <Tile
-    ID="116">
+    ID="132">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
-    ID="117">
+    ID="133">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
-    ID="118">
+    ID="134">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
-    ID="119">
+    ID="135">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
-    ID="120">
+    ID="136">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
   </Tile>
   <Tile
-    ID="121">
+    ID="137">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
-    ID="122">
+    ID="138">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
-    ID="123">
+    ID="139">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
-    ID="124">
+    ID="140">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
-    ID="125">
+    ID="141">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
-    ID="126">
+    ID="142">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
-    ID="127">
+    ID="143">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
+  </Tile>
+  <Tile
+    ID="144">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
+  </Tile>
+  <Tile
+    ID="145">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
+  </Tile>
+  <Tile
+    ID="146">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
+  </Tile>
+  <Tile
+    ID="147">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_OCEAN</Height>
   </Tile>
   <Tile
-    ID="128">
+    ID="148">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
-    ID="129">
+    ID="149">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
-    ID="130">
+    ID="150">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
-    ID="131">
+    ID="151">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
-    ID="132">
+    ID="152">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
-    ID="133">
+    ID="153">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
-    ID="134">
+    ID="154">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
@@ -734,30 +834,30 @@
     <RiverSE>1</RiverSE>
   </Tile>
   <Tile
-    ID="135">
+    ID="155">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
   </Tile>
   <Tile
-    ID="136">
+    ID="156">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
   </Tile>
   <Tile
-    ID="137">
+    ID="157">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
-    ID="138">
+    ID="158">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <RiverSE>1</RiverSE>
   </Tile>
   <Tile
-    ID="139">
+    ID="159">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
@@ -765,159 +865,49 @@
     <Improvement>IMPROVEMENT_QUARRY</Improvement>
   </Tile>
   <Tile
-    ID="140">
+    ID="160">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
     <Improvement>IMPROVEMENT_MINE</Improvement>
   </Tile>
   <Tile
-    ID="141">
+    ID="161">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Improvement>IMPROVEMENT_PASTURE</Improvement>
   </Tile>
   <Tile
-    ID="142">
+    ID="162">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Improvement>IMPROVEMENT_GARRISON_1</Improvement>
   </Tile>
   <Tile
-    ID="143">
+    ID="163">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
     <Improvement>IMPROVEMENT_BARRACKS</Improvement>
   </Tile>
   <Tile
-    ID="144">
+    ID="164">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
     <Improvement>IMPROVEMENT_GARRISON_2</Improvement>
   </Tile>
   <Tile
-    ID="145">
+    ID="165">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverW>1</RiverW>
     <Improvement>IMPROVEMENT_BARRACKS</Improvement>
   </Tile>
   <Tile
-    ID="146">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-  </Tile>
-  <Tile
-    ID="147">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-  </Tile>
-  <Tile
-    ID="148">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
-  </Tile>
-  <Tile
-    ID="149">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-  </Tile>
-  <Tile
-    ID="150">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-  </Tile>
-  <Tile
-    ID="151">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-  </Tile>
-  <Tile
-    ID="152">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-  </Tile>
-  <Tile
-    ID="153">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-  </Tile>
-  <Tile
-    ID="154">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
-    <Resource>RESOURCE_PEARL</Resource>
-  </Tile>
-  <Tile
-    ID="155">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
-    <Resource>RESOURCE_PEARL</Resource>
-  </Tile>
-  <Tile
-    ID="156">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_OCEAN</Height>
-  </Tile>
-  <Tile
-    ID="157">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
-  </Tile>
-  <Tile
-    ID="158">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
-    <Resource>RESOURCE_DYE</Resource>
-  </Tile>
-  <Tile
-    ID="159">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-  </Tile>
-  <Tile
-    ID="160">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
-  </Tile>
-  <Tile
-    ID="161">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
-    <ElementName>TEXT_ITALIA</ElementName>
-  </Tile>
-  <Tile
-    ID="162">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Resource>RESOURCE_BARLEY</Resource>
-  </Tile>
-  <Tile
-    ID="163">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-  </Tile>
-  <Tile
-    ID="164">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-  </Tile>
-  <Tile
-    ID="165">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverSE>1</RiverSE>
-  </Tile>
-  <Tile
     ID="166">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <RiverW>0</RiverW>
   </Tile>
   <Tile
     ID="167">
@@ -926,133 +916,128 @@
   </Tile>
   <Tile
     ID="168">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Improvement>IMPROVEMENT_MINE</Improvement>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
   </Tile>
   <Tile
     ID="169">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Improvement>IMPROVEMENT_MINE</Improvement>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="170">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Resource>RESOURCE_HONEY</Resource>
   </Tile>
   <Tile
     ID="171">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <RiverSE>0</RiverSE>
   </Tile>
   <Tile
     ID="172">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Resource>RESOURCE_HORSE</Resource>
-    <RiverW>1</RiverW>
-    <Improvement>IMPROVEMENT_PASTURE</Improvement>
   </Tile>
   <Tile
     ID="173">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="174">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="175">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="176">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="177">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="178">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-  </Tile>
-  <Tile
-    ID="179">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-  </Tile>
-  <Tile
-    ID="180">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-  </Tile>
-  <Tile
-    ID="181">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
-  </Tile>
-  <Tile
-    ID="182">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
     <Resource>RESOURCE_PEARL</Resource>
   </Tile>
   <Tile
-    ID="183">
+    ID="179">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
+    <Resource>RESOURCE_PEARL</Resource>
+  </Tile>
+  <Tile
+    ID="180">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
+  </Tile>
+  <Tile
+    ID="181">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
+  </Tile>
+  <Tile
+    ID="182">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
+    <Resource>RESOURCE_DYE</Resource>
+  </Tile>
+  <Tile
+    ID="183">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="184">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="185">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
+    <ElementName>TEXT_ITALIA</ElementName>
   </Tile>
   <Tile
     ID="186">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
+    <Height>HEIGHT_FLAT</Height>
+    <Resource>RESOURCE_BARLEY</Resource>
   </Tile>
   <Tile
     ID="187">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
   </Tile>
   <Tile
     ID="188">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
   </Tile>
   <Tile
     ID="189">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
+    <RiverSE>1</RiverSE>
   </Tile>
   <Tile
     ID="190">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <RiverW>0</RiverW>
   </Tile>
   <Tile
     ID="191">
@@ -1061,31 +1046,35 @@
   </Tile>
   <Tile
     ID="192">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <Improvement>IMPROVEMENT_MINE</Improvement>
   </Tile>
   <Tile
     ID="193">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverW>0</RiverW>
-    <RiverSW>0</RiverSW>
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <Improvement>IMPROVEMENT_MINE</Improvement>
   </Tile>
   <Tile
     ID="194">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <Resource>RESOURCE_HONEY</Resource>
   </Tile>
   <Tile
     ID="195">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverSE>0</RiverSE>
   </Tile>
   <Tile
     ID="196">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
+    <Height>HEIGHT_FLAT</Height>
+    <Resource>RESOURCE_HORSE</Resource>
+    <RiverW>1</RiverW>
+    <Improvement>IMPROVEMENT_PASTURE</Improvement>
   </Tile>
   <Tile
     ID="197">
@@ -1095,14 +1084,13 @@
   <Tile
     ID="198">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="199">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverW>1</RiverW>
-    <RiverSW>1</RiverSW>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="200">
@@ -1118,38 +1106,36 @@
     ID="202">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="203">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="204">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="205">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="206">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="207">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="208">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
   </Tile>
   <Tile
     ID="209">
@@ -1159,39 +1145,42 @@
   </Tile>
   <Tile
     ID="210">
-    <Road />
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
+    <Resource>RESOURCE_PEARL</Resource>
   </Tile>
   <Tile
     ID="211">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
     ID="212">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="213">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
   </Tile>
   <Tile
     ID="214">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
   </Tile>
   <Tile
     ID="215">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
   </Tile>
   <Tile
     ID="216">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
   </Tile>
   <Tile
@@ -1204,43 +1193,33 @@
     ID="218">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Resource>RESOURCE_HONEY</Resource>
-    <RiverW>0</RiverW>
-    <RiverSW>0</RiverSW>
-    <RiverSE>0</RiverSE>
   </Tile>
   <Tile
     ID="219">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <RiverW>1</RiverW>
-    <RiverSW>0</RiverSW>
   </Tile>
   <Tile
     ID="220">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <ElementName>TEXT_TARNIS_RIVER</ElementName>
   </Tile>
   <Tile
     ID="221">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <RiverW>0</RiverW>
+    <RiverSW>0</RiverSW>
   </Tile>
   <Tile
     ID="222">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="223">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
-    <RiverW>0</RiverW>
-    <RiverSW>0</RiverSW>
-    <RiverSE>0</RiverSE>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="224">
@@ -1252,211 +1231,201 @@
     ID="225">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
+  </Tile>
+  <Tile
+    ID="226">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="227">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverW>1</RiverW>
+    <RiverSW>1</RiverSW>
+  </Tile>
+  <Tile
+    ID="228">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+  </Tile>
+  <Tile
+    ID="229">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+  </Tile>
+  <Tile
+    ID="230">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
+  </Tile>
+  <Tile
+    ID="231">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
+  </Tile>
+  <Tile
+    ID="232">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
+  </Tile>
+  <Tile
+    ID="233">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
+  </Tile>
+  <Tile
+    ID="234">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
+  </Tile>
+  <Tile
+    ID="235">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
+  </Tile>
+  <Tile
+    ID="236">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
+  </Tile>
+  <Tile
+    ID="237">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
+  </Tile>
+  <Tile
+    ID="238">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
+  </Tile>
+  <Tile
+    ID="239">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
+  </Tile>
+  <Tile
+    ID="240">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
+  </Tile>
+  <Tile
+    ID="241">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
+  </Tile>
+  <Tile
+    ID="242">
+    <Road />
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="243">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+  </Tile>
+  <Tile
+    ID="244">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+  </Tile>
+  <Tile
+    ID="245">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
+  </Tile>
+  <Tile
+    ID="246">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+  </Tile>
+  <Tile
+    ID="247">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="248">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
+  </Tile>
+  <Tile
+    ID="249">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
+  </Tile>
+  <Tile
+    ID="250">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <Resource>RESOURCE_HONEY</Resource>
+    <RiverW>0</RiverW>
+    <RiverSW>0</RiverSW>
+    <RiverSE>0</RiverSE>
+  </Tile>
+  <Tile
+    ID="251">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverW>1</RiverW>
+    <RiverSW>0</RiverSW>
+  </Tile>
+  <Tile
+    ID="252">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
+    <ElementName>TEXT_TARNIS_RIVER</ElementName>
+  </Tile>
+  <Tile
+    ID="253">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="254">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
+  </Tile>
+  <Tile
+    ID="255">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
+    <RiverW>0</RiverW>
+    <RiverSW>0</RiverSW>
+    <RiverSE>0</RiverSE>
+  </Tile>
+  <Tile
+    ID="256">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
+  </Tile>
+  <Tile
+    ID="257">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
     <RiverSE>0</RiverSE>
   </Tile>
   <Tile
-    ID="226">
+    ID="258">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverW>1</RiverW>
     <ElementName>TEXT_RHODANUS_RIVER</ElementName>
   </Tile>
   <Tile
-    ID="227">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-  </Tile>
-  <Tile
-    ID="228">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
-  </Tile>
-  <Tile
-    ID="229">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
-  </Tile>
-  <Tile
-    ID="230">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-  </Tile>
-  <Tile
-    ID="231">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-  </Tile>
-  <Tile
-    ID="232">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-  </Tile>
-  <Tile
-    ID="233">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-  </Tile>
-  <Tile
-    ID="234">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-  </Tile>
-  <Tile
-    ID="235">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
-    <RiverSE>1</RiverSE>
-  </Tile>
-  <Tile
-    ID="236">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
-    <RiverW>0</RiverW>
-  </Tile>
-  <Tile
-    ID="237">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-  </Tile>
-  <Tile
-    ID="238">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
-  </Tile>
-  <Tile
-    ID="239">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-  </Tile>
-  <Tile
-    ID="240">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-  </Tile>
-  <Tile
-    ID="241">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-  </Tile>
-  <Tile
-    ID="242">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
-  </Tile>
-  <Tile
-    ID="243">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
-  </Tile>
-  <Tile
-    ID="244">
-    <Road />
-    <Terrain>TERRAIN_URBAN</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <CitySite>ACTIVE</CitySite>
-    <Improvement>IMPROVEMENT_CITY_SITE</Improvement>
-    <ElementName>TEXT_CITYNAME_BURDIGALA</ElementName>
-  </Tile>
-  <Tile
-    ID="245">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverW>0</RiverW>
-    <RiverSW>0</RiverSW>
-  </Tile>
-  <Tile
-    ID="246">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverSE>0</RiverSE>
-  </Tile>
-  <Tile
-    ID="247">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverSW>0</RiverSW>
-    <RiverSE>0</RiverSE>
-  </Tile>
-  <Tile
-    ID="248">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Resource>RESOURCE_HONEY</Resource>
-    <RiverSW>0</RiverSW>
-    <RiverSE>0</RiverSE>
-  </Tile>
-  <Tile
-    ID="249">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <RiverSW>0</RiverSW>
-    <RiverSE>0</RiverSE>
-  </Tile>
-  <Tile
-    ID="250">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <RiverSW>0</RiverSW>
-  </Tile>
-  <Tile
-    ID="251">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
-    <ElementName>TEXT_GALLIA</ElementName>
-  </Tile>
-  <Tile
-    ID="252">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
-  </Tile>
-  <Tile
-    ID="253">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
-    <RiverSE>0</RiverSE>
-  </Tile>
-  <Tile
-    ID="254">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverW>1</RiverW>
-  </Tile>
-  <Tile
-    ID="255">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
-  </Tile>
-  <Tile
-    ID="256">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
-  </Tile>
-  <Tile
-    ID="257">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
-    <ElementName>TEXT_ALPES</ElementName>
-  </Tile>
-  <Tile
-    ID="258">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
-  </Tile>
-  <Tile
     ID="259">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="260">
@@ -1466,7 +1435,8 @@
   <Tile
     ID="261">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="262">
@@ -1476,20 +1446,235 @@
   <Tile
     ID="263">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverW>1</RiverW>
-    <RiverSW>1</RiverSW>
-    <RiverSE>1</RiverSE>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="264">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverSW>1</RiverSW>
-    <RiverSE>1</RiverSE>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="265">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+  </Tile>
+  <Tile
+    ID="266">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+  </Tile>
+  <Tile
+    ID="267">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+  </Tile>
+  <Tile
+    ID="268">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+  </Tile>
+  <Tile
+    ID="269">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+  </Tile>
+  <Tile
+    ID="270">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+  </Tile>
+  <Tile
+    ID="271">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
+    <RiverSE>1</RiverSE>
+  </Tile>
+  <Tile
+    ID="272">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
+    <RiverW>0</RiverW>
+  </Tile>
+  <Tile
+    ID="273">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+  </Tile>
+  <Tile
+    ID="274">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
+  </Tile>
+  <Tile
+    ID="275">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="276">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="277">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="278">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
+  </Tile>
+  <Tile
+    ID="279">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
+  </Tile>
+  <Tile
+    ID="280">
+    <Road />
+    <Terrain>TERRAIN_URBAN</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <CitySite>ACTIVE</CitySite>
+    <Improvement>IMPROVEMENT_CITY_SITE</Improvement>
+    <ElementName>TEXT_CITYNAME_BURDIGALA</ElementName>
+  </Tile>
+  <Tile
+    ID="281">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverW>0</RiverW>
+    <RiverSW>0</RiverSW>
+  </Tile>
+  <Tile
+    ID="282">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverSE>0</RiverSE>
+  </Tile>
+  <Tile
+    ID="283">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverSW>0</RiverSW>
+    <RiverSE>0</RiverSE>
+  </Tile>
+  <Tile
+    ID="284">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <Resource>RESOURCE_HONEY</Resource>
+    <RiverSW>0</RiverSW>
+    <RiverSE>0</RiverSE>
+  </Tile>
+  <Tile
+    ID="285">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
+    <RiverSW>0</RiverSW>
+    <RiverSE>0</RiverSE>
+  </Tile>
+  <Tile
+    ID="286">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <RiverSW>0</RiverSW>
+  </Tile>
+  <Tile
+    ID="287">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
+    <ElementName>TEXT_GALLIA</ElementName>
+  </Tile>
+  <Tile
+    ID="288">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
+  </Tile>
+  <Tile
+    ID="289">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
+    <RiverSE>0</RiverSE>
+  </Tile>
+  <Tile
+    ID="290">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverW>1</RiverW>
+  </Tile>
+  <Tile
+    ID="291">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
+  </Tile>
+  <Tile
+    ID="292">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
+  </Tile>
+  <Tile
+    ID="293">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
+    <ElementName>TEXT_ALPES</ElementName>
+  </Tile>
+  <Tile
+    ID="294">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
+  </Tile>
+  <Tile
+    ID="295">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
+  </Tile>
+  <Tile
+    ID="296">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
+  </Tile>
+  <Tile
+    ID="297">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
+  </Tile>
+  <Tile
+    ID="298">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
+  </Tile>
+  <Tile
+    ID="299">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
+  </Tile>
+  <Tile
+    ID="300">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
+  </Tile>
+  <Tile
+    ID="301">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
+  </Tile>
+  <Tile
+    ID="302">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+  </Tile>
+  <Tile
+    ID="303">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverW>1</RiverW>
@@ -1497,7 +1682,22 @@
     <RiverSE>1</RiverSE>
   </Tile>
   <Tile
-    ID="266">
+    ID="304">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverSW>1</RiverSW>
+    <RiverSE>1</RiverSE>
+  </Tile>
+  <Tile
+    ID="305">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverW>1</RiverW>
+    <RiverSW>1</RiverSW>
+    <RiverSE>1</RiverSE>
+  </Tile>
+  <Tile
+    ID="306">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Resource>RESOURCE_HORSE</Resource>
@@ -1505,7 +1705,7 @@
     <RiverSE>1</RiverSE>
   </Tile>
   <Tile
-    ID="267">
+    ID="307">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSW>1</RiverSW>
@@ -1513,7 +1713,7 @@
     <ElementName>TEXT_PADUS_RIVER</ElementName>
   </Tile>
   <Tile
-    ID="268">
+    ID="308">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverW>1</RiverW>
@@ -1521,7 +1721,7 @@
     <RiverSE>1</RiverSE>
   </Tile>
   <Tile
-    ID="269">
+    ID="309">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Resource>RESOURCE_BARLEY</Resource>
@@ -1529,66 +1729,66 @@
     <RiverSE>1</RiverSE>
   </Tile>
   <Tile
-    ID="270">
+    ID="310">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
   </Tile>
   <Tile
-    ID="271">
+    ID="311">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
   </Tile>
   <Tile
-    ID="272">
+    ID="312">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <ElementName>TEXT_GALLIA</ElementName>
   </Tile>
   <Tile
-    ID="273">
+    ID="313">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
-    ID="274">
+    ID="314">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
-    ID="275">
+    ID="315">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
-    ID="276">
+    ID="316">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
-    ID="277">
+    ID="317">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Resource>RESOURCE_ORE</Resource>
   </Tile>
   <Tile
-    ID="278">
+    ID="318">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
-    ID="279">
+    ID="319">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_TREES</Vegetation>
     <RiverW>0</RiverW>
   </Tile>
   <Tile
-    ID="280">
+    ID="320">
     <Road />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
@@ -1597,558 +1797,334 @@
     <Improvement>IMPROVEMENT_FARM</Improvement>
   </Tile>
   <Tile
-    ID="281">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Improvement>IMPROVEMENT_FARM</Improvement>
-  </Tile>
-  <Tile
-    ID="282">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <Improvement>IMPROVEMENT_FARM</Improvement>
-  </Tile>
-  <Tile
-    ID="283">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-  </Tile>
-  <Tile
-    ID="284">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
-  </Tile>
-  <Tile
-    ID="285">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_HILL</Height>
-  </Tile>
-  <Tile
-    ID="286">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_HILL</Height>
-  </Tile>
-  <Tile
-    ID="287">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_HILL</Height>
-  </Tile>
-  <Tile
-    ID="288">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_HILL</Height>
-  </Tile>
-  <Tile
-    ID="289">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
-    <RiverW>1</RiverW>
-    <RiverSW>1</RiverSW>
-  </Tile>
-  <Tile
-    ID="290">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-  </Tile>
-  <Tile
-    ID="291">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <RiverW>1</RiverW>
-    <RiverSW>1</RiverSW>
-  </Tile>
-  <Tile
-    ID="292">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-  </Tile>
-  <Tile
-    ID="293">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
-  </Tile>
-  <Tile
-    ID="294">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_LAKE</Height>
-  </Tile>
-  <Tile
-    ID="295">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-  </Tile>
-  <Tile
-    ID="296">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-  </Tile>
-  <Tile
-    ID="297">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
-  </Tile>
-  <Tile
-    ID="298">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverSW>0</RiverSW>
-  </Tile>
-  <Tile
-    ID="299">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-  </Tile>
-  <Tile
-    ID="300">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Resource>RESOURCE_HONEY</Resource>
-  </Tile>
-  <Tile
-    ID="301">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
-  </Tile>
-  <Tile
-    ID="302">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
-  </Tile>
-  <Tile
-    ID="303">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
-  </Tile>
-  <Tile
-    ID="304">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
-  </Tile>
-  <Tile
-    ID="305">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-  </Tile>
-  <Tile
-    ID="306">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <RiverSE>1</RiverSE>
-  </Tile>
-  <Tile
-    ID="307">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
-    <RiverW>0</RiverW>
-    <RiverSE>0</RiverSE>
-    <Improvement>IMPROVEMENT_LUMBERMILL</Improvement>
-  </Tile>
-  <Tile
-    ID="308">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <RiverW>1</RiverW>
-    <RiverSW>0</RiverSW>
-    <RiverSE>0</RiverSE>
-    <Improvement>IMPROVEMENT_FARM</Improvement>
-  </Tile>
-  <Tile
-    ID="309">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <RiverSW>0</RiverSW>
-    <RiverSE>0</RiverSE>
-    <Improvement>IMPROVEMENT_FARM</Improvement>
-  </Tile>
-  <Tile
-    ID="310">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <RiverW>1</RiverW>
-  </Tile>
-  <Tile
-    ID="311">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
-  </Tile>
-  <Tile
-    ID="312">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
-  </Tile>
-  <Tile
-    ID="313">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
-  </Tile>
-  <Tile
-    ID="314">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
-  </Tile>
-  <Tile
-    ID="315">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
-  </Tile>
-  <Tile
-    ID="316">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
-    <RiverSW>1</RiverSW>
-  </Tile>
-  <Tile
-    ID="317">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
-  </Tile>
-  <Tile
-    ID="318">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <RiverSE>0</RiverSE>
-  </Tile>
-  <Tile
-    ID="319">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <RiverW>1</RiverW>
-  </Tile>
-  <Tile
-    ID="320">
-    <Terrain>TERRAIN_URBAN</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Improvement>IMPROVEMENT_ANCIENT_RUINS</Improvement>
-  </Tile>
-  <Tile
     ID="321">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
+    <Height>HEIGHT_HILL</Height>
+    <Improvement>IMPROVEMENT_FARM</Improvement>
   </Tile>
   <Tile
     ID="322">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
+    <Improvement>IMPROVEMENT_FARM</Improvement>
   </Tile>
   <Tile
     ID="323">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="324">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Resource>RESOURCE_HORSE</Resource>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="325">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="326">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="327">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Resource>RESOURCE_HONEY</Resource>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="328">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="329">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="330">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <RiverW>0</RiverW>
   </Tile>
   <Tile
     ID="331">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="332">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="333">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <RiverW>0</RiverW>
-    <RiverSW>0</RiverSW>
+    <Vegetation>VEGETATION_TREES</Vegetation>
+    <RiverW>1</RiverW>
+    <RiverSW>1</RiverSW>
   </Tile>
   <Tile
     ID="334">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverSE>0</RiverSE>
-    <Improvement>IMPROVEMENT_FARM</Improvement>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="335">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
     <RiverW>1</RiverW>
-  </Tile>
-  <Tile
-    ID="336">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_LAKE</Height>
-  </Tile>
-  <Tile
-    ID="337">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_LAKE</Height>
-  </Tile>
-  <Tile
-    ID="338">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
-  </Tile>
-  <Tile
-    ID="339">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
-  </Tile>
-  <Tile
-    ID="340">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
-  </Tile>
-  <Tile
-    ID="341">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
-  </Tile>
-  <Tile
-    ID="342">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
-  </Tile>
-  <Tile
-    ID="343">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
-  </Tile>
-  <Tile
-    ID="344">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
-  </Tile>
-  <Tile
-    ID="345">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
-    <RiverW>1</RiverW>
     <RiverSW>1</RiverSW>
   </Tile>
   <Tile
-    ID="346">
+    ID="336">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
-  </Tile>
-  <Tile
-    ID="347">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
-  </Tile>
-  <Tile
-    ID="348">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
-  </Tile>
-  <Tile
-    ID="349">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
-    ID="350">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
+    ID="337">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
   </Tile>
   <Tile
-    ID="351">
+    ID="338">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_LAKE</Height>
+  </Tile>
+  <Tile
+    ID="339">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+  </Tile>
+  <Tile
+    ID="340">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="341">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
-    ID="352">
+    ID="342">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverSW>0</RiverSW>
+  </Tile>
+  <Tile
+    ID="343">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
-    ID="353">
+    ID="344">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <Resource>RESOURCE_HONEY</Resource>
+  </Tile>
+  <Tile
+    ID="345">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
+  </Tile>
+  <Tile
+    ID="346">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
+  </Tile>
+  <Tile
+    ID="347">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
+  </Tile>
+  <Tile
+    ID="348">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
+  </Tile>
+  <Tile
+    ID="349">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="350">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <RiverSE>1</RiverSE>
+  </Tile>
+  <Tile
+    ID="351">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
+    <RiverW>0</RiverW>
+    <RiverSE>0</RiverSE>
+    <Improvement>IMPROVEMENT_LUMBERMILL</Improvement>
+  </Tile>
+  <Tile
+    ID="352">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <RiverW>1</RiverW>
+    <RiverSW>0</RiverSW>
+    <RiverSE>0</RiverSE>
+    <Improvement>IMPROVEMENT_FARM</Improvement>
+  </Tile>
+  <Tile
+    ID="353">
+    <Terrain>TERRAIN_URBAN</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <RiverSW>0</RiverSW>
+    <RiverSE>0</RiverSE>
+    <CitySite>ACTIVE</CitySite>
   </Tile>
   <Tile
     ID="354">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
+    <RiverW>1</RiverW>
   </Tile>
   <Tile
     ID="355">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="356">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Resource>RESOURCE_HORSE</Resource>
-    <RiverW>0</RiverW>
-    <RiverSW>0</RiverSW>
-    <RiverSE>0</RiverSE>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="357">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverSW>0</RiverSW>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="358">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="359">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="360">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <RiverW>0</RiverW>
-    <RiverSW>0</RiverSW>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="361">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="362">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Resource>RESOURCE_HORSE</Resource>
-    <RiverW>1</RiverW>
-    <RiverSW>1</RiverSW>
-    <Improvement>IMPROVEMENT_PASTURE</Improvement>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="363">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
-    <Improvement>IMPROVEMENT_LUMBERMILL</Improvement>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="364">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
+    <RiverSW>1</RiverSW>
   </Tile>
   <Tile
     ID="365">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="366">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
+    <RiverSE>0</RiverSE>
   </Tile>
   <Tile
     ID="367">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
+    <RiverW>1</RiverW>
   </Tile>
   <Tile
     ID="368">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    <Terrain>TERRAIN_URBAN</Terrain>
     <Height>HEIGHT_HILL</Height>
+    <Improvement>IMPROVEMENT_ANCIENT_RUINS</Improvement>
   </Tile>
   <Tile
     ID="369">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="370">
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Height>HEIGHT_HILL</Height>
+  </Tile>
+  <Tile
+    ID="371">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
-    ID="371">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
-    <ElementName>TEXT_ALPES</ElementName>
-  </Tile>
-  <Tile
     ID="372">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <Resource>RESOURCE_HORSE</Resource>
   </Tile>
   <Tile
     ID="373">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="374">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="375">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <Resource>RESOURCE_HONEY</Resource>
   </Tile>
   <Tile
     ID="376">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="377">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
-    <ElementName>TEXT_ALPES</ElementName>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="378">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
+    <RiverW>0</RiverW>
   </Tile>
   <Tile
     ID="379">
@@ -2163,91 +2139,99 @@
   <Tile
     ID="381">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
+    <RiverW>0</RiverW>
+    <RiverSW>0</RiverSW>
   </Tile>
   <Tile
     ID="382">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <RiverSE>0</RiverSE>
+    <Improvement>IMPROVEMENT_FARM</Improvement>
   </Tile>
   <Tile
     ID="383">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
+    <RiverW>1</RiverW>
+    <Improvement>IMPROVEMENT_FARM</Improvement>
   </Tile>
   <Tile
     ID="384">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_LAKE</Height>
   </Tile>
   <Tile
     ID="385">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_LAKE</Height>
   </Tile>
   <Tile
     ID="386">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="387">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="388">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="389">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="390">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="391">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="392">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="393">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="394">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="395">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="396">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="397">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_MOUNTAIN</Height>
+    <RiverW>1</RiverW>
+    <RiverSW>1</RiverSW>
   </Tile>
   <Tile
     ID="398">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
@@ -2263,7 +2247,7 @@
   <Tile
     ID="401">
     <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="402">
@@ -2272,18 +2256,18 @@
   </Tile>
   <Tile
     ID="403">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
     ID="404">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="405">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="406">
@@ -2299,11 +2283,16 @@
     ID="408">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <Resource>RESOURCE_HORSE</Resource>
+    <RiverW>0</RiverW>
+    <RiverSW>0</RiverSW>
+    <RiverSE>0</RiverSE>
   </Tile>
   <Tile
     ID="409">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <RiverSW>0</RiverSW>
   </Tile>
   <Tile
     ID="410">
@@ -2318,37 +2307,46 @@
   <Tile
     ID="412">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
+    <RiverW>0</RiverW>
+    <RiverSW>0</RiverSW>
   </Tile>
   <Tile
     ID="413">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="414">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_FLAT</Height>
+    <Resource>RESOURCE_HORSE</Resource>
+    <RiverW>1</RiverW>
+    <RiverSW>1</RiverSW>
+    <Improvement>IMPROVEMENT_PASTURE</Improvement>
   </Tile>
   <Tile
     ID="415">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
+    <Improvement>IMPROVEMENT_LUMBERMILL</Improvement>
   </Tile>
   <Tile
     ID="416">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="417">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
   </Tile>
   <Tile
     ID="418">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="419">
@@ -2382,18 +2380,19 @@
   </Tile>
   <Tile
     ID="425">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="426">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="427">
     <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_MOUNTAIN</Height>
+    <ElementName>TEXT_ALPES</ElementName>
   </Tile>
   <Tile
     ID="428">
@@ -2408,7 +2407,7 @@
   <Tile
     ID="430">
     <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="431">
@@ -2417,18 +2416,20 @@
   </Tile>
   <Tile
     ID="432">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="433">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
+    <ElementName>TEXT_ALPES</ElementName>
   </Tile>
   <Tile
     ID="434">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
     ID="435">
@@ -2463,32 +2464,32 @@
   <Tile
     ID="441">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="442">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="443">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="444">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="445">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="446">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="447">
@@ -2517,32 +2518,32 @@
   </Tile>
   <Tile
     ID="452">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="453">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="454">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="455">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="456">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="457">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
@@ -2552,38 +2553,38 @@
   </Tile>
   <Tile
     ID="459">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="460">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="461">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="462">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="463">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="464">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="465">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
     ID="466">
@@ -2598,12 +2599,12 @@
   <Tile
     ID="468">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="469">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="470">
@@ -2613,18 +2614,17 @@
   <Tile
     ID="471">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="472">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
-    <ElementName>TEXT_JURA_MOUNTAINS</ElementName>
-    </Tile>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
   <Tile
     ID="473">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="474">
@@ -2639,107 +2639,107 @@
   <Tile
     ID="476">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="477">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="478">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="479">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="480">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="481">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="482">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="483">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="484">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="485">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="486">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="487">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="488">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="489">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="490">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="491">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="492">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="493">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="494">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="495">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="496">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
     ID="497">
@@ -2749,38 +2749,37 @@
   <Tile
     ID="498">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="499">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
-    </Tile>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
   <Tile
     ID="500">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <RiverW>0</RiverW>
-    </Tile>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
   <Tile
     ID="501">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="502">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    </Tile>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
   <Tile
     ID="503">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="504">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="505">
@@ -2789,227 +2788,219 @@
   </Tile>
   <Tile
     ID="506">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="507">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="508">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="509">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="510">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="511">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="512">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="513">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="514">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="515">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="516">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="517">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="518">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="519">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="520">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="521">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="522">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="523">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-  </Tile>
-  <Tile
-    ID="524">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-  </Tile>
-  <Tile
-    ID="525">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-  </Tile>
-  <Tile
-    ID="526">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    </Tile>
-  <Tile
-    ID="527">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <RiverSE>1</RiverSE>
-    </Tile>
-  <Tile
-    ID="528">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <RiverW>0</RiverW>
-    </Tile>
-  <Tile
-    ID="529">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    </Tile>
-  <Tile
-    ID="530">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-  </Tile>
-  <Tile
-    ID="531">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-  </Tile>
-  <Tile
-    ID="532">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-  </Tile>
-  <Tile
-    ID="533">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_HILL</Height>
-  </Tile>
-  <Tile
-    ID="534">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_HILL</Height>
-  </Tile>
-  <Tile
-    ID="535">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_HILL</Height>
-  </Tile>
-  <Tile
-    ID="536">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_HILL</Height>
-  </Tile>
-  <Tile
-    ID="537">
     <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
-    ID="538">
+    ID="524">
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
+  </Tile>
+  <Tile
+    ID="525">
     <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
-    ID="539">
+    ID="526">
     <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
+  </Tile>
+  <Tile
+    ID="527">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
+  </Tile>
+  <Tile
+    ID="528">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="529">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="530">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="531">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="532">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="533">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="534">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="535">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="536">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+  </Tile>
+  <Tile
+    ID="537">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+  </Tile>
+  <Tile
+    ID="538">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="539">
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="540">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
+    <Height>HEIGHT_MOUNTAIN</Height>
+    <ElementName>TEXT_JURA_MOUNTAINS</ElementName>
   </Tile>
   <Tile
     ID="541">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="542">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="543">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="544">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverW>0</RiverW>
-    <RiverSW>0</RiverSW>
-    <ElementName>TEXT_LIGERA_RIVER</ElementName>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="545">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="546">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="547">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Resource>RESOURCE_MARBLE</Resource>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="548">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverW>0</RiverW>
-    <RiverSW>0</RiverSW>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="549">
@@ -3023,106 +3014,93 @@
   </Tile>
   <Tile
     ID="551">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="552">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
-    <RiverW>0</RiverW>
-    <RiverSW>0</RiverSW>
-    <RiverSE>0</RiverSE>
-    </Tile>
-  <Tile
-    ID="553">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <RiverW>1</RiverW>
-    </Tile>
-  <Tile
-    ID="554">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
-    <RiverW>0</RiverW>
-    <RiverSW>0</RiverSW>
-    </Tile>
-  <Tile
-    ID="555">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    </Tile>
-  <Tile
-    ID="556">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    </Tile>
-  <Tile
-    ID="557">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
-    ID="558">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    ID="553">
+    <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_HILL</Height>
+  </Tile>
+  <Tile
+    ID="554">
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_HILL</Height>
+  </Tile>
+  <Tile
+    ID="555">
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
+  </Tile>
+  <Tile
+    ID="556">
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_HILL</Height>
+  </Tile>
+  <Tile
+    ID="557">
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
+  </Tile>
+  <Tile
+    ID="558">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
     ID="559">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="560">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="561">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="562">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="563">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="564">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="565">
-    <Terrain>TERRAIN_TUNDRA</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
-    <RiverW>0</RiverW>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="566">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="567">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
-    <Resource>RESOURCE_PIG</Resource>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="568">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="569">
@@ -3132,31 +3110,23 @@
   <Tile
     ID="570">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverW>0</RiverW>
-    <RiverSW>0</RiverSW>
-    <RiverSE>0</RiverSE>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="571">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverSW>0</RiverSW>
-    <RiverSE>0</RiverSE>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="572">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
-    <RiverW>1</RiverW>
+    <Height>HEIGHT_HILL</Height>
+    <RiverW>0</RiverW>
   </Tile>
   <Tile
     ID="573">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
-    <Resource>RESOURCE_PIG</Resource>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="574">
@@ -3167,13 +3137,11 @@
     ID="575">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <RiverW>0</RiverW>
-    <RiverSW>0</RiverSW>
   </Tile>
   <Tile
     ID="576">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="577">
@@ -3184,176 +3152,138 @@
     ID="578">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <RiverW>0</RiverW>
-    <RiverSW>0</RiverSW>
-    <RiverSE>0</RiverSE>
-    </Tile>
+  </Tile>
   <Tile
     ID="579">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverSW>0</RiverSW>
-    </Tile>
+    <Height>HEIGHT_HILL</Height>
+  </Tile>
   <Tile
     ID="580">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
-    <RiverSE>0</RiverSE>
-    </Tile>
+  </Tile>
   <Tile
     ID="581">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <RiverW>1</RiverW>
-    <RiverSE>1</RiverSE>
-    </Tile>
+  </Tile>
   <Tile
     ID="582">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <RiverW>0</RiverW>
-    </Tile>
+  </Tile>
   <Tile
     ID="583">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_HILL</Height>
-    </Tile>
+  </Tile>
   <Tile
     ID="584">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="585">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="586">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="587">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <RiverW>0</RiverW>
-    <RiverSW>0</RiverSW>
-    <RiverSE>0</RiverSE>
-    <ElementName>TEXT_RHENUS_RIVER</ElementName>
-    </Tile>
+  </Tile>
   <Tile
     ID="588">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <RiverSW>0</RiverSW>
-    <RiverSE>0</RiverSE>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="589">
     <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_LAKE</Height>
+    <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
     ID="590">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="591">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="592">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
-    <RiverSE>1</RiverSE>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="593">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <RiverSW>1</RiverSW>
-    <RiverSE>1</RiverSE>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="594">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <RiverSW>0</RiverSW>
-    <RiverSE>0</RiverSE>
   </Tile>
   <Tile
     ID="595">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <RiverSW>0</RiverSW>
-    <RiverSE>0</RiverSE>
   </Tile>
   <Tile
     ID="596">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <RiverSW>0</RiverSW>
   </Tile>
   <Tile
     ID="597">
-    <Road />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="598">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverSE>0</RiverSE>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="599">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
-    <RiverSW>0</RiverSW>
-    <RiverSE>0</RiverSE>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="600">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
-    <RiverSW>0</RiverSW>
-    <RiverSE>0</RiverSE>
   </Tile>
   <Tile
     ID="601">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Resource>RESOURCE_ELEPHANT</Resource>
-    <RiverSW>0</RiverSW>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="602">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="603">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
+    <RiverSE>1</RiverSE>
   </Tile>
   <Tile
     ID="604">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
     <RiverW>0</RiverW>
-    <RiverSW>0</RiverSW>
   </Tile>
   <Tile
     ID="605">
@@ -3363,30 +3293,28 @@
   <Tile
     ID="606">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="607">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <RiverSE>0</RiverSE>
-    </Tile>
+  </Tile>
   <Tile
     ID="608">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <RiverSW>0</RiverSW>
-    </Tile>
+  </Tile>
   <Tile
     ID="609">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    </Tile>
+  </Tile>
   <Tile
     ID="610">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    </Tile>
+  </Tile>
   <Tile
     ID="611">
     <Terrain>TERRAIN_LUSH</Terrain>
@@ -3399,49 +3327,44 @@
   </Tile>
   <Tile
     ID="613">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverW>0</RiverW>
-    <RiverSW>0</RiverSW>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="614">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="615">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="616">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="617">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="618">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="619">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="620">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <RiverSE>1</RiverSE>
+    <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
   </Tile>
   <Tile
     ID="621">
@@ -3462,13 +3385,14 @@
     ID="624">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
+    <RiverW>0</RiverW>
+    <RiverSW>0</RiverSW>
+    <ElementName>TEXT_LIGERA_RIVER</ElementName>
   </Tile>
   <Tile
     ID="625">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="626">
@@ -3479,22 +3403,24 @@
     ID="627">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <ElementName>TEXT_GALLIA</ElementName>
+    <Resource>RESOURCE_MARBLE</Resource>
   </Tile>
   <Tile
     ID="628">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <RiverW>0</RiverW>
+    <RiverSW>0</RiverSW>
   </Tile>
   <Tile
     ID="629">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="630">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="631">
@@ -3504,23 +3430,30 @@
   <Tile
     ID="632">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
+    <RiverW>0</RiverW>
+    <RiverSW>0</RiverSW>
+    <RiverSE>0</RiverSE>
   </Tile>
   <Tile
     ID="633">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <RiverW>1</RiverW>
   </Tile>
   <Tile
     ID="634">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
+    <RiverW>0</RiverW>
+    <RiverSW>0</RiverSW>
   </Tile>
   <Tile
     ID="635">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="636">
@@ -3545,14 +3478,12 @@
   <Tile
     ID="640">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverSE>1</RiverSE>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="641">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverW>0</RiverW>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="642">
@@ -3568,50 +3499,51 @@
     ID="644">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <RiverSE>1</RiverSE>
   </Tile>
   <Tile
     ID="645">
-    <Road />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <RiverW>0</RiverW>
   </Tile>
   <Tile
     ID="646">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="647">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="648">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
   </Tile>
   <Tile
     ID="649">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_MOUNTAIN</Height>
+    <RiverW>0</RiverW>
   </Tile>
   <Tile
     ID="650">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
     ID="651">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
+    <Resource>RESOURCE_PIG</Resource>
   </Tile>
   <Tile
     ID="652">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
+    <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
   </Tile>
   <Tile
     ID="653">
@@ -3620,89 +3552,98 @@
   </Tile>
   <Tile
     ID="654">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <RiverW>0</RiverW>
+    <RiverSW>0</RiverSW>
+    <RiverSE>0</RiverSE>
   </Tile>
   <Tile
     ID="655">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
     <RiverSE>0</RiverSE>
-    <ElementName>TEXT_SEQUANA_RIVER</ElementName>
   </Tile>
   <Tile
     ID="656">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <RiverSW>0</RiverSW>
-    <RiverSE>0</RiverSE>
+    <Vegetation>VEGETATION_TREES</Vegetation>
+    <RiverW>1</RiverW>
   </Tile>
   <Tile
     ID="657">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
+    <Resource>RESOURCE_PIG</Resource>
   </Tile>
   <Tile
     ID="658">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="659">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Resource>RESOURCE_HORSE</Resource>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <RiverW>0</RiverW>
+    <RiverSW>0</RiverSW>
   </Tile>
   <Tile
     ID="660">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="661">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Resource>RESOURCE_HONEY</Resource>
   </Tile>
   <Tile
     ID="662">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
+    <Height>HEIGHT_HILL</Height>
+    <RiverW>0</RiverW>
+    <RiverSW>0</RiverSW>
+    <RiverSE>0</RiverSE>
   </Tile>
   <Tile
     ID="663">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <RiverSW>0</RiverSW>
   </Tile>
   <Tile
     ID="664">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
+    <RiverSE>0</RiverSE>
   </Tile>
   <Tile
     ID="665">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
+    <RiverW>1</RiverW>
+    <RiverSE>1</RiverSE>
   </Tile>
   <Tile
     ID="666">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
+    <RiverW>0</RiverW>
   </Tile>
   <Tile
     ID="667">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverSE>1</RiverSE>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="668">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverW>0</RiverW>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="669">
@@ -3718,84 +3659,94 @@
     ID="671">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <RiverSE>1</RiverSE>
   </Tile>
   <Tile
     ID="672">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <RiverSW>1</RiverSW>
-    <RiverSE>1</RiverSE>
   </Tile>
   <Tile
     ID="673">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <RiverSW>1</RiverSW>
-    <RiverSE>1</RiverSE>
   </Tile>
   <Tile
     ID="674">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <RiverW>0</RiverW>
+    <Vegetation>VEGETATION_TREES</Vegetation>
   </Tile>
   <Tile
     ID="675">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <RiverW>0</RiverW>
+    <RiverSW>0</RiverSW>
+    <RiverSE>0</RiverSE>
+    <ElementName>TEXT_RHENUS_RIVER</ElementName>
   </Tile>
   <Tile
     ID="676">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
+    <RiverSW>0</RiverSW>
+    <RiverSE>0</RiverSE>
   </Tile>
   <Tile
     ID="677">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_LAKE</Height>
   </Tile>
   <Tile
     ID="678">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="679">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
   </Tile>
   <Tile
     ID="680">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
+    <RiverSE>1</RiverSE>
   </Tile>
   <Tile
     ID="681">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverW>0</RiverW>
-    <RiverSW>0</RiverSW>
-    <RiverSE>0</RiverSE>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
+    <RiverSW>1</RiverSW>
+    <RiverSE>1</RiverSE>
   </Tile>
   <Tile
     ID="682">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSW>0</RiverSW>
+    <RiverSE>0</RiverSE>
   </Tile>
   <Tile
     ID="683">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <RiverSW>0</RiverSW>
+    <RiverSE>0</RiverSE>
   </Tile>
   <Tile
     ID="684">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverSW>0</RiverSW>
   </Tile>
   <Tile
     ID="685">
+    <Road />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
   </Tile>
@@ -3803,21 +3754,30 @@
     ID="686">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <RiverSE>0</RiverSE>
   </Tile>
   <Tile
     ID="687">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
+    <RiverSW>0</RiverSW>
+    <RiverSE>0</RiverSE>
   </Tile>
   <Tile
     ID="688">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
+    <RiverSW>0</RiverSW>
+    <RiverSE>0</RiverSE>
   </Tile>
   <Tile
     ID="689">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <Resource>RESOURCE_ELEPHANT</Resource>
+    <RiverSW>0</RiverSW>
   </Tile>
   <Tile
     ID="690">
@@ -3833,29 +3793,30 @@
     ID="692">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <RiverW>0</RiverW>
+    <RiverSW>0</RiverSW>
   </Tile>
   <Tile
     ID="693">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="694">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="695">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverSE>1</RiverSE>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <RiverSE>0</RiverSE>
   </Tile>
   <Tile
     ID="696">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Resource>RESOURCE_WHEAT</Resource>
-    <RiverW>0</RiverW>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <RiverSW>0</RiverSW>
   </Tile>
   <Tile
     ID="697">
@@ -3865,29 +3826,27 @@
   <Tile
     ID="698">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="699">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="700">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <ElementName>TEXT_RAETIA</ElementName>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="701">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <RiverSE>1</RiverSE>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="702">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="703">
@@ -3903,46 +3862,47 @@
     ID="705">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <RiverW>0</RiverW>
+    <RiverSW>0</RiverSW>
   </Tile>
   <Tile
     ID="706">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverW>0</RiverW>
-    <RiverSW>0</RiverSW>
-    <RiverSE>0</RiverSE>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="707">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverSW>0</RiverSW>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="708">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="709">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Resource>RESOURCE_HORSE</Resource>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="710">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="711">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="712">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
+    <RiverSE>1</RiverSE>
   </Tile>
   <Tile
     ID="713">
@@ -3952,65 +3912,64 @@
   <Tile
     ID="714">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="715">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="716">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="717">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="718">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="719">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_FLAT</Height>
+    <ElementName>TEXT_GALLIA</ElementName>
   </Tile>
   <Tile
     ID="720">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="721">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="722">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <RiverSE>1</RiverSE>
   </Tile>
   <Tile
     ID="723">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Resource>RESOURCE_WHEAT</Resource>
-    <RiverW>0</RiverW>
   </Tile>
   <Tile
     ID="724">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="725">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
@@ -4021,47 +3980,43 @@
   <Tile
     ID="727">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="728">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
   </Tile>
   <Tile
     ID="729">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="730">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Resource>RESOURCE_HONEY</Resource>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="731">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="732">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="733">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <RiverSW>0</RiverSW>
   </Tile>
   <Tile
     ID="734">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Resource>RESOURCE_HONEY</Resource>
   </Tile>
   <Tile
     ID="735">
@@ -4072,52 +4027,56 @@
     ID="736">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <RiverSE>1</RiverSE>
   </Tile>
   <Tile
     ID="737">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <RiverW>0</RiverW>
   </Tile>
   <Tile
     ID="738">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="739">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="740">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <ElementName>TEXT_BELGICA</ElementName>
+    <Height>HEIGHT_HILL</Height>
+    <RiverSE>1</RiverSE>
   </Tile>
   <Tile
     ID="741">
+    <Road />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
+    <RiverW>0</RiverW>
   </Tile>
   <Tile
     ID="742">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="743">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="744">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="745">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="746">
@@ -4131,35 +4090,35 @@
   </Tile>
   <Tile
     ID="748">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Resource>RESOURCE_WHEAT</Resource>
-    <RiverW>0</RiverW>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="749">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <RiverW>0</RiverW>
-    <RiverSW>0</RiverSW>
-    <RiverSE>0</RiverSE>
   </Tile>
   <Tile
     ID="750">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <RiverSW>0</RiverSW>
   </Tile>
   <Tile
     ID="751">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Resource>RESOURCE_WHEAT</Resource>
+    <RiverW>0</RiverW>
+    <RiverSW>0</RiverSW>
+    <RiverSE>0</RiverSE>
+    <ElementName>TEXT_SEQUANA_RIVER</ElementName>
   </Tile>
   <Tile
     ID="752">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <RiverSW>0</RiverSW>
+    <RiverSE>0</RiverSE>
   </Tile>
   <Tile
     ID="753">
@@ -4168,46 +4127,46 @@
   </Tile>
   <Tile
     ID="754">
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="755">
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <Resource>RESOURCE_HORSE</Resource>
+  </Tile>
+  <Tile
+    ID="756">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+  </Tile>
+  <Tile
+    ID="757">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <Resource>RESOURCE_HONEY</Resource>
+  </Tile>
+  <Tile
+    ID="758">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
-    ID="755">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <RiverW>0</RiverW>
-  </Tile>
-  <Tile
-    ID="756">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
-  </Tile>
-  <Tile
-    ID="757">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
-  </Tile>
-  <Tile
-    ID="758">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
-  </Tile>
-  <Tile
     ID="759">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="760">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="761">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="762">
@@ -4233,68 +4192,69 @@
     ID="766">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="767">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <RiverSE>1</RiverSE>
   </Tile>
   <Tile
     ID="768">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <RiverW>0</RiverW>
   </Tile>
   <Tile
     ID="769">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="770">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <RiverSE>1</RiverSE>
   </Tile>
   <Tile
     ID="771">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <RiverSE>1</RiverSE>
   </Tile>
   <Tile
     ID="772">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <RiverSW>1</RiverSW>
+    <RiverSE>1</RiverSE>
   </Tile>
   <Tile
     ID="773">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <RiverSW>1</RiverSW>
+    <RiverSE>1</RiverSE>
   </Tile>
   <Tile
     ID="774">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <RiverW>0</RiverW>
   </Tile>
   <Tile
     ID="775">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <RiverW>0</RiverW>
-    <RiverSW>0</RiverSW>
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
     ID="776">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="777">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="778">
@@ -4304,36 +4264,36 @@
   <Tile
     ID="779">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverW>0</RiverW>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="780">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="781">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
+    <Height>HEIGHT_FLAT</Height>
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
+    <RiverSE>0</RiverSE>
   </Tile>
   <Tile
     ID="782">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
+    <RiverSW>0</RiverSW>
   </Tile>
   <Tile
     ID="783">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="784">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="785">
@@ -4342,27 +4302,27 @@
   </Tile>
   <Tile
     ID="786">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="787">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="788">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="789">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="790">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
@@ -4374,19 +4334,16 @@
     ID="792">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="793">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="794">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="795">
@@ -4402,91 +4359,85 @@
     ID="797">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    </Tile>
+  </Tile>
   <Tile
     ID="798">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <RiverW>0</RiverW>
-    <RiverSW>0</RiverSW>
-    <RiverSE>0</RiverSE>
-    </Tile>
+  </Tile>
   <Tile
     ID="799">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverSW>0</RiverSW>
-    <RiverSE>0</RiverSE>
-    </Tile>
-  <Tile
-    ID="800">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverSW>0</RiverSW>
-    <RiverSE>0</RiverSE>
-    </Tile>
-  <Tile
-    ID="801">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverSW>0</RiverSW>
-    <RiverSE>0</RiverSE>
-    </Tile>
-  <Tile
-    ID="802">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverSW>0</RiverSW>
-    </Tile>
-  <Tile
-    ID="803">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
-  </Tile>
-  <Tile
-    ID="804">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-  </Tile>
-  <Tile
-    ID="805">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-  </Tile>
-  <Tile
-    ID="806">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverW>0</RiverW>
-    <RiverSW>0</RiverSW>
-  </Tile>
-  <Tile
-    ID="807">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-  </Tile>
-  <Tile
-    ID="808">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSE>1</RiverSE>
   </Tile>
   <Tile
-    ID="809">
+    ID="800">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <Resource>RESOURCE_WHEAT</Resource>
     <RiverW>0</RiverW>
+  </Tile>
+  <Tile
+    ID="801">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+  </Tile>
+  <Tile
+    ID="802">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="803">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="804">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <ElementName>TEXT_RAETIA</ElementName>
+  </Tile>
+  <Tile
+    ID="805">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <RiverSE>1</RiverSE>
+  </Tile>
+  <Tile
+    ID="806">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
+  </Tile>
+  <Tile
+    ID="807">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="808">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="809">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="810">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <RiverW>0</RiverW>
+    <RiverSW>0</RiverSW>
+    <RiverSE>0</RiverSE>
   </Tile>
   <Tile
     ID="811">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <RiverSW>0</RiverSW>
   </Tile>
   <Tile
     ID="812">
@@ -4497,6 +4448,7 @@
     ID="813">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <Resource>RESOURCE_HORSE</Resource>
   </Tile>
   <Tile
     ID="814">
@@ -4505,65 +4457,64 @@
   </Tile>
   <Tile
     ID="815">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="816">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="817">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="818">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="819">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="820">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="821">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="822">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="823">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="824">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverW>0</RiverW>
-    <RiverSW>0</RiverSW>
-    </Tile>
+    <Height>HEIGHT_HILL</Height>
+  </Tile>
   <Tile
     ID="825">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    </Tile>
+    <Height>HEIGHT_HILL</Height>
+  </Tile>
   <Tile
     ID="826">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="827">
@@ -4577,106 +4528,104 @@
   </Tile>
   <Tile
     ID="829">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="830">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    <Terrain>TERRAIN_URBAN</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <RiverSE>1</RiverSE>
+    <CitySite>ACTIVE</CitySite>
+    <Improvement>IMPROVEMENT_SETTLEMENT_1</Improvement>
+    <TribeSite>TRIBE_SUEBI</TribeSite>
   </Tile>
   <Tile
     ID="831">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <Resource>RESOURCE_WHEAT</Resource>
+    <RiverW>0</RiverW>
   </Tile>
   <Tile
     ID="832">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverW>0</RiverW>
-    <RiverSW>0</RiverSW>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="833">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Resource>RESOURCE_HONEY</Resource>
   </Tile>
   <Tile
     ID="834">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="835">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <RiverSE>1</RiverSE>
+    <Vegetation>VEGETATION_TREES</Vegetation>
   </Tile>
   <Tile
     ID="836">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverW>0</RiverW>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
   </Tile>
   <Tile
     ID="837">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
     ID="838">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <Resource>RESOURCE_HONEY</Resource>
   </Tile>
   <Tile
     ID="839">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
     ID="840">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
-    <RiverW>1</RiverW>
-    <RiverSW>1</RiverSW>
-    <RiverSE>1</RiverSE>
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
     ID="841">
-    <Road />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <RiverSW>1</RiverSW>
-    <RiverSE>1</RiverSE>
+    <RiverSW>0</RiverSW>
   </Tile>
   <Tile
     ID="842">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <Resource>RESOURCE_HONEY</Resource>
   </Tile>
   <Tile
     ID="843">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="844">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_OCEAN</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="845">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="846">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
-    <Resource>RESOURCE_DYE</Resource>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="847">
@@ -4687,126 +4636,122 @@
     ID="848">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <ElementName>TEXT_BELGICA</ElementName>
   </Tile>
   <Tile
     ID="849">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="850">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <ElementName>TEXT_RHENUS_RIVER</ElementName>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="851">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverW>0</RiverW>
-    <RiverSW>0</RiverSW>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="852">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="853">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="854">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="855">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="856">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="857">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="858">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="859">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <RiverSE>1</RiverSE>
   </Tile>
   <Tile
     ID="860">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <Resource>RESOURCE_WHEAT</Resource>
     <RiverW>0</RiverW>
   </Tile>
   <Tile
     ID="861">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_HILL</Height>
-    <Resource>RESOURCE_HONEY</Resource>
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverW>0</RiverW>
+    <RiverSW>0</RiverSW>
+    <RiverSE>0</RiverSE>
   </Tile>
   <Tile
     ID="862">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <RiverSW>0</RiverSW>
   </Tile>
   <Tile
     ID="863">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <RiverW>0</RiverW>
-    <RiverSW>0</RiverSW>
-    <ElementName>TEXT_ALBIS_RIVER</ElementName>
+    <Resource>RESOURCE_WHEAT</Resource>
   </Tile>
   <Tile
     ID="864">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <RiverW>1</RiverW>
   </Tile>
   <Tile
     ID="865">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <RiverSE>1</RiverSE>
   </Tile>
   <Tile
     ID="866">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <RiverSW>1</RiverSW>
-    <ElementName>TEXT_TAMESIS_RIVER</ElementName>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="867">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
+    <RiverW>0</RiverW>
   </Tile>
   <Tile
     ID="868">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
     ID="869">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Resource>RESOURCE_HORSE</Resource>
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
     ID="870">
@@ -4816,12 +4761,12 @@
   <Tile
     ID="871">
     <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_OCEAN</Height>
+    <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
     ID="872">
     <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_OCEAN</Height>
+    <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
     ID="873">
@@ -4832,29 +4777,21 @@
     ID="874">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <RiverSW>0</RiverSW>
-    <RiverSE>0</RiverSE>
   </Tile>
   <Tile
     ID="875">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <RiverSW>0</RiverSW>
-    <RiverSE>0</RiverSE>
   </Tile>
   <Tile
     ID="876">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <RiverSW>0</RiverSW>
-    <RiverSE>0</RiverSE>
   </Tile>
   <Tile
     ID="877">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
-    <RiverSW>0</RiverSW>
   </Tile>
   <Tile
     ID="878">
@@ -4875,12 +4812,15 @@
   <Tile
     ID="881">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Height>HEIGHT_HILL</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="882">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
+    <RiverSE>1</RiverSE>
   </Tile>
   <Tile
     ID="883">
@@ -4896,15 +4836,11 @@
     ID="885">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <RiverW>0</RiverW>
-    <RiverSW>0</RiverSW>
-    <RiverSE>0</RiverSE>
   </Tile>
   <Tile
     ID="886">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <RiverSW>0</RiverSW>
   </Tile>
   <Tile
     ID="887">
@@ -4915,33 +4851,29 @@
     ID="888">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Resource>RESOURCE_HONEY</Resource>
   </Tile>
   <Tile
     ID="889">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <RiverSE>1</RiverSE>
   </Tile>
   <Tile
     ID="890">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <RiverW>0</RiverW>
-    <RiverSW>0</RiverSW>
   </Tile>
   <Tile
     ID="891">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <RiverSE>0</RiverSE>
+    <RiverW>0</RiverW>
+    <RiverSW>0</RiverSW>
   </Tile>
   <Tile
     ID="892">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <RiverW>1</RiverW>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="893">
@@ -4957,48 +4889,50 @@
     ID="895">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <RiverW>0</RiverW>
   </Tile>
   <Tile
     ID="896">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="897">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <RiverW>0</RiverW>
+    <RiverSW>0</RiverSW>
   </Tile>
   <Tile
     ID="898">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="899">
     <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_OCEAN</Height>
+    <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
     ID="900">
     <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_OCEAN</Height>
-  </Tile>
-  <Tile
-    ID="901">
-    <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
-    ID="902">
+    ID="901">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="902">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
     ID="903">
     <Terrain>TERRAIN_WATER</Terrain>
     <Height>HEIGHT_COAST</Height>
-    <Resource>RESOURCE_PEARL</Resource>
   </Tile>
   <Tile
     ID="904">
@@ -5007,13 +4941,12 @@
   </Tile>
   <Tile
     ID="905">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
     ID="906">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
@@ -5025,16 +4958,19 @@
     ID="908">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="909">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="910">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="911">
@@ -5045,115 +4981,116 @@
     ID="912">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <RiverSE>1</RiverSE>
   </Tile>
   <Tile
     ID="913">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <RiverW>0</RiverW>
   </Tile>
   <Tile
     ID="914">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <RiverW>0</RiverW>
+    <RiverSW>0</RiverSW>
+    <RiverSE>0</RiverSE>
   </Tile>
   <Tile
     ID="915">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <ElementName>TEXT_GERMANIA</ElementName>
+    <RiverSW>0</RiverSW>
+    <RiverSE>0</RiverSE>
   </Tile>
   <Tile
     ID="916">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <RiverSW>0</RiverSW>
+    <RiverSE>0</RiverSE>
   </Tile>
   <Tile
     ID="917">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
+    <RiverSE>0</RiverSE>
   </Tile>
   <Tile
     ID="918">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <RiverSE>0</RiverSE>
   </Tile>
   <Tile
     ID="919">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
-    <Resource>RESOURCE_GAME</Resource>
-    <RiverW>1</RiverW>
   </Tile>
   <Tile
     ID="920">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_SCRUB</Vegetation>
-  </Tile>
-  <Tile
-    ID="921">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-    <Vegetation>VEGETATION_TREES</Vegetation>
-  </Tile>
-  <Tile
-    ID="922">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-  </Tile>
-  <Tile
-    ID="923">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
-    <Height>HEIGHT_FLAT</Height>
-  </Tile>
-  <Tile
-    ID="924">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
-  </Tile>
-  <Tile
-    ID="925">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_OCEAN</Height>
-  </Tile>
-  <Tile
-    ID="926">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_OCEAN</Height>
-  </Tile>
-  <Tile
-    ID="927">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_OCEAN</Height>
-  </Tile>
-  <Tile
-    ID="928">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
-  </Tile>
-  <Tile
-    ID="929">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
+    ID="921">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="922">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverSW>0</RiverSW>
+  </Tile>
+  <Tile
+    ID="923">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
+  </Tile>
+  <Tile
+    ID="924">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+  </Tile>
+  <Tile
+    ID="925">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="926">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverW>0</RiverW>
+    <RiverSW>0</RiverSW>
+  </Tile>
+  <Tile
+    ID="927">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+  </Tile>
+  <Tile
+    ID="928">
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverSE>1</RiverSE>
+  </Tile>
+  <Tile
+    ID="929">
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverW>0</RiverW>
+  </Tile>
+  <Tile
     ID="930">
-    <Terrain>TERRAIN_WATER</Terrain>
-    <Height>HEIGHT_COAST</Height>
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="931">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Resource>RESOURCE_MARBLE</Resource>
   </Tile>
   <Tile
     ID="932">
@@ -5172,30 +5109,28 @@
   </Tile>
   <Tile
     ID="935">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="936">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
     ID="937">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_FLAT</Height>
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
   </Tile>
   <Tile
     ID="938">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
   </Tile>
   <Tile
     ID="939">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <RiverW>0</RiverW>
-    <RiverSW>0</RiverSW>
   </Tile>
   <Tile
     ID="940">
@@ -5211,17 +5146,786 @@
     ID="942">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
-    <Resource>RESOURCE_HORSE</Resource>
   </Tile>
   <Tile
     ID="943">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="944">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
   </Tile>
   <Tile
-    ID="944">
+    ID="945">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="946">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="947">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="948">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="949">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="950">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="951">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="952">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="953">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="954">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="955">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="956">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverW>0</RiverW>
+    <RiverSW>0</RiverSW>
+  </Tile>
+  <Tile
+    ID="957">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <Resource>RESOURCE_HONEY</Resource>
+  </Tile>
+  <Tile
+    ID="958">
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="959">
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverSE>1</RiverSE>
+  </Tile>
+  <Tile
+    ID="960">
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverW>0</RiverW>
+  </Tile>
+  <Tile
+    ID="961">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="962">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="963">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="964">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
+    <RiverW>1</RiverW>
+    <RiverSW>1</RiverSW>
+    <RiverSE>1</RiverSE>
+  </Tile>
+  <Tile
+    ID="965">
+    <Road />
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverSW>1</RiverSW>
+    <RiverSE>1</RiverSE>
+  </Tile>
+  <Tile
+    ID="966">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
+  </Tile>
+  <Tile
+    ID="967">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
+  </Tile>
+  <Tile
+    ID="968">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
+  </Tile>
+  <Tile
+    ID="969">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
+  </Tile>
+  <Tile
+    ID="970">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
+    <Resource>RESOURCE_DYE</Resource>
+  </Tile>
+  <Tile
+    ID="971">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="972">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="973">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="974">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
+    <ElementName>TEXT_RHENUS_RIVER</ElementName>
+  </Tile>
+  <Tile
+    ID="975">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverW>0</RiverW>
+    <RiverSW>0</RiverSW>
+  </Tile>
+  <Tile
+    ID="976">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="977">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="978">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="979">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="980">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="981">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="982">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="983">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="984">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="985">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="986">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="987">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverSE>1</RiverSE>
+  </Tile>
+  <Tile
+    ID="988">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverW>0</RiverW>
+  </Tile>
+  <Tile
+    ID="989">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_HILL</Height>
+    <Resource>RESOURCE_HONEY</Resource>
+  </Tile>
+  <Tile
+    ID="990">
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="991">
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverW>0</RiverW>
+    <RiverSW>0</RiverSW>
+    <ElementName>TEXT_ALBIS_RIVER</ElementName>
+  </Tile>
+  <Tile
+    ID="992">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverW>1</RiverW>
+  </Tile>
+  <Tile
+    ID="993">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverSE>1</RiverSE>
+  </Tile>
+  <Tile
+    ID="994">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverSW>1</RiverSW>
+    <ElementName>TEXT_TAMESIS_RIVER</ElementName>
+  </Tile>
+  <Tile
+    ID="995">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="996">
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="997">
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <Resource>RESOURCE_HORSE</Resource>
+  </Tile>
+  <Tile
+    ID="998">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
+  </Tile>
+  <Tile
+    ID="999">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
+  </Tile>
+  <Tile
+    ID="1000">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
+  </Tile>
+  <Tile
+    ID="1001">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
+  </Tile>
+  <Tile
+    ID="1002">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverSW>0</RiverSW>
+    <RiverSE>0</RiverSE>
+  </Tile>
+  <Tile
+    ID="1003">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverSW>0</RiverSW>
+    <RiverSE>0</RiverSE>
+  </Tile>
+  <Tile
+    ID="1004">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverSW>0</RiverSW>
+    <RiverSE>0</RiverSE>
+  </Tile>
+  <Tile
+    ID="1005">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
+    <RiverSW>0</RiverSW>
+  </Tile>
+  <Tile
+    ID="1006">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
+  </Tile>
+  <Tile
+    ID="1007">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1008">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1009">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1010">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1011">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1012">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1013">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1014">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1015">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1016">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1017">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverW>0</RiverW>
+    <RiverSW>0</RiverSW>
+    <RiverSE>0</RiverSE>
+  </Tile>
+  <Tile
+    ID="1018">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverSW>0</RiverSW>
+  </Tile>
+  <Tile
+    ID="1019">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1020">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <Resource>RESOURCE_HONEY</Resource>
+  </Tile>
+  <Tile
+    ID="1021">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverSE>1</RiverSE>
+  </Tile>
+  <Tile
+    ID="1022">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverW>0</RiverW>
+    <RiverSW>0</RiverSW>
+  </Tile>
+  <Tile
+    ID="1023">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
+    <RiverSE>0</RiverSE>
+  </Tile>
+  <Tile
+    ID="1024">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverW>1</RiverW>
+  </Tile>
+  <Tile
+    ID="1025">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1026">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1027">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1028">
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
+  </Tile>
+  <Tile
+    ID="1029">
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1030">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
+  </Tile>
+  <Tile
+    ID="1031">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
+  </Tile>
+  <Tile
+    ID="1032">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
+  </Tile>
+  <Tile
+    ID="1033">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
+  </Tile>
+  <Tile
+    ID="1034">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1035">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
+    <Resource>RESOURCE_PEARL</Resource>
+  </Tile>
+  <Tile
+    ID="1036">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
+  </Tile>
+  <Tile
+    ID="1037">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
+  </Tile>
+  <Tile
+    ID="1038">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1039">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1040">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1041">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1042">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1043">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1044">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1045">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1046">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1047">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1048">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverSE>1</RiverSE>
+  </Tile>
+  <Tile
+    ID="1049">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverW>0</RiverW>
+  </Tile>
+  <Tile
+    ID="1050">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1051">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <ElementName>TEXT_GERMANIA</ElementName>
+  </Tile>
+  <Tile
+    ID="1052">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1053">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
+    <RiverW>0</RiverW>
+    <RiverSW>0</RiverSW>
+  </Tile>
+  <Tile
+    ID="1054">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
+    <RiverSE>0</RiverSE>
+  </Tile>
+  <Tile
+    ID="1055">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
+    <Resource>RESOURCE_GAME</Resource>
+    <RiverW>1</RiverW>
+  </Tile>
+  <Tile
+    ID="1056">
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_SCRUB</Vegetation>
+  </Tile>
+  <Tile
+    ID="1057">
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <Vegetation>VEGETATION_TREES</Vegetation>
+  </Tile>
+  <Tile
+    ID="1058">
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1059">
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1060">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
+  </Tile>
+  <Tile
+    ID="1061">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
+  </Tile>
+  <Tile
+    ID="1062">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
+  </Tile>
+  <Tile
+    ID="1063">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_OCEAN</Height>
+  </Tile>
+  <Tile
+    ID="1064">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
+  </Tile>
+  <Tile
+    ID="1065">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1066">
+    <Terrain>TERRAIN_WATER</Terrain>
+    <Height>HEIGHT_COAST</Height>
+  </Tile>
+  <Tile
+    ID="1067">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <Resource>RESOURCE_MARBLE</Resource>
+  </Tile>
+  <Tile
+    ID="1068">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1069">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1070">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1071">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1072">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1073">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1074">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1075">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1076">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1077">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1078">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1079">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverW>0</RiverW>
+    <RiverSW>0</RiverSW>
+  </Tile>
+  <Tile
+    ID="1080">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1081">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+  </Tile>
+  <Tile
+    ID="1082">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <Resource>RESOURCE_HORSE</Resource>
+  </Tile>
+  <Tile
+    ID="1083">
+    <Terrain>TERRAIN_LUSH</Terrain>
+    <Height>HEIGHT_FLAT</Height>
+    <RiverW>0</RiverW>
+    <RiverSW>0</RiverSW>
+  </Tile>
+  <Tile
+    ID="1084">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>

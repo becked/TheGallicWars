@@ -136,4 +136,28 @@
 		<zType>TEXT_TRIBE_BOII_NICK_F</zType>
 		<en-US>the Boian</en-US>
 	</Entry>
+	<Entry>
+		<zType>TEXT_GOAL_GW1_FORTIFY_RHONE</zType>
+		<en-US>Fortify the Rhone</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_GOAL_GW1_FORTIFY_RHONE_HELPTEXT</zType>
+		<en-US>Build 4 Forts along the Rhone to block the Helvetii migration.</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_GOAL_GW1_BIBRACTE</zType>
+		<en-US>Win the Battle of Bibracte</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_GOAL_GW1_BIBRACTE_HELPTEXT</zType>
+		<en-US>Destroy the Helvetii. Eliminate all their military forces.</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_GOAL_GW1_VOSGES</zType>
+		<en-US>Win the Battle of Vosges</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_GOAL_GW1_VOSGES_HELPTEXT</zType>
+		<en-US>Destroy the Suebi. Eliminate Ariovistus's army and raze their camp.</en-US>
+	</Entry>
 </Root>

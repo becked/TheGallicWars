@@ -1,2 +1,6 @@
 .env
 Reference
+GallicWars/CrcFix.dll
+GallicWars/0Harmony.dll
+src/CrcFix/bin/
+src/CrcFix/obj/

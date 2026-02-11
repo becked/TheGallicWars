@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <AssemblyName>CrcFix</AssemblyName>
+    <RootNamespace>GallicWars</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Lib.Harmony" Version="2.4.2" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OldWorldManagedPath>$([System.Environment]::GetEnvironmentVariable('OLDWORLD_MANAGED_PATH'))</OldWorldManagedPath>
+    <OldWorldManagedPath Condition="'$(OldWorldManagedPath)' == ''">$(HOME)/Library/Application Support/Steam/steamapps/common/Old World/OldWorld.app/Contents/Resources/Data/Managed</OldWorldManagedPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="TenCrowns.GameCore">
+      <HintPath>$(OldWorldManagedPath)/TenCrowns.GameCore.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(OldWorldManagedPath)/UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>

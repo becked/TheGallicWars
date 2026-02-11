@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Entry>
+		<zType>GOAL_GW1_FORTIFY_RHONE</zType>
+		<Name>TEXT_GOAL_GW1_FORTIFY_RHONE</Name>
+		<HelpText>TEXT_GOAL_GW1_FORTIFY_RHONE_HELPTEXT</HelpText>
+		<bScenario>1</bScenario>
+		<aiImprovementCount>
+			<Pair>
+				<zIndex>IMPROVEMENT_FORT</zIndex>
+				<iValue>4</iValue>
+			</Pair>
+		</aiImprovementCount>
+	</Entry>
+	<Entry>
+		<zType>GOAL_GW1_BIBRACTE</zType>
+		<Name>TEXT_GOAL_GW1_BIBRACTE</Name>
+		<HelpText>TEXT_GOAL_GW1_BIBRACTE_HELPTEXT</HelpText>
+		<bBlockComplete>1</bBlockComplete>
+		<bTribeDead>1</bTribeDead>
+		<bScenario>1</bScenario>
+	</Entry>
+	<Entry>
+		<zType>GOAL_GW1_VOSGES</zType>
+		<Name>TEXT_GOAL_GW1_VOSGES</Name>
+		<HelpText>TEXT_GOAL_GW1_VOSGES_HELPTEXT</HelpText>
+		<bBlockComplete>1</bBlockComplete>
+		<bTribeDead>1</bTribeDead>
+		<bScenario>1</bScenario>
+	</Entry>
+</Root>
