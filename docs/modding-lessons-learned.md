@@ -412,6 +412,28 @@ In-game restart does **NOT** reload map files. A full quit-and-relaunch of Old W
 
 `.bak` files in the mod directory get copied by deploy scripts. Keep backup files outside the mod directory.
 
+## CRC Strict Mode Bug with Scenario Mods
+
+External scenario mods that use `StrictModeDeferred` info types (goal, bonus, event, eventOption, eventStory, goalReq) cause a "Version mismatch" error when the scenario has `mzModName` set.
+
+**Root cause**: `UpdateScenarioMods()` sets strict mode on the controller's `ModPath` when `mzModName` is non-empty. In strict mode, `ReadInfoListTypes` XORs deferred file CRCs but `ReadInfoListData` skips them, creating an asymmetric CRC. `AppMain.StartGame()` copies this non-zero CRC to the server **before** `Infos.PreCreateGame()` can fix it. PreCreateGame then updates the controller's CRC (via the reused Infos's internal `mModSettings` reference), but the server's copy is already stale.
+
+**Workaround**: A Harmony postfix on `ModSettings.CreateServerGame` that re-copies the controller's (now-fixed) CRC to the server's `ModPath` after PreCreateGame runs. See `src/CrcFix/` for implementation.
+
+**Bug report**: https://gist.github.com/becked/f6f2c434762d18148e7d3ffe621d9c5d
+
+Internal (DLC) mods are immune because they bypass `OpenModdedXML`/`AddCRC` entirely in `GetModdedXML`.
+
+## Scenario Mods Cannot Be Manually Toggled
+
+Mods with `<scenario>true</scenario>` in ModInfo.xml do not show an ON/OFF toggle in the mod browser. This means scenario mods cannot be manually enabled — they are only activated when a player selects the scenario from the scenario browser. This is relevant because it prevents using manual mod enablement as a workaround for the CRC strict mode bug above.
+
+## DLL Placement
+
+Mod DLLs must be placed in the mod root directory alongside `ModInfo.xml`. The game scans for `*.dll` files via `Directory.GetFiles(moddedPath, "*.dll", SearchOption.TopDirectoryOnly)` in `UserScriptManager.Initialize()`. DLLs in subdirectories are not found.
+
+The DLL is loaded multiple times (controller, server, client). Use a static guard (`if (_harmony != null) return;`) to prevent duplicate Harmony patching.
+
 ## Common Pitfalls
 
 1. **Missing BOM on text file** - Events silently fail

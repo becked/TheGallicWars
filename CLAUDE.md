@@ -7,14 +7,17 @@ A scenario campaign mod for Old World based on Caesar's *Commentarii de Bello Ga
 ```
 GallicWars/              # The mod (deployed to Old World's Mods directory)
   ModInfo.xml            # Mod manifest (scenario=true)
-  Infos/                 # XML data: scenario, scenarioClass, tribe, unit, text, genderedText
+  Infos/                 # XML data: scenario, scenarioClass, tribe, unit, text, genderedText, goal
   Maps/                  # Map XML files (generated)
+src/
+  CrcFix/                # Harmony DLL: fixes CRC strict mode bug for scenario mods
 data/
   base_terrain.xml       # Authored terrain data (frozen from Imperium Romanum, now editable)
 scripts/
   generate_scenario.py   # Reads frozen terrain, generates scenario map
   freeze_terrain.py      # One-time: extract + freeze terrain from Imperium Romanum
-  deploy.sh              # Copies mod to game's Mods path
+  build_dll.sh           # Builds CrcFix.dll and copies to GallicWars/
+  deploy.sh              # Builds DLL, copies mod to game's Mods path
   screenshot_map.sh      # Automated in-game screenshot tool
 docs/                    # Design docs, milestones, modding reference
 Reference/               # Symlink to game's XML (for looking up base game data)
@@ -23,8 +26,10 @@ Reference/               # Symlink to game's XML (for looking up base game data)
 ## Build & Test Workflow
 
 1. `python3 scripts/generate_scenario.py` - generate scenario map from frozen terrain
-2. `./scripts/deploy.sh` - copy mod to game's Mods directory
+2. `./scripts/deploy.sh` - build CrcFix DLL, copy mod to game's Mods directory
 3. Check logs: `~/Library/Logs/MohawkGames/OldWorld/Player.log`
+
+To build the DLL separately: `./scripts/build_dll.sh` (requires `dotnet` SDK and game DLLs)
 
 To re-extract terrain from Imperium Romanum (one-time, rarely needed):
 `python3 scripts/freeze_terrain.py` - writes `data/base_terrain.xml`
@@ -48,7 +53,7 @@ Requires `.env` with `OLDWORLD_MODS_PATH` set (see `.env.example`).
 
 Terrain is authored in `data/base_terrain.xml` (originally extracted from the Imperium Romanum map, now independent). The scenario generator reads this file and layers game state on top.
 
-- Dimensions: 23 x 29 = 667 tiles (editable — change MapWidth and add/remove tiles)
+- Dimensions: 31 x 35 = 1085 tiles (editable — change MapWidth and add/remove tiles)
 - Terrain fields: Terrain, Height, Vegetation, Resource, Road, Rivers, ElementName, CitySite, Improvement
 - Boundary tiles computed by the generator (outer 2 rows/columns)
 - Output uses scenario/save-file format with Game/Player/Character/City blocks and embedded units
