@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Entry>
+		<zType />
+		<Gender />
+		<FirstName />
+	</Entry>
+	<Entry>
+		<zType>CHARACTER_AURELIA_COTTA</zType>
+		<Gender>GENDER_FEMALE</Gender>
+		<FirstName>NAME_AURELIA_COTTA</FirstName>
+	</Entry>
+	<Entry>
+		<zType>CHARACTER_QUINTUS_FABIUS_MAXIMUS</zType>
+		<Gender>GENDER_MALE</Gender>
+		<FirstName>NAME_QUINTUS_FABIUS_MAXIMUS</FirstName>
+	</Entry>
+	<Entry>
+		<zType>CHARACTER_APPIUS_CLAUDIUS_PULCHER</zType>
+		<Gender>GENDER_MALE</Gender>
+		<FirstName>NAME_APPIUS_CLAUDIUS_PULCHER</FirstName>
+	</Entry>
+	<Entry>
+		<zType>CHARACTER_LABIENUS</zType>
+		<Gender>GENDER_MALE</Gender>
+		<FirstName>NAME_TITUS_LABIENUS</FirstName>
+	</Entry>
+	<Entry>
+		<zType>CHARACTER_PUBLIUS_CRASSUS</zType>
+		<Gender>GENDER_MALE</Gender>
+		<FirstName>NAME_PUBLIUS_CRASSUS</FirstName>
+	</Entry>
+	<Entry>
+		<zType>CHARACTER_DIVICIACUS</zType>
+		<Gender>GENDER_MALE</Gender>
+		<FirstName>NAME_DIVICIACUS</FirstName>
+	</Entry>
+	<Entry>
+		<zType>CHARACTER_LISCUS</zType>
+		<Gender>GENDER_MALE</Gender>
+		<FirstName>NAME_LISCUS</FirstName>
+	</Entry>
+</Root>

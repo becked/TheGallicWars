@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Entry>
+		<zType>TRAIT_IN_ROME</zType>
+		<GenderedName>GENDERED_TEXT_TRAIT_IN_ROME</GenderedName>
+		<bDisplay>1</bDisplay>
+		<bNoGeneral>1</bNoGeneral>
+		<bNoGovernor>1</bNoGovernor>
+	</Entry>
+</Root>

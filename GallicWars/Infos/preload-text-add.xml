@@ -137,6 +137,42 @@
 		<en-US>the Boian</en-US>
 	</Entry>
 	<Entry>
+		<zType>TEXT_NAME_AURELIA_COTTA</zType>
+		<en-US>Aurelia Cotta</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_NAME_QUINTUS_FABIUS_MAXIMUS</zType>
+		<en-US>Quintus Fabius Maximus</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_NAME_APPIUS_CLAUDIUS_PULCHER</zType>
+		<en-US>Appius Claudius Pulcher</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRAIT_IN_ROME</zType>
+		<en-US>In Rome</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRAIT_IN_ROME_F</zType>
+		<en-US>In Rome</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_NAME_TITUS_LABIENUS</zType>
+		<en-US>Titus Labienus</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_NAME_PUBLIUS_CRASSUS</zType>
+		<en-US>Publius Crassus</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_NAME_DIVICIACUS</zType>
+		<en-US>Diviciacus</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_NAME_LISCUS</zType>
+		<en-US>Liscus</en-US>
+	</Entry>
+	<Entry>
 		<zType>TEXT_GOAL_GW1_FORTIFY_RHONE</zType>
 		<en-US>Fortify the Rhone</en-US>
 	</Entry>

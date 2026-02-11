@@ -3,7 +3,7 @@
   MapWidth="37"
   MapEdgesSafe="True"
   MapPath=""
-  GameId="fdfce30a-494f-4ee2-857f-9e80f30374cb"
+  GameId="1d5f89ac-fb0a-4e26-be02-d87355a38497"
   MapSize="MAPSIZE_SMALL"
   Scenario="SCENARIO_GALLIC_WARS_1"
   GameName=""
@@ -59,7 +59,7 @@
     <Seed>666877878369320307</Seed>
     <NextUnitID>14</NextUnitID>
     <NextCityID>4</NextCityID>
-    <NextCharacterID>2</NextCharacterID>
+    <NextCharacterID>9</NextCharacterID>
     <NextOccurrenceID>0</NextOccurrenceID>
     <MapSize>MAPSIZE_SMALL</MapSize>
     <NoFogOfWar />
@@ -198,7 +198,11 @@
       <FAMILY_FABIUS>0</FAMILY_FABIUS>
       <FAMILY_CLAUDIUS>1</FAMILY_CLAUDIUS>
     </FamilySeatCityID>
-    <FamilyHeadID />
+    <FamilyHeadID>
+      <FAMILY_JULIUS>6</FAMILY_JULIUS>
+      <FAMILY_FABIUS>7</FAMILY_FABIUS>
+      <FAMILY_CLAUDIUS>8</FAMILY_CLAUDIUS>
+    </FamilyHeadID>
     <TechAvailable />
     <TechPassed />
     <TechTrashed />
@@ -300,6 +304,179 @@
       <TRAIT_JUDGE_ARCHETYPE />
       <TRAIT_HUMBLE />
       <TRAIT_SUPERSTITIOUS />
+    </Trait>
+  </Character>
+  <Character
+    ID="2"
+    BirthTurn="-40"
+    Player="0"
+    Character="CHARACTER_LABIENUS"
+    Gender="GENDER_MALE"
+    FirstName="NAME_TITUS_LABIENUS"
+    Seed="58100000000000003">
+    <Portrait>CHARACTER_PORTRAIT_ROME_LEADER_MALE_10</Portrait>
+    <NameType>NAME_TITUS_LABIENUS</NameType>
+    <Level>1</Level>
+    <Courtier>COURTIER_SOLDIER</Courtier>
+    <Nation>NATION_ROME</Nation>
+    <Family>FAMILY_JULIUS</Family>
+    <Rating>
+      <RATING_WISDOM>2</RATING_WISDOM>
+      <RATING_CHARISMA>1</RATING_CHARISMA>
+      <RATING_COURAGE>3</RATING_COURAGE>
+      <RATING_DISCIPLINE>3</RATING_DISCIPLINE>
+    </Rating>
+    <Stat />
+    <Trait>
+      <TRAIT_TACTICIAN_ARCHETYPE />
+    </Trait>
+  </Character>
+  <Character
+    ID="3"
+    BirthTurn="-26"
+    Player="0"
+    Character="CHARACTER_PUBLIUS_CRASSUS"
+    Gender="GENDER_MALE"
+    FirstName="NAME_PUBLIUS_CRASSUS"
+    Seed="58100000000000004">
+    <Portrait>CHARACTER_PORTRAIT_ROME_LEADER_MALE_03</Portrait>
+    <NameType>NAME_PUBLIUS_CRASSUS</NameType>
+    <Level>1</Level>
+    <Courtier>COURTIER_SOLDIER</Courtier>
+    <Nation>NATION_ROME</Nation>
+    <Family>FAMILY_JULIUS</Family>
+    <Rating>
+      <RATING_WISDOM>0</RATING_WISDOM>
+      <RATING_CHARISMA>2</RATING_CHARISMA>
+      <RATING_COURAGE>3</RATING_COURAGE>
+      <RATING_DISCIPLINE>1</RATING_DISCIPLINE>
+    </Rating>
+    <Stat />
+    <Trait>
+      <TRAIT_HERO_ARCHETYPE />
+    </Trait>
+  </Character>
+  <Character
+    ID="4"
+    BirthTurn="-50"
+    Player="0"
+    Character="CHARACTER_DIVICIACUS"
+    Gender="GENDER_MALE"
+    FirstName="NAME_DIVICIACUS"
+    Seed="58100000000000005">
+    <Portrait>CHARACTER_PORTRAIT_GAUL_MALE_01</Portrait>
+    <NameType>NAME_DIVICIACUS</NameType>
+    <Level>1</Level>
+    <Courtier>COURTIER_MINISTER</Courtier>
+    <Nation>NATION_ROME</Nation>
+    <Rating>
+      <RATING_WISDOM>3</RATING_WISDOM>
+      <RATING_CHARISMA>3</RATING_CHARISMA>
+      <RATING_COURAGE>0</RATING_COURAGE>
+      <RATING_DISCIPLINE>1</RATING_DISCIPLINE>
+    </Rating>
+    <Stat />
+    <Trait>
+      <TRAIT_DIPLOMAT_ARCHETYPE />
+    </Trait>
+  </Character>
+  <Character
+    ID="5"
+    BirthTurn="-45"
+    Player="0"
+    Character="CHARACTER_LISCUS"
+    Gender="GENDER_MALE"
+    FirstName="NAME_LISCUS"
+    Seed="58100000000000006">
+    <Portrait>CHARACTER_PORTRAIT_GAUL_MALE_06</Portrait>
+    <NameType>NAME_LISCUS</NameType>
+    <Level>1</Level>
+    <Courtier>COURTIER_MINISTER</Courtier>
+    <Nation>NATION_ROME</Nation>
+    <Rating>
+      <RATING_WISDOM>2</RATING_WISDOM>
+      <RATING_CHARISMA>2</RATING_CHARISMA>
+      <RATING_COURAGE>0</RATING_COURAGE>
+      <RATING_DISCIPLINE>2</RATING_DISCIPLINE>
+    </Rating>
+    <Stat />
+    <Trait>
+      <TRAIT_JUDGE_ARCHETYPE />
+    </Trait>
+  </Character>
+  <Character
+    ID="6"
+    BirthTurn="-62"
+    Player="0"
+    Character="CHARACTER_AURELIA_COTTA"
+    Gender="GENDER_FEMALE"
+    FirstName="NAME_AURELIA_COTTA"
+    Seed="58100000000000007">
+    <Portrait>CHARACTER_PORTRAIT_ROME_LEADER_FEMALE_07</Portrait>
+    <NameType>NAME_AURELIA_COTTA</NameType>
+    <Level>1</Level>
+    <Nation>NATION_ROME</Nation>
+    <Family>FAMILY_JULIUS</Family>
+    <Rating>
+      <RATING_WISDOM>2</RATING_WISDOM>
+      <RATING_CHARISMA>2</RATING_CHARISMA>
+      <RATING_COURAGE>0</RATING_COURAGE>
+      <RATING_DISCIPLINE>3</RATING_DISCIPLINE>
+    </Rating>
+    <Stat />
+    <Trait>
+      <TRAIT_JUDGE_ARCHETYPE />
+      <TRAIT_IN_ROME />
+    </Trait>
+  </Character>
+  <Character
+    ID="7"
+    BirthTurn="-35"
+    Player="0"
+    Character="CHARACTER_QUINTUS_FABIUS_MAXIMUS"
+    Gender="GENDER_MALE"
+    FirstName="NAME_QUINTUS_FABIUS_MAXIMUS"
+    Seed="58100000000000008">
+    <Portrait>CHARACTER_PORTRAIT_ROME_LEADER_MALE_07</Portrait>
+    <NameType>NAME_QUINTUS_FABIUS_MAXIMUS</NameType>
+    <Level>1</Level>
+    <Nation>NATION_ROME</Nation>
+    <Family>FAMILY_FABIUS</Family>
+    <Rating>
+      <RATING_WISDOM>1</RATING_WISDOM>
+      <RATING_CHARISMA>3</RATING_CHARISMA>
+      <RATING_COURAGE>1</RATING_COURAGE>
+      <RATING_DISCIPLINE>1</RATING_DISCIPLINE>
+    </Rating>
+    <Stat />
+    <Trait>
+      <TRAIT_ORATOR_ARCHETYPE />
+      <TRAIT_IN_ROME />
+    </Trait>
+  </Character>
+  <Character
+    ID="8"
+    BirthTurn="-39"
+    Player="0"
+    Character="CHARACTER_APPIUS_CLAUDIUS_PULCHER"
+    Gender="GENDER_MALE"
+    FirstName="NAME_APPIUS_CLAUDIUS_PULCHER"
+    Seed="58100000000000009">
+    <Portrait>CHARACTER_PORTRAIT_ROME_LEADER_MALE_12</Portrait>
+    <NameType>NAME_APPIUS_CLAUDIUS_PULCHER</NameType>
+    <Level>1</Level>
+    <Nation>NATION_ROME</Nation>
+    <Family>FAMILY_CLAUDIUS</Family>
+    <Rating>
+      <RATING_WISDOM>3</RATING_WISDOM>
+      <RATING_CHARISMA>2</RATING_CHARISMA>
+      <RATING_COURAGE>0</RATING_COURAGE>
+      <RATING_DISCIPLINE>2</RATING_DISCIPLINE>
+    </Rating>
+    <Stat />
+    <Trait>
+      <TRAIT_SCHOLAR_ARCHETYPE />
+      <TRAIT_IN_ROME />
     </Trait>
   </Character>
   <City
@@ -1384,7 +1561,7 @@
       <OriginalPlayer>0</OriginalPlayer>
       <RaidTurn />
       <PlayerFamily>
-        <P.0>FAMILY_FABIUS</P.0>
+        <P.0>NONE</P.0>
       </PlayerFamily>
       <QueueList />
       <AI />
@@ -1997,7 +2174,7 @@
       <OriginalPlayer>0</OriginalPlayer>
       <RaidTurn />
       <PlayerFamily>
-        <P.0>FAMILY_FABIUS</P.0>
+        <P.0>NONE</P.0>
       </PlayerFamily>
       <QueueList />
       <AI />
@@ -2033,7 +2210,7 @@
       <OriginalPlayer>0</OriginalPlayer>
       <RaidTurn />
       <PlayerFamily>
-        <P.0>FAMILY_FABIUS</P.0>
+        <P.0>FAMILY_JULIUS</P.0>
       </PlayerFamily>
       <QueueList />
       <AI />
@@ -2070,7 +2247,7 @@
       <OriginalPlayer>0</OriginalPlayer>
       <RaidTurn />
       <PlayerFamily>
-        <P.0>FAMILY_FABIUS</P.0>
+        <P.0>NONE</P.0>
       </PlayerFamily>
       <QueueList />
       <AI />
@@ -2107,7 +2284,7 @@
       <OriginalPlayer>0</OriginalPlayer>
       <RaidTurn />
       <PlayerFamily>
-        <P.0>FAMILY_FABIUS</P.0>
+        <P.0>FAMILY_JULIUS</P.0>
       </PlayerFamily>
       <QueueList />
       <AI />
@@ -2123,7 +2300,7 @@
       <OriginalPlayer>0</OriginalPlayer>
       <RaidTurn />
       <PlayerFamily>
-        <P.0>FAMILY_FABIUS</P.0>
+        <P.0>FAMILY_JULIUS</P.0>
       </PlayerFamily>
       <QueueList />
       <AI />
@@ -2159,7 +2336,7 @@
       <OriginalPlayer>0</OriginalPlayer>
       <RaidTurn />
       <PlayerFamily>
-        <P.0>FAMILY_FABIUS</P.0>
+        <P.0>FAMILY_JULIUS</P.0>
       </PlayerFamily>
       <QueueList />
       <AI />
@@ -2175,7 +2352,7 @@
       <OriginalPlayer>0</OriginalPlayer>
       <RaidTurn />
       <PlayerFamily>
-        <P.0>FAMILY_FABIUS</P.0>
+        <P.0>FAMILY_JULIUS</P.0>
       </PlayerFamily>
       <QueueList />
       <AI />
@@ -2454,7 +2631,7 @@
       <OriginalPlayer>0</OriginalPlayer>
       <RaidTurn />
       <PlayerFamily>
-        <P.0>FAMILY_FABIUS</P.0>
+        <P.0>NONE</P.0>
       </PlayerFamily>
       <QueueList />
       <AI />
@@ -2490,7 +2667,7 @@
       <OriginalPlayer>0</OriginalPlayer>
       <RaidTurn />
       <PlayerFamily>
-        <P.0>FAMILY_FABIUS</P.0>
+        <P.0>NONE</P.0>
       </PlayerFamily>
       <QueueList />
       <AI />
@@ -2534,7 +2711,7 @@
       <OriginalPlayer>0</OriginalPlayer>
       <RaidTurn />
       <PlayerFamily>
-        <P.0>FAMILY_FABIUS</P.0>
+        <P.0>FAMILY_JULIUS</P.0>
       </PlayerFamily>
       <QueueList />
       <AI />
@@ -2550,7 +2727,7 @@
       <OriginalPlayer>0</OriginalPlayer>
       <RaidTurn />
       <PlayerFamily>
-        <P.0>FAMILY_FABIUS</P.0>
+        <P.0>FAMILY_JULIUS</P.0>
       </PlayerFamily>
       <QueueList />
       <AI />
@@ -2587,7 +2764,7 @@
       <OriginalPlayer>0</OriginalPlayer>
       <RaidTurn />
       <PlayerFamily>
-        <P.0>FAMILY_FABIUS</P.0>
+        <P.0>NONE</P.0>
       </PlayerFamily>
       <QueueList />
       <AI />
@@ -2603,7 +2780,7 @@
       <OriginalPlayer>0</OriginalPlayer>
       <RaidTurn />
       <PlayerFamily>
-        <P.0>FAMILY_FABIUS</P.0>
+        <P.0>FAMILY_JULIUS</P.0>
       </PlayerFamily>
       <QueueList />
       <AI />

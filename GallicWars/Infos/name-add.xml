@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Entry>
+		<zType />
+		<Name />
+	</Entry>
+	<Entry>
+		<zType>NAME_AURELIA_COTTA</zType>
+		<Name>TEXT_NAME_AURELIA_COTTA</Name>
+	</Entry>
+	<Entry>
+		<zType>NAME_QUINTUS_FABIUS_MAXIMUS</zType>
+		<Name>TEXT_NAME_QUINTUS_FABIUS_MAXIMUS</Name>
+	</Entry>
+	<Entry>
+		<zType>NAME_APPIUS_CLAUDIUS_PULCHER</zType>
+		<Name>TEXT_NAME_APPIUS_CLAUDIUS_PULCHER</Name>
+	</Entry>
+	<Entry>
+		<zType>NAME_TITUS_LABIENUS</zType>
+		<Name>TEXT_NAME_TITUS_LABIENUS</Name>
+	</Entry>
+	<Entry>
+		<zType>NAME_PUBLIUS_CRASSUS</zType>
+		<Name>TEXT_NAME_PUBLIUS_CRASSUS</Name>
+	</Entry>
+	<Entry>
+		<zType>NAME_DIVICIACUS</zType>
+		<Name>TEXT_NAME_DIVICIACUS</Name>
+	</Entry>
+	<Entry>
+		<zType>NAME_LISCUS</zType>
+		<Name>TEXT_NAME_LISCUS</Name>
+	</Entry>
+</Root>
