@@ -1,0 +1,12 @@
+<Root>
+	<Entry>
+		<zType>EFFECTPLAYER_NATION_ROME</zType>
+		<iLegitimacy>50</iLegitimacy>
+		<aiYieldRate>
+			<Pair>
+				<zIndex>YIELD_ORDERS</zIndex>
+				<iValue>200</iValue>
+			</Pair>
+		</aiYieldRate>
+	</Entry>
+</Root>

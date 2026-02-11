@@ -61,15 +61,15 @@ class CityDef:
 def make_cities(width: int) -> list[CityDef]:
     """Build the CITIES list with tile IDs computed from map width."""
     return [
-        CityDef(0, NARBO_Y * width + NARBO_X, "Narbo", 0, "FAMILY_JULIUS",
+        CityDef(0, NARBO_Y * width + NARBO_X, "Narbo", 0, "FAMILY_FABIUS",
                 "NONE", True, 3, NARBO_X, NARBO_Y,
                 culture="CULTURE_DEVELOPING",
                 build_queue=[("BUILD_UNIT", "UNIT_HASTATUS")],
                 extra_territory=[(8, 5), (9, 5), (10, 5), (11, 5), (9, 6), (10, 6), (8, 6)]),
-        CityDef(1, GENAVA_Y * width + GENAVA_X, "Genava", 0, "FAMILY_JULIUS",
+        CityDef(1, GENAVA_Y * width + GENAVA_X, "Genava", 0, "FAMILY_CLAUDIUS",
                 "NONE", False, 1, GENAVA_X, GENAVA_Y,
                 build_queue=[("BUILD_UNIT", "UNIT_WARRIOR")],
-                territory_x_min=10, territory_y_max=19),
+                territory_x_min=10, territory_x_max=19, territory_y_max=19),
         CityDef(2, BIBRACTE_Y * width + BIBRACTE_X, "Bibracte", -1, "NONE",
                 "TRIBE_AEDUI", False, 1, BIBRACTE_X, BIBRACTE_Y),
         CityDef(3, VESONTIO_Y * width + VESONTIO_X, "Vesontio", -1, "NONE",
@@ -79,10 +79,24 @@ def make_cities(width: int) -> list[CityDef]:
 
 # Units to pre-place: (x, y, unit_type)
 STARTING_UNITS: list[tuple[int, int, str]] = [
-    (5, 4, "UNIT_HASTATUS"),
+    # Hastatus x4
+    (7, 5, "UNIT_HASTATUS"),
+    (9, 5, "UNIT_HASTATUS"),
+    (9, 6, "UNIT_HASTATUS"),
+    (10, 5, "UNIT_HASTATUS"),
+    # Balearic Slinger x2
     (6, 3, "UNIT_BALEARIC_SLINGER"),
-    (6, 5, "UNIT_NOMAD_SKIRMISHER_2"),
-    (5, 5, "UNIT_WORKER"),
+    (10, 6, "UNIT_BALEARIC_SLINGER"),
+    # Elite Nomad Warlord x4
+    (6, 5, "UNIT_NOMAD_WARLORD_2"),
+    (8, 5, "UNIT_NOMAD_WARLORD_2"),
+    (6, 6, "UNIT_NOMAD_WARLORD_2"),
+    (7, 6, "UNIT_NOMAD_WARLORD_2"),
+    # Worker x4
+    (9, 5, "UNIT_WORKER"),
+    (9, 6, "UNIT_WORKER"),
+    (10, 5, "UNIT_WORKER"),
+    (10, 6, "UNIT_WORKER"),
 ]
 
 NUM_UNITS = len(STARTING_UNITS)
@@ -332,14 +346,17 @@ def generate_preamble(
     lines.append('    <StartTurnCities>0</StartTurnCities>')
     lines.append('    <Founded />')
     lines.append('    <SuccessionGender>SUCCESSIONGENDER_ABSOLUTE_COGNATIC</SuccessionGender>')
+    # Camera centers on first starting tile; use a tile east of Narbo
+    # so both Narbo and Genava are visible at game start
+    camera_tile_id = 8 * width + 10  # approx (10,8)
     lines.append(f'    <StartingTileIDs>')
-    lines.append(f'      <Tile>{narbo_tile_id}</Tile>')
+    lines.append(f'      <Tile>{camera_tile_id}</Tile>')
     lines.append(f'    </StartingTileIDs>')
     lines.append('    <YieldStockpile>')
     lines.append('      <YIELD_CIVICS>3000</YIELD_CIVICS>')
     lines.append('      <YIELD_TRAINING>3000</YIELD_TRAINING>')
     lines.append('      <YIELD_MONEY>500</YIELD_MONEY>')
-    lines.append('      <YIELD_ORDERS>80</YIELD_ORDERS>')
+    lines.append('      <YIELD_ORDERS>370</YIELD_ORDERS>')
     lines.append('      <YIELD_FOOD>2000</YIELD_FOOD>')
     lines.append('      <YIELD_IRON>2000</YIELD_IRON>')
     lines.append('      <YIELD_STONE>2000</YIELD_STONE>')
@@ -374,7 +391,8 @@ def generate_preamble(
     lines.append('    <UnitsProducedTurn />')
     lines.append('    <CouncilCharacter />')
     lines.append('    <FamilySeatCityID>')
-    lines.append('      <FAMILY_JULIUS>0</FAMILY_JULIUS>')
+    lines.append('      <FAMILY_FABIUS>0</FAMILY_FABIUS>')
+    lines.append('      <FAMILY_CLAUDIUS>1</FAMILY_CLAUDIUS>')
     lines.append('    </FamilySeatCityID>')
     lines.append('    <FamilyHeadID />')
     lines.append('    <TechAvailable />')
@@ -405,6 +423,8 @@ def generate_preamble(
     lines.append('      <ID>0</ID>')
     lines.append('    </Leaders>')
     lines.append('    <Families>')
+    lines.append('      <FAMILY_FABIUS />')
+    lines.append('      <FAMILY_CLAUDIUS />')
     lines.append('      <FAMILY_JULIUS />')
     lines.append('    </Families>')
     lines.append('    <IgnoreCouncilReminder />')
@@ -561,7 +581,7 @@ def write_unit(unit_id: int, unit_type: str) -> list[str]:
     lines.append(f'      <OriginalPlayer>0</OriginalPlayer>')
     lines.append(f'      <RaidTurn />')
     lines.append(f'      <PlayerFamily>')
-    lines.append(f'        <P.0>FAMILY_JULIUS</P.0>')
+    lines.append(f'        <P.0>FAMILY_FABIUS</P.0>')
     lines.append(f'      </PlayerFamily>')
     lines.append(f'      <QueueList />')
     lines.append(f'      <AI />')

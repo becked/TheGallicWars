@@ -3,7 +3,7 @@
   MapWidth="37"
   MapEdgesSafe="True"
   MapPath=""
-  GameId="635b6a04-9a23-44a0-97d5-6470bd2af579"
+  GameId="fdfce30a-494f-4ee2-857f-9e80f30374cb"
   MapSize="MAPSIZE_SMALL"
   Scenario="SCENARIO_GALLIC_WARS_1"
   GameName=""
@@ -57,7 +57,7 @@
   <MapSingleOptions />
   <Game>
     <Seed>666877878369320307</Seed>
-    <NextUnitID>4</NextUnitID>
+    <NextUnitID>14</NextUnitID>
     <NextCityID>4</NextCityID>
     <NextCharacterID>2</NextCharacterID>
     <NextOccurrenceID>0</NextOccurrenceID>
@@ -154,13 +154,13 @@
     <Founded />
     <SuccessionGender>SUCCESSIONGENDER_ABSOLUTE_COGNATIC</SuccessionGender>
     <StartingTileIDs>
-      <Tile>154</Tile>
+      <Tile>306</Tile>
     </StartingTileIDs>
     <YieldStockpile>
       <YIELD_CIVICS>3000</YIELD_CIVICS>
       <YIELD_TRAINING>3000</YIELD_TRAINING>
       <YIELD_MONEY>500</YIELD_MONEY>
-      <YIELD_ORDERS>80</YIELD_ORDERS>
+      <YIELD_ORDERS>370</YIELD_ORDERS>
       <YIELD_FOOD>2000</YIELD_FOOD>
       <YIELD_IRON>2000</YIELD_IRON>
       <YIELD_STONE>2000</YIELD_STONE>
@@ -195,7 +195,8 @@
     <UnitsProducedTurn />
     <CouncilCharacter />
     <FamilySeatCityID>
-      <FAMILY_JULIUS>0</FAMILY_JULIUS>
+      <FAMILY_FABIUS>0</FAMILY_FABIUS>
+      <FAMILY_CLAUDIUS>1</FAMILY_CLAUDIUS>
     </FamilySeatCityID>
     <FamilyHeadID />
     <TechAvailable />
@@ -226,6 +227,8 @@
       <ID>0</ID>
     </Leaders>
     <Families>
+      <FAMILY_FABIUS />
+      <FAMILY_CLAUDIUS />
       <FAMILY_JULIUS />
     </Families>
     <IgnoreCouncilReminder />
@@ -303,7 +306,7 @@
     ID="0"
     TileID="154"
     Player="0"
-    Family="FAMILY_JULIUS"
+    Family="FAMILY_FABIUS"
     Founded="1">
     <Name>Narbo</Name>
     <Citizens>3</Citizens>
@@ -320,7 +323,7 @@
     <TeamDiscontentLevelHighest />
     <Religion />
     <PlayerFamily>
-      <P.0>FAMILY_JULIUS</P.0>
+      <P.0>FAMILY_FABIUS</P.0>
     </PlayerFamily>
     <TeamCulture>
       <T.0>CULTURE_DEVELOPING</T.0>
@@ -339,7 +342,7 @@
     ID="1"
     TileID="647"
     Player="0"
-    Family="FAMILY_JULIUS"
+    Family="FAMILY_CLAUDIUS"
     Founded="1">
     <Name>Genava</Name>
     <Citizens>1</Citizens>
@@ -355,7 +358,7 @@
     <TeamDiscontentLevelHighest />
     <Religion />
     <PlayerFamily>
-      <P.0>FAMILY_JULIUS</P.0>
+      <P.0>FAMILY_CLAUDIUS</P.0>
     </PlayerFamily>
     <TeamCulture>
       <T.0>CULTURE_WEAK</T.0>
@@ -1371,17 +1374,17 @@
     </Revealed>
     <CityTerritory>0</CityTerritory>
     <Unit
-      ID="1"
+      ID="4"
       Type="UNIT_BALEARIC_SLINGER"
       Player="0"
       Tribe="NONE"
-      Seed="58100000000000101">
+      Seed="58100000000000104">
       <CreateTurn>1</CreateTurn>
       <Facing>NE</Facing>
       <OriginalPlayer>0</OriginalPlayer>
       <RaidTurn />
       <PlayerFamily>
-        <P.0>FAMILY_JULIUS</P.0>
+        <P.0>FAMILY_FABIUS</P.0>
       </PlayerFamily>
       <QueueList />
       <AI />
@@ -1657,35 +1660,8 @@
     <Vegetation>VEGETATION_SCRUB</Vegetation>
     <RiverSW>1</RiverSW>
     <RiverSE>1</RiverSE>
-    <RevealedCityTerritory>
-      <Team
-        CityTerritory="0">0</Team>
-    </RevealedCityTerritory>
-    <Revealed>
-      <Team>0</Team>
-    </Revealed>
     <CityTerritory>0</CityTerritory>
-    <Unit
-      ID="0"
-      Type="UNIT_HASTATUS"
-      Player="0"
-      Tribe="NONE"
-      Seed="58100000000000100">
-      <CreateTurn>1</CreateTurn>
-      <Facing>NE</Facing>
-      <OriginalPlayer>0</OriginalPlayer>
-      <RaidTurn />
-      <PlayerFamily>
-        <P.0>FAMILY_JULIUS</P.0>
-      </PlayerFamily>
-      <QueueList />
-      <AI />
-    </Unit>
     <Religion />
-    <RevealedTerrain>
-      <Team
-        Terrain="TERRAIN_LUSH">0</Team>
-    </RevealedTerrain>
     <RevealedTurn />
   </Tile>
   <Tile
@@ -1751,6 +1727,7 @@
   </Tile>
   <Tile
     ID="159">
+    <Road />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Religion />
@@ -1758,6 +1735,7 @@
   </Tile>
   <Tile
     ID="160">
+    <Road />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Religion />
@@ -1765,6 +1743,7 @@
   </Tile>
   <Tile
     ID="161">
+    <Road />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Religion />
@@ -1990,35 +1969,8 @@
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
     <Improvement>IMPROVEMENT_MINE</Improvement>
-    <RevealedCityTerritory>
-      <Team
-        CityTerritory="0">0</Team>
-    </RevealedCityTerritory>
-    <Revealed>
-      <Team>0</Team>
-    </Revealed>
     <CityTerritory>0</CityTerritory>
-    <Unit
-      ID="3"
-      Type="UNIT_WORKER"
-      Player="0"
-      Tribe="NONE"
-      Seed="58100000000000103">
-      <CreateTurn>1</CreateTurn>
-      <Facing>NE</Facing>
-      <OriginalPlayer>0</OriginalPlayer>
-      <RaidTurn />
-      <PlayerFamily>
-        <P.0>FAMILY_JULIUS</P.0>
-      </PlayerFamily>
-      <QueueList />
-      <AI />
-    </Unit>
     <Religion />
-    <RevealedTerrain>
-      <Team
-        Terrain="TERRAIN_LUSH">0</Team>
-    </RevealedTerrain>
     <RevealedTurn />
   </Tile>
   <Tile
@@ -2035,17 +1987,17 @@
     </Revealed>
     <CityTerritory>0</CityTerritory>
     <Unit
-      ID="2"
-      Type="UNIT_NOMAD_SKIRMISHER_2"
+      ID="6"
+      Type="UNIT_NOMAD_WARLORD_2"
       Player="0"
       Tribe="NONE"
-      Seed="58100000000000102">
+      Seed="58100000000000106">
       <CreateTurn>1</CreateTurn>
       <Facing>NE</Facing>
       <OriginalPlayer>0</OriginalPlayer>
       <RaidTurn />
       <PlayerFamily>
-        <P.0>FAMILY_JULIUS</P.0>
+        <P.0>FAMILY_FABIUS</P.0>
       </PlayerFamily>
       <QueueList />
       <AI />
@@ -2062,8 +2014,35 @@
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Improvement>IMPROVEMENT_GARRISON_1</Improvement>
+    <RevealedCityTerritory>
+      <Team
+        CityTerritory="0">0</Team>
+    </RevealedCityTerritory>
+    <Revealed>
+      <Team>0</Team>
+    </Revealed>
     <CityTerritory>0</CityTerritory>
+    <Unit
+      ID="0"
+      Type="UNIT_HASTATUS"
+      Player="0"
+      Tribe="NONE"
+      Seed="58100000000000100">
+      <CreateTurn>1</CreateTurn>
+      <Facing>NE</Facing>
+      <OriginalPlayer>0</OriginalPlayer>
+      <RaidTurn />
+      <PlayerFamily>
+        <P.0>FAMILY_FABIUS</P.0>
+      </PlayerFamily>
+      <QueueList />
+      <AI />
+    </Unit>
     <Religion />
+    <RevealedTerrain>
+      <Team
+        Terrain="TERRAIN_TEMPERATE">0</Team>
+    </RevealedTerrain>
     <RevealedTurn />
   </Tile>
   <Tile
@@ -2072,8 +2051,35 @@
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
     <Improvement>IMPROVEMENT_BARRACKS</Improvement>
+    <RevealedCityTerritory>
+      <Team
+        CityTerritory="0">0</Team>
+    </RevealedCityTerritory>
+    <Revealed>
+      <Team>0</Team>
+    </Revealed>
     <CityTerritory>0</CityTerritory>
+    <Unit
+      ID="7"
+      Type="UNIT_NOMAD_WARLORD_2"
+      Player="0"
+      Tribe="NONE"
+      Seed="58100000000000107">
+      <CreateTurn>1</CreateTurn>
+      <Facing>NE</Facing>
+      <OriginalPlayer>0</OriginalPlayer>
+      <RaidTurn />
+      <PlayerFamily>
+        <P.0>FAMILY_FABIUS</P.0>
+      </PlayerFamily>
+      <QueueList />
+      <AI />
+    </Unit>
     <Religion />
+    <RevealedTerrain>
+      <Team
+        Terrain="TERRAIN_TEMPERATE">0</Team>
+    </RevealedTerrain>
     <RevealedTurn />
   </Tile>
   <Tile
@@ -2082,8 +2088,51 @@
     <Height>HEIGHT_FLAT</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
     <Improvement>IMPROVEMENT_GARRISON_2</Improvement>
+    <RevealedCityTerritory>
+      <Team
+        CityTerritory="0">0</Team>
+    </RevealedCityTerritory>
+    <Revealed>
+      <Team>0</Team>
+    </Revealed>
     <CityTerritory>0</CityTerritory>
+    <Unit
+      ID="1"
+      Type="UNIT_HASTATUS"
+      Player="0"
+      Tribe="NONE"
+      Seed="58100000000000101">
+      <CreateTurn>1</CreateTurn>
+      <Facing>NE</Facing>
+      <OriginalPlayer>0</OriginalPlayer>
+      <RaidTurn />
+      <PlayerFamily>
+        <P.0>FAMILY_FABIUS</P.0>
+      </PlayerFamily>
+      <QueueList />
+      <AI />
+    </Unit>
+    <Unit
+      ID="10"
+      Type="UNIT_WORKER"
+      Player="0"
+      Tribe="NONE"
+      Seed="58100000000000110">
+      <CreateTurn>1</CreateTurn>
+      <Facing>NE</Facing>
+      <OriginalPlayer>0</OriginalPlayer>
+      <RaidTurn />
+      <PlayerFamily>
+        <P.0>FAMILY_FABIUS</P.0>
+      </PlayerFamily>
+      <QueueList />
+      <AI />
+    </Unit>
     <Religion />
+    <RevealedTerrain>
+      <Team
+        Terrain="TERRAIN_LUSH">0</Team>
+    </RevealedTerrain>
     <RevealedTurn />
   </Tile>
   <Tile
@@ -2091,12 +2140,56 @@
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <Improvement>IMPROVEMENT_BARRACKS</Improvement>
+    <RevealedCityTerritory>
+      <Team
+        CityTerritory="0">0</Team>
+    </RevealedCityTerritory>
+    <Revealed>
+      <Team>0</Team>
+    </Revealed>
     <CityTerritory>0</CityTerritory>
+    <Unit
+      ID="3"
+      Type="UNIT_HASTATUS"
+      Player="0"
+      Tribe="NONE"
+      Seed="58100000000000103">
+      <CreateTurn>1</CreateTurn>
+      <Facing>NE</Facing>
+      <OriginalPlayer>0</OriginalPlayer>
+      <RaidTurn />
+      <PlayerFamily>
+        <P.0>FAMILY_FABIUS</P.0>
+      </PlayerFamily>
+      <QueueList />
+      <AI />
+    </Unit>
+    <Unit
+      ID="12"
+      Type="UNIT_WORKER"
+      Player="0"
+      Tribe="NONE"
+      Seed="58100000000000112">
+      <CreateTurn>1</CreateTurn>
+      <Facing>NE</Facing>
+      <OriginalPlayer>0</OriginalPlayer>
+      <RaidTurn />
+      <PlayerFamily>
+        <P.0>FAMILY_FABIUS</P.0>
+      </PlayerFamily>
+      <QueueList />
+      <AI />
+    </Unit>
     <Religion />
+    <RevealedTerrain>
+      <Team
+        Terrain="TERRAIN_LUSH">0</Team>
+    </RevealedTerrain>
     <RevealedTurn />
   </Tile>
   <Tile
     ID="196">
+    <Road />
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <CityTerritory>0</CityTerritory>
@@ -2342,8 +2435,35 @@
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Improvement>IMPROVEMENT_MINE</Improvement>
+    <RevealedCityTerritory>
+      <Team
+        CityTerritory="0">0</Team>
+    </RevealedCityTerritory>
+    <Revealed>
+      <Team>0</Team>
+    </Revealed>
     <CityTerritory>0</CityTerritory>
+    <Unit
+      ID="8"
+      Type="UNIT_NOMAD_WARLORD_2"
+      Player="0"
+      Tribe="NONE"
+      Seed="58100000000000108">
+      <CreateTurn>1</CreateTurn>
+      <Facing>NE</Facing>
+      <OriginalPlayer>0</OriginalPlayer>
+      <RaidTurn />
+      <PlayerFamily>
+        <P.0>FAMILY_FABIUS</P.0>
+      </PlayerFamily>
+      <QueueList />
+      <AI />
+    </Unit>
     <Religion />
+    <RevealedTerrain>
+      <Team
+        Terrain="TERRAIN_TEMPERATE">0</Team>
+    </RevealedTerrain>
     <RevealedTurn />
   </Tile>
   <Tile
@@ -2351,8 +2471,35 @@
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Improvement>IMPROVEMENT_MINE</Improvement>
+    <RevealedCityTerritory>
+      <Team
+        CityTerritory="0">0</Team>
+    </RevealedCityTerritory>
+    <Revealed>
+      <Team>0</Team>
+    </Revealed>
     <CityTerritory>0</CityTerritory>
+    <Unit
+      ID="9"
+      Type="UNIT_NOMAD_WARLORD_2"
+      Player="0"
+      Tribe="NONE"
+      Seed="58100000000000109">
+      <CreateTurn>1</CreateTurn>
+      <Facing>NE</Facing>
+      <OriginalPlayer>0</OriginalPlayer>
+      <RaidTurn />
+      <PlayerFamily>
+        <P.0>FAMILY_FABIUS</P.0>
+      </PlayerFamily>
+      <QueueList />
+      <AI />
+    </Unit>
     <Religion />
+    <RevealedTerrain>
+      <Team
+        Terrain="TERRAIN_TEMPERATE">0</Team>
+    </RevealedTerrain>
     <RevealedTurn />
   </Tile>
   <Tile
@@ -2368,8 +2515,51 @@
     ID="231">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <RevealedCityTerritory>
+      <Team
+        CityTerritory="0">0</Team>
+    </RevealedCityTerritory>
+    <Revealed>
+      <Team>0</Team>
+    </Revealed>
     <CityTerritory>0</CityTerritory>
+    <Unit
+      ID="2"
+      Type="UNIT_HASTATUS"
+      Player="0"
+      Tribe="NONE"
+      Seed="58100000000000102">
+      <CreateTurn>1</CreateTurn>
+      <Facing>NE</Facing>
+      <OriginalPlayer>0</OriginalPlayer>
+      <RaidTurn />
+      <PlayerFamily>
+        <P.0>FAMILY_FABIUS</P.0>
+      </PlayerFamily>
+      <QueueList />
+      <AI />
+    </Unit>
+    <Unit
+      ID="11"
+      Type="UNIT_WORKER"
+      Player="0"
+      Tribe="NONE"
+      Seed="58100000000000111">
+      <CreateTurn>1</CreateTurn>
+      <Facing>NE</Facing>
+      <OriginalPlayer>0</OriginalPlayer>
+      <RaidTurn />
+      <PlayerFamily>
+        <P.0>FAMILY_FABIUS</P.0>
+      </PlayerFamily>
+      <QueueList />
+      <AI />
+    </Unit>
     <Religion />
+    <RevealedTerrain>
+      <Team
+        Terrain="TERRAIN_LUSH">0</Team>
+    </RevealedTerrain>
     <RevealedTurn />
   </Tile>
   <Tile
@@ -2378,8 +2568,51 @@
     <Height>HEIGHT_FLAT</Height>
     <Resource>RESOURCE_HORSE</Resource>
     <Improvement>IMPROVEMENT_PASTURE</Improvement>
+    <RevealedCityTerritory>
+      <Team
+        CityTerritory="0">0</Team>
+    </RevealedCityTerritory>
+    <Revealed>
+      <Team>0</Team>
+    </Revealed>
     <CityTerritory>0</CityTerritory>
+    <Unit
+      ID="5"
+      Type="UNIT_BALEARIC_SLINGER"
+      Player="0"
+      Tribe="NONE"
+      Seed="58100000000000105">
+      <CreateTurn>1</CreateTurn>
+      <Facing>NE</Facing>
+      <OriginalPlayer>0</OriginalPlayer>
+      <RaidTurn />
+      <PlayerFamily>
+        <P.0>FAMILY_FABIUS</P.0>
+      </PlayerFamily>
+      <QueueList />
+      <AI />
+    </Unit>
+    <Unit
+      ID="13"
+      Type="UNIT_WORKER"
+      Player="0"
+      Tribe="NONE"
+      Seed="58100000000000113">
+      <CreateTurn>1</CreateTurn>
+      <Facing>NE</Facing>
+      <OriginalPlayer>0</OriginalPlayer>
+      <RaidTurn />
+      <PlayerFamily>
+        <P.0>FAMILY_FABIUS</P.0>
+      </PlayerFamily>
+      <QueueList />
+      <AI />
+    </Unit>
     <Religion />
+    <RevealedTerrain>
+      <Team
+        Terrain="TERRAIN_LUSH">0</Team>
+    </RevealedTerrain>
     <RevealedTurn />
   </Tile>
   <Tile
@@ -4301,14 +4534,14 @@
   </Tile>
   <Tile
     ID="499">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Religion />
     <RevealedTurn />
   </Tile>
   <Tile
     ID="500">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
     <Religion />
@@ -4316,7 +4549,7 @@
   </Tile>
   <Tile
     ID="501">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
     <Religion />
     <RevealedTurn />
@@ -4339,6 +4572,7 @@
     ID="504">
     <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
+    <ElementName>TEXT_ALPES</ElementName>
     <Religion />
     <RevealedTurn />
   </Tile>
@@ -4587,15 +4821,15 @@
   </Tile>
   <Tile
     ID="536">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Religion />
     <RevealedTurn />
   </Tile>
   <Tile
     ID="537">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
     <Religion />
     <RevealedTurn />
@@ -4892,16 +5126,15 @@
   <Tile
     ID="574">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
+    <Height>HEIGHT_HILL</Height>
     <CityTerritory>1</CityTerritory>
     <Religion />
     <RevealedTurn />
   </Tile>
   <Tile
     ID="575">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
-    <ElementName>TEXT_ALPES</ElementName>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_HILL</Height>
     <Religion />
     <RevealedTurn />
   </Tile>
@@ -5206,7 +5439,6 @@
     <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
-    <CityTerritory>1</CityTerritory>
     <Religion />
     <RevealedTurn />
   </Tile>
@@ -5509,7 +5741,6 @@
     ID="649">
     <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <CityTerritory>1</CityTerritory>
     <Religion />
     <RevealedTurn />
   </Tile>
@@ -5603,9 +5834,8 @@
   </Tile>
   <Tile
     ID="662">
-    <Terrain>TERRAIN_URBAN</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Improvement>IMPROVEMENT_ANCIENT_RUINS</Improvement>
     <Religion />
     <RevealedTurn />
   </Tile>
@@ -5789,7 +6019,6 @@
     ID="686">
     <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <CityTerritory>1</CityTerritory>
     <Religion />
     <RevealedTurn />
   </Tile>

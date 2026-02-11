@@ -852,16 +852,19 @@
     ID="159">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <Road />
   </Tile>
   <Tile
     ID="160">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <Road />
   </Tile>
   <Tile
     ID="161">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <Road />
   </Tile>
   <Tile
     ID="162">
@@ -1059,6 +1062,7 @@
     ID="196">
     <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <Road />
   </Tile>
   <Tile
     ID="197">
@@ -2616,18 +2620,18 @@
   </Tile>
   <Tile
     ID="499">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="500">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
     ID="501">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
   </Tile>
   <Tile
@@ -2644,6 +2648,7 @@
     ID="504">
     <Terrain>TERRAIN_TUNDRA</Terrain>
     <Height>HEIGHT_MOUNTAIN</Height>
+    <ElementName>TEXT_ALPES</ElementName>
   </Tile>
   <Tile
     ID="505">
@@ -2824,13 +2829,13 @@
   </Tile>
   <Tile
     ID="536">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="537">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_HILL</Height>
     <Vegetation>VEGETATION_SCRUB</Vegetation>
   </Tile>
   <Tile
@@ -3047,13 +3052,12 @@
   <Tile
     ID="574">
     <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="575">
-    <Terrain>TERRAIN_LUSH</Terrain>
-    <Height>HEIGHT_MOUNTAIN</Height>
-    <ElementName>TEXT_ALPES</ElementName>
+    <Terrain>TERRAIN_TUNDRA</Terrain>
+    <Height>HEIGHT_HILL</Height>
   </Tile>
   <Tile
     ID="576">
@@ -3549,9 +3553,8 @@
   </Tile>
   <Tile
     ID="662">
-    <Terrain>TERRAIN_URBAN</Terrain>
+    <Terrain>TERRAIN_LUSH</Terrain>
     <Height>HEIGHT_HILL</Height>
-    <Improvement>IMPROVEMENT_ANCIENT_RUINS</Improvement>
   </Tile>
   <Tile
     ID="663">
