@@ -26,14 +26,14 @@ BOUNDARY_WIDTH = 2  # tiles from each edge marked as boundary
 NARBO_X = 6
 NARBO_Y = 4
 
-GENAVA_X = 12
-GENAVA_Y = 11
+GENAVA_X = 18
+GENAVA_Y = 17
 
 BIBRACTE_X = 9
-BIBRACTE_Y = 13
+BIBRACTE_Y = 19
 
-VESONTIO_X = 14
-VESONTIO_Y = 21
+VESONTIO_X = 20
+VESONTIO_Y = 27
 
 # City definitions
 @dataclass
@@ -69,7 +69,7 @@ def make_cities(width: int) -> list[CityDef]:
         CityDef(1, GENAVA_Y * width + GENAVA_X, "Genava", 0, "FAMILY_JULIUS",
                 "NONE", False, 1, GENAVA_X, GENAVA_Y,
                 build_queue=[("BUILD_UNIT", "UNIT_WARRIOR")],
-                territory_x_min=10, territory_y_max=13),
+                territory_x_min=10, territory_y_max=19),
         CityDef(2, BIBRACTE_Y * width + BIBRACTE_X, "Bibracte", -1, "NONE",
                 "TRIBE_AEDUI", False, 1, BIBRACTE_X, BIBRACTE_Y),
         CityDef(3, VESONTIO_Y * width + VESONTIO_X, "Vesontio", -1, "NONE",
