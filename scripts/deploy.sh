@@ -29,10 +29,6 @@ fi
 
 MOD_FOLDER="$OLDWORLD_MODS_PATH/GallicWars"
 
-echo "=== Building CrcFix DLL ==="
-"$SCRIPT_DIR/build_dll.sh"
-
-echo ""
 echo "=== Deploying GallicWars to mods folder ==="
 echo "Target: $MOD_FOLDER"
 
@@ -42,8 +38,6 @@ mkdir -p "$MOD_FOLDER"
 cp GallicWars/ModInfo.xml "$MOD_FOLDER/"
 cp -r GallicWars/Infos "$MOD_FOLDER/"
 cp -r GallicWars/Maps "$MOD_FOLDER/"
-cp GallicWars/CrcFix.dll "$MOD_FOLDER/"
-cp GallicWars/0Harmony.dll "$MOD_FOLDER/"
 
 echo ""
 echo "=== Deployment complete ==="
