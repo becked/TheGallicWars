@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Entry>
+		<zType>EVENTOPTION_GW1_INTRO_OK</zType>
+		<Text>TEXT_EVENTOPTION_GW1_INTRO_OK</Text>
+		<aeBonuses>
+			<zValue>BONUS_GW1_START_FORTIFY_RHONE</zValue>
+		</aeBonuses>
+	</Entry>
+</Root>

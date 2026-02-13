@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Entry>
+		<zType>EVENTSTORY_GW1_INTRO</zType>
+		<Name>TEXT_EVENTSTORY_GW1_INTRO_TITLE</Name>
+		<Text>TEXT_EVENTSTORY_GW1_INTRO</Text>
+		<Class>EVENTCLASS_GALLIC_WARS</Class>
+		<Trigger>EVENTTRIGGER_START_GAME</Trigger>
+		<aeSubjects>
+			<zValue>SUBJECT_PLAYER_US</zValue>
+		</aeSubjects>
+		<aeOptions>
+			<zValue>EVENTOPTION_GW1_INTRO_OK</zValue>
+		</aeOptions>
+		<iPriority>20</iPriority>
+		<iWeight>1</iWeight>
+		<bForceChoice>1</bForceChoice>
+		<bNoEventsValid>1</bNoEventsValid>
+	</Entry>
+</Root>

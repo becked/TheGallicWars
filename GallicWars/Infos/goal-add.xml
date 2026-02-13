@@ -4,13 +4,8 @@
 		<zType>GOAL_GW1_FORTIFY_RHONE</zType>
 		<Name>TEXT_GOAL_GW1_FORTIFY_RHONE</Name>
 		<HelpText>TEXT_GOAL_GW1_FORTIFY_RHONE_HELPTEXT</HelpText>
+		<bBlockComplete>1</bBlockComplete>
 		<bScenario>1</bScenario>
-		<aiImprovementCount>
-			<Pair>
-				<zIndex>IMPROVEMENT_FORT</zIndex>
-				<iValue>4</iValue>
-			</Pair>
-		</aiImprovementCount>
 	</Entry>
 	<Entry>
 		<zType>GOAL_GW1_BIBRACTE</zType>

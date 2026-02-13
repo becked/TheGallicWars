@@ -3,7 +3,7 @@
   MapWidth="37"
   MapEdgesSafe="True"
   MapPath=""
-  GameId="1d5f89ac-fb0a-4e26-be02-d87355a38497"
+  GameId="503ee455-7d6f-40e8-935b-cb9dcdfc46d2"
   MapSize="MAPSIZE_SMALL"
   Scenario="SCENARIO_GALLIC_WARS_1"
   GameName=""
@@ -23,7 +23,7 @@
   TurnScale="TURNSCALE_YEAR"
   TeamNation="TEAMNATION_GAME_UNIQUE"
   ForceMarch="FORCEMARCH_UNLIMITED"
-  EventLevel="EVENTLEVEL_MODERATE"
+  EventLevel="EVENTLEVEL_MINIMAL"
   NumAutosaves="10">
   <Team>
     <PlayerTeam>0</PlayerTeam>
@@ -51,7 +51,9 @@
   </StartingPlayerOptions>
   <GameOptions />
   <OccurrenceLevels />
-  <VictoryEnabled />
+  <VictoryEnabled>
+    <VICTORY_CONQUEST />
+  </VictoryEnabled>
   <GameContent />
   <MapMultiOptions />
   <MapSingleOptions />
@@ -104,7 +106,13 @@
     <TeamDiplomacyBlock />
     <TeamWarScore />
     <ReligionTheology />
-    <TribeContact />
+    <TribeContact>
+      <TRIBE_HELVETII.0 />
+      <TRIBE_SUEBI.0 />
+      <TRIBE_AEDUI.0 />
+      <TRIBE_SEQUANI.0 />
+      <TRIBE_BOII.0 />
+    </TribeContact>
     <TeamContact>
       <T.0.0 />
     </TeamContact>
@@ -246,6 +254,12 @@
     <YieldRateHistory />
     <FamilyOpinionHistory />
     <AI />
+    <Pings>
+      <Ping PingType="6" Turn="1" RemindTurn="0" Tile="531" Improvement="IMPROVEMENT_FORT" />
+      <Ping PingType="6" Turn="1" RemindTurn="0" Tile="569" Improvement="IMPROVEMENT_FORT" />
+      <Ping PingType="6" Turn="1" RemindTurn="0" Tile="570" Improvement="IMPROVEMENT_FORT" />
+      <Ping PingType="6" Turn="1" RemindTurn="0" Tile="607" Improvement="IMPROVEMENT_FORT" />
+    </Pings>
   </Player>
   <Character
     ID="0"

@@ -10,13 +10,13 @@ GallicWars/              # The mod (deployed to Old World's Mods directory)
   Infos/                 # XML data: scenario, scenarioClass, tribe, unit, text, genderedText, goal
   Maps/                  # Map XML files (generated)
 src/
-  CrcFix/                # Harmony DLL: fixes CRC strict mode bug for scenario mods
+  GallicWarsMod/         # Harmony DLL: CRC fix, goal tracking, and other runtime patches
 data/
   base_terrain.xml       # Authored terrain data (frozen from Imperium Romanum, now editable)
 scripts/
   generate_scenario.py   # Reads frozen terrain, generates scenario map
   freeze_terrain.py      # One-time: extract + freeze terrain from Imperium Romanum
-  build_dll.sh           # Builds CrcFix.dll and copies to GallicWars/
+  build_dll.sh           # Builds GallicWarsMod.dll and copies to GallicWars/
   deploy.sh              # Builds DLL, copies mod to game's Mods path
   screenshot_map.sh      # Automated in-game screenshot tool
 docs/                    # Design docs, milestones, modding reference
@@ -26,7 +26,7 @@ Reference/               # Symlink to game's XML (for looking up base game data)
 ## Build & Test Workflow
 
 1. `python3 scripts/generate_scenario.py` - generate scenario map from frozen terrain
-2. `./scripts/deploy.sh` - build CrcFix DLL, copy mod to game's Mods directory
+2. `./scripts/deploy.sh` - build GallicWarsMod DLL, copy mod to game's Mods directory
 3. Check logs: `~/Library/Logs/MohawkGames/OldWorld/Player.log`
 
 To build the DLL separately: `./scripts/build_dll.sh` (requires `dotnet` SDK and game DLLs)

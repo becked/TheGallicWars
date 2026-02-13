@@ -9,12 +9,27 @@
 		<zModName>GallicWars</zModName>
 		<Nation>NATION_ROME</Nation>
 		<Difficulty>DIFFICULTY_GREAT</Difficulty>
+		<EventLevel>EVENTLEVEL_MINIMAL</EventLevel>
 		<ParametersInvalid>
 			<zValue>NumPlayers</zValue>
 			<zValue>NumTeams</zValue>
 			<zValue>Nation</zValue>
+			<zValue>Archetype</zValue>
+			<zValue>Dynasty</zValue>
+			<zValue>OpponentLevel</zValue>
+			<zValue>TribeLevel</zValue>
+			<zValue>Advantage</zValue>
+			<zValue>SuccessionGender</zValue>
+			<zValue>SuccessionOrder</zValue>
+			<zValue>Mortality</zValue>
+			<zValue>TurnScale</zValue>
+			<zValue>ForceMarch</zValue>
+			<zValue>EventLevel</zValue>
+			<zValue>DifficultyMode</zValue>
+			<zValue>Development</zValue>
 			<zValue>MapSize</zValue>
 			<zValue>MapOptions</zValue>
+			<zValue>ModOptions</zValue>
 			<zValue>MapClass</zValue>
 			<zValue>MapPath</zValue>
 		</ParametersInvalid>

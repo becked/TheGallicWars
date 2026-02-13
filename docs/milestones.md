@@ -31,7 +31,7 @@
 - Starting orders stockpile set to 37 for turn 1
 - Camera start positioned east of Narbo for wider initial view
 - Victory conditions: 3 scenario goals (Fortify the Rhone, Battle of Bibracte, Battle of Vosges)
-- CrcFix Harmony DLL to work around game bug with StrictModeDeferred info types in scenario mods
+- GallicWarsMod Harmony DLL: CRC fix for StrictModeDeferred bug, fort goal tracking via Tile.setImprovement hook
 
 ## Milestone 5: Book 1 Narrative Content (PENDING)
 - Narrative event chains (Helvetii migration, Dumnorix subplot, Ariovistus campaign)

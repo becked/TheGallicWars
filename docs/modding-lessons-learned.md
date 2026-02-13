@@ -418,7 +418,7 @@ External scenario mods that use `StrictModeDeferred` info types (goal, bonus, ev
 
 **Root cause**: `UpdateScenarioMods()` sets strict mode on the controller's `ModPath` when `mzModName` is non-empty. In strict mode, `ReadInfoListTypes` XORs deferred file CRCs but `ReadInfoListData` skips them, creating an asymmetric CRC. `AppMain.StartGame()` copies this non-zero CRC to the server **before** `Infos.PreCreateGame()` can fix it. PreCreateGame then updates the controller's CRC (via the reused Infos's internal `mModSettings` reference), but the server's copy is already stale.
 
-**Workaround**: A Harmony postfix on `ModSettings.CreateServerGame` that re-copies the controller's (now-fixed) CRC to the server's `ModPath` after PreCreateGame runs. See `src/CrcFix/` for implementation.
+**Workaround**: A Harmony postfix on `ModSettings.CreateServerGame` that re-copies the controller's (now-fixed) CRC to the server's `ModPath` after PreCreateGame runs. See `src/GallicWarsMod/` for implementation.
 
 **Bug report**: https://gist.github.com/becked/f6f2c434762d18148e7d3ffe621d9c5d
 

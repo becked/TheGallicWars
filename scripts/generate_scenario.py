@@ -29,6 +29,14 @@ NARBO_Y = 4
 GENAVA_X = 18
 GENAVA_Y = 17
 
+# Fort ping locations for the Fortify Rhone goal
+FORT_PING_TILES: list[tuple[int, int]] = [
+    (13, 14),
+    (14, 15),
+    (15, 15),
+    (15, 16),
+]
+
 BIBRACTE_X = 9
 BIBRACTE_Y = 19
 
@@ -214,7 +222,7 @@ def generate_preamble(
     lines.append('  TurnScale="TURNSCALE_YEAR"')
     lines.append('  TeamNation="TEAMNATION_GAME_UNIQUE"')
     lines.append('  ForceMarch="FORCEMARCH_UNLIMITED"')
-    lines.append('  EventLevel="EVENTLEVEL_MODERATE"')
+    lines.append('  EventLevel="EVENTLEVEL_MINIMAL"')
     lines.append('  NumAutosaves="10">')
 
     # Team / Difficulty / Nation / Dynasty / Humans
@@ -244,7 +252,9 @@ def generate_preamble(
     lines.append('  </StartingPlayerOptions>')
     lines.append('  <GameOptions />')
     lines.append('  <OccurrenceLevels />')
-    lines.append('  <VictoryEnabled />')
+    lines.append('  <VictoryEnabled>')
+    lines.append('    <VICTORY_CONQUEST />')
+    lines.append('  </VictoryEnabled>')
     lines.append('  <GameContent />')
     lines.append('  <MapMultiOptions />')
     lines.append('  <MapSingleOptions />')
@@ -299,7 +309,12 @@ def generate_preamble(
     lines.append('    <TeamDiplomacyBlock />')
     lines.append('    <TeamWarScore />')
     lines.append('    <ReligionTheology />')
-    lines.append('    <TribeContact />')
+    lines.append('    <TribeContact>')
+    # Rome knows all custom tribes from the start of Book 1
+    for tribe in ["TRIBE_HELVETII", "TRIBE_SUEBI", "TRIBE_AEDUI",
+                   "TRIBE_SEQUANI", "TRIBE_BOII"]:
+        lines.append(f'      <{tribe}.0 />')
+    lines.append('    </TribeContact>')
     lines.append('    <TeamContact>')
     lines.append('      <T.0.0 />')
     lines.append('    </TeamContact>')
@@ -442,6 +457,12 @@ def generate_preamble(
     lines.append('    <YieldRateHistory />')
     lines.append('    <FamilyOpinionHistory />')
     lines.append('    <AI />')
+    # Improvement pings for Fortify Rhone goal
+    lines.append('    <Pings>')
+    for px, py in FORT_PING_TILES:
+        tile_id = py * width + px
+        lines.append(f'      <Ping PingType="6" Turn="1" RemindTurn="0" Tile="{tile_id}" Improvement="IMPROVEMENT_FORT" />')
+    lines.append('    </Pings>')
     lines.append('  </Player>')
 
     # Character blocks

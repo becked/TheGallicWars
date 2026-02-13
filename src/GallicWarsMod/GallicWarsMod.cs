@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Reflection;
 using HarmonyLib;
 using TenCrowns.AppCore;
@@ -34,7 +35,14 @@ namespace GallicWars
                     typeof(CreateServerGamePatch), nameof(CreateServerGamePatch.Postfix)))
             );
 
-            Debug.Log("[GallicWars] CRC fix applied");
+            // Postfix on Tile.setImprovement: check fort pings and complete goal
+            _harmony.Patch(
+                AccessTools.Method(typeof(Tile), "setImprovement"),
+                postfix: new HarmonyMethod(AccessTools.Method(
+                    typeof(FortPingPatch), nameof(FortPingPatch.Postfix)))
+            );
+
+            Debug.Log("[GallicWars] CRC fix and fort ping tracking applied");
         }
 
         public override void Shutdown()
@@ -100,6 +108,78 @@ namespace GallicWars
             catch (System.Exception ex)
             {
                 Debug.LogError("[GallicWars] CreateServerGame postfix error: " + ex.Message);
+            }
+        }
+    }
+
+    /// <summary>
+    /// Postfix on Tile.setImprovement. Completes the "Fortify the Rhone" goal
+    /// when all 4 target tiles along the Rhone have active forts.
+    ///
+    /// Target tiles are computed from coordinates using the runtime map width,
+    /// matching the FORT_PING_TILES in generate_scenario.py.
+    /// </summary>
+    public static class FortPingPatch
+    {
+        // Fort target coordinates — must match FORT_PING_TILES in generate_scenario.py
+        private static readonly int[][] FortCoords = new int[][] {
+            new int[] { 13, 14 },
+            new int[] { 14, 15 },
+            new int[] { 15, 15 },
+            new int[] { 15, 16 },
+        };
+
+        private static Game _cachedGame;
+        private static HashSet<int> _targetTiles;
+        private static HashSet<int> _fortedTargets;
+        private static ImprovementType _fortType;
+        private static GoalType _goalType;
+
+        public static void Postfix(Tile __instance, ImprovementType eNewImprovement)
+        {
+            try
+            {
+                var game = __instance.game();
+
+                // Initialize or re-initialize on game change
+                if (game != _cachedGame)
+                {
+                    _cachedGame = game;
+                    _fortType = game.infos().getType<ImprovementType>("IMPROVEMENT_FORT");
+                    _goalType = game.infos().getType<GoalType>("GOAL_GW1_FORTIFY_RHONE");
+
+                    int mapWidth = game.getWidth();
+                    _targetTiles = new HashSet<int>();
+                    foreach (var coord in FortCoords)
+                        _targetTiles.Add(coord[1] * mapWidth + coord[0]);
+                    _fortedTargets = new HashSet<int>();
+
+                    Debug.Log("[GallicWars] Fort targets: " + _targetTiles.Count
+                        + " tiles (width=" + mapWidth + ")");
+                }
+
+                // Quick exit: not a fort or not on a target tile
+                if (eNewImprovement != _fortType) return;
+                if (!_targetTiles.Contains(__instance.getID())) return;
+
+                // Track this target as having a fort placed
+                _fortedTargets.Add(__instance.getID());
+                Debug.Log("[GallicWars] Fort placed on target " + __instance.getID()
+                    + " (" + _fortedTargets.Count + "/" + _targetTiles.Count + ")");
+
+                if (_fortedTargets.Count < _targetTiles.Count) return;
+
+                // All target tiles have forts — complete the goal
+                Player player = game.player((PlayerType)0);
+                if (player != null)
+                {
+                    player.finishGoalType(_goalType, PlayerType.NONE, TribeType.NONE, null, false);
+                    Debug.Log("[GallicWars] Fortify Rhone goal completed!");
+                }
+            }
+            catch (System.Exception ex)
+            {
+                Debug.LogError("[GallicWars] FortPingPatch error: " + ex.Message);
             }
         }
     }
