@@ -1,0 +1,25 @@
+Old World Designer Notes #1: Orders
+By Soren Johnson | July 26, 2021
+Source: https://www.designer-notes.com/old-world-designer-notes-1-orders/
+
+The Problem with Every Unit Moving
+
+Johnson challenges the conventional game design assumption that every unit should move exactly once per turn. He argues this creates an illusion of strategic depth while actually producing mundane, consequence-free decisions. In strategy games like Civilization, players face no real tradeoffs—there's always a reason to build another mine or attack with an archer.
+
+The limitation manifests particularly with worker units. "Players ask to automate their Workers because they no longer want to make these boring decisions" yet feel compelled to micromanage them anyway to avoid falling behind.
+
+Inspiration from Unexpected Places
+
+The Orders system drew inspiration from Facebook social games circa 2010. Johnson specifically noted Brian Reynolds' FrontierVille and its "energy" mechanic, which limited player actions per session. While uninterested in the microtransaction aspect, Johnson recognized how energy systems could deepen strategic complexity in traditional genres.
+
+The Orders System Design
+
+Old World implements a limited-action economy: players receive a finite number of Orders each turn to allocate across all units. This creates genuine guns-or-butter decisions. "Every tactical situation now had hundreds of possible approaches based on which units the players wanted to spend their orders moving."
+
+Multiplayer testing revealed the system's strength: victorious teams weren't those spending maximum military Orders, but those balancing warfare with economic infrastructure—particularly road construction to reduce troop movement costs.
+
+The Great Fatigue Debate
+
+Initially, Johnson favored unlimited per-unit movement, restricted only by available Orders. However, his development team strongly objected, fearing players would become confused or make inefficient decisions.
+
+A compromise emerged: the fatigue system. Units receive three standard moves, with "Force March" offering doubled movement range at double Order cost. This provides guidance without eliminating strategic possibility, while offering additional balancing knobs for game designers.

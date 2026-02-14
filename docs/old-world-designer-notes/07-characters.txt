@@ -1,0 +1,15 @@
+Old World Designer Notes #7: Characters
+By Soren Johnson | September 7, 2021
+Source: https://www.designer-notes.com/old-world-designer-notes-7-characters/
+
+Johnson identifies "Eternal China Syndrome" (ECS) as a critical issue in 4X games: once players establish stability, gameplay becomes predictable and tedious. Traditional games like Civilization front-load strategic decisions during expansion phases, but later gameplay lacks meaningful choices.
+
+Rather than implementing characters solely to address ECS, Johnson explains they were added because contemporary strategy games increasingly feature meaningful character systems, with Crusader Kings being the prime example. People naturally engage with games about individuals rather than abstract nations spanning millennia.
+
+The character system creates dynamism through two mechanisms:
+
+External dynamism via diplomacy: Leaders age, die, and are succeeded by heirs with different relationships and opinions. A diplomatic relationship might shift from favorable to hostile simply because a new leader assumes power—a thematically natural occurrence that avoids the "unpredictable AI" frustration plaguing Civilization games.
+
+Internal dynamism via leadership archetypes: Powers are attached to leaders (Builder, Orator, Hero, Tactician, etc.) and disappear upon their death. This prevents powers from being permanently accretive. Since archetypes are mutually exclusive and active less than 10% of the time, the system creates meaningful variation without permanent dominance. Players gain some succession control but cannot repeatedly exploit the same pattern.
+
+Johnson emphasizes that characters provide natural justification for constant change that would otherwise require convoluted explanations, making the system feel organic rather than mechanical.

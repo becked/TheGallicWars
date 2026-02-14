@@ -1,0 +1,11 @@
+Old World Designer Notes #9: Events
+By Soren Johnson | September 30, 2021
+Source: https://www.designer-notes.com/old-world-designer-notes-9-events/
+
+Soren Johnson discusses the development of the events system for Old World. The article traces his journey discovering event systems through community feedback on Civilization 3 and exploring how other games implemented them.
+
+Johnson explains that he became inspired by interactive fiction games, board games like Tales of the Arabian Nights, and particularly King of Dragon Pass, which demonstrated how random events could create narrative depth without predetermined story structures.
+
+The Old World event system operates as a virtual deck with triggers, requirements, and effects. When a trigger occurs—such as meeting a new nation—the game identifies all valid events and randomly selects one. The architecture relies on "subjects" (game objects like characters or cities) with specific requirements. As Johnson notes, "One writer might add an event which results in your leader becoming a Drunk, and a different writer could add an event that requires the leader to be a Drunk...these two writers have now created a little story without discussing anything."
+
+This approach creates unpredictable gameplay where "perhaps an event provides a sudden burst of Orders that allows the player to move enough units to defend a city that was just about to fall." Johnson emphasizes that the event system helps avoid repetitive outcomes, ensuring diverse experiences across different playthroughs.

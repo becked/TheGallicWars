@@ -1,0 +1,18 @@
+Old World Designer Notes #10: Diplomacy
+By Soren Johnson | October 8, 2021
+Source: https://www.designer-notes.com/old-world-designer-notes-10-diplomacy/
+
+In this designer notes entry, Johnson reflects on the evolution of diplomacy systems across Civilization games and explains Old World's innovative approach.
+
+Johnson reveals that the bargaining table system in Civ 3—allowing players to customize deals freely—was ultimately "a big mistake." The core problem: unhindered technology trading became exploitative since "the player that 'gives away' the tech is not really giving away anything."
+
+Though Civ 4 implemented restrictions on tech trading based on AI relationships and player standings, diplomacy remained predictable and economically driven. Players could repeatedly contact AIs to extract optimal deals, reducing diplomacy to "walking up to a vending machine."
+
+Old World abandons the bargaining table entirely, instead leveraging its event system to manage all diplomatic interactions. This approach makes diplomacy unpredictable yet reactive to gameplay conditions. Key innovations include:
+
+- Diplomatic missions conducted by Ambassadors (limiting concurrent negotiations)
+- Multi-year mission timelines preventing rapid experimentation
+- Civics and Training costs for diplomatic requests
+- Event-driven outcomes that surprise players (including ambassador deaths)
+
+Johnson acknowledges this decision was risky given player expectations from previous games. However, he argues the event system's flexibility—incorporating proximity, relative strength, shared religion, and historical claims—creates richer, more dynamic diplomatic experiences that improve with each new writer-created event.

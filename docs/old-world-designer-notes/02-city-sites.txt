@@ -1,0 +1,21 @@
+Old World Designer Notes #2: City Sites
+By Soren Johnson | August 2, 2021
+Source: https://www.designer-notes.com/old-world-designer-notes-2-city-sites/
+
+The Problem
+
+This designer note addresses how Old World solves the "Infinite City Sleaze" problem that has plagued Civilization games since their inception. The core issue is that players are incentivized to build as many cities as possible in tight clusters, leading to tedious gameplay rather than meaningful strategy.
+
+Previous Civilization titles attempted various punitive mechanics to discourage excessive city-building—corruption in Civ 3, maintenance costs in Civ 4, and global unhappiness in Civ 5. None proved satisfying because they punished empire-building itself rather than addressing the fundamental strategy.
+
+The Solution: City Sites
+
+Old World implements predetermined city locations on the map, but with a dynamic twist. Rather than fixed city borders, territories expand based on player decisions: building urban improvements and producing specialists extend city borders in all directions. Certain structures like Hamlets, Shrines, and Monasteries enable targeted border expansion.
+
+Design Benefits
+
+This approach ties border growth directly to player agency, aligning with the core 4X hook of long-term planning. It creates scarcity around city sites, making territorial disputes meaningful and dramatic. The system also enables deeper gameplay mechanics, such as governors with traits affecting specific cities' resources.
+
+Trade-offs
+
+While community members debate optimal city placement extensively, the designer acknowledges sacrificing this popular strategic discussion for overall game design health.

@@ -1,0 +1,29 @@
+Old World Designer Notes #5: Yields
+By Soren Johnson | August 24, 2021
+Source: https://www.designer-notes.com/old-world-designer-notes-5-yields/
+
+Overview
+
+This designer note explores the currency system in Old World. The game features 13 distinct yields—resources that represent everything from concrete materials like Iron to abstract concepts like Civics.
+
+Why So Many Currencies?
+
+Johnson explains that multiple yields serve several purposes. The game employs resource stockpiles to differentiate unit and improvement production, encouraging players to adapt strategies based on map geography. Having varied yields from rural improvements (Food, Iron, Stone, Wood) creates meaningful decisions. As he notes, "making military powerhouse cities specializing in Training more distinct from those able to crank out the Settlers with Growth" adds strategic depth.
+
+The Market System
+
+Rather than forcing empty stockpiles to block player agency, Old World adopted a free market system inspired by Offworld Trading Company. Players can buy and sell resources, though separate buy/sell prices discourage constant market reliance. This prevents economic stalling while maintaining meaningful resource management.
+
+Differentiated Production
+
+The developers split traditional "production" into three yields: Growth (determines citizen creation), Training (military units), and Civics (specialists and projects). This system enables greater city specialization, as different tile improvements naturally generate different yields through adjacency bonuses and governor traits.
+
+Culture and Discontent
+
+Culture progresses through four discrete levels—Weak, Developing, Strong, and Legendary—each unlocking different improvements and bonuses. This replaced the traditional infinite culture bar with "chunky levels" that players find more satisfying.
+
+Discontent operates as a necessary balancing mechanism, disconnected from city growth to prevent players from manipulating expansion for happiness benefits. The system escalates through levels with increasingly severe penalties.
+
+Strategic Event Design
+
+The diverse yield system enabled development of approximately 3,000 distinct events. Choices between different currencies—Money versus Training, Stone versus Science—feel fundamentally different to players and encourage gut-level decision-making rather than mathematical optimization.

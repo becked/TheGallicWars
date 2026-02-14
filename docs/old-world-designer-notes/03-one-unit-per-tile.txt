@@ -1,0 +1,21 @@
+Old World Designer Notes #3: One Unit per Tile
+By Soren Johnson | August 10, 2021
+Source: https://www.designer-notes.com/old-world-3-one-unit-per-tile/
+
+Historical Context
+
+Johnson discusses the design decision to implement one-unit-per-tile (1UPT) mechanics in Old World. He traces the concept's origins to Civilization 5's adoption of the system and explains why Old World ultimately chose 1UPT after initially experimenting with unit stacking.
+
+The 1UPT system debuted in Civ 5 to enhance tactical depth, inspired by turn-based wargames like Panzer General. Johnson notes this was a purely mechanical rather than thematic change, designed to improve combat interestingness through visual transparency and strategic positioning.
+
+The Stacking Experiment
+
+Old World initially developed with stacking allowed. Johnson implemented a compromise system where infinite stacking was possible, but defending stacks suffered damage to every unit in the stack rather than just the top unit. This created risk-reward decisions about whether to stack for additional attacks.
+
+Why It Failed
+
+Despite Johnson's enthusiasm for the elegant trade-offs, the development team rejected the stacking system. Johnson eventually agreed to test pure 1UPT and found he preferred its simplicity, though he acknowledges: "I'm not sure I can quite articulate why 1UPT worked better."
+
+The Real Solution
+
+Johnson ultimately realized 1UPT was ideal for Old World's unique combat system, which spans multiple turns with minimal retaliation damage. Allowing defenders strong counterattacks would undermine this philosophy. He emphasizes that 1UPT, the Orders system, and limited city sites function as interconnected mechanics supporting each other.

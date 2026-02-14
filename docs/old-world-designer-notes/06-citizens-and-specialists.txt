@@ -1,0 +1,27 @@
+Old World Designer Notes #6: Citizens and Specialists
+By Soren Johnson | August 31, 2021
+Source: https://www.designer-notes.com/old-world-designer-notes-6-citizens-and-specialists/
+
+The Problem with Citizens in Civ
+
+Johnson describes citizen tile placement as "clumsy, fiddly, and unnecessary," noting that players spend considerable time on minimal efficiency gains. The system lacks meaningful choice—optimal placements are usually obvious, and moving citizens yields only marginal benefits.
+
+He observes that even Civ's designers seemed uncomfortable with the mechanic, burying it in an intimidating interface. Later games attempted fixes through AI governors, which Johnson views as "a telltale sign of poor game design."
+
+The Escalating Complexity
+
+By Civilization 3, experienced players engaged in intricate micromanagement to prevent "wasted" production points. Civ 4's improvements only spawned new optimization problems elsewhere.
+
+Johnson notes that removing citizen placement entirely during early Civ 4 development proved impossible without fundamentally restructuring how the game's economy functioned.
+
+The Old World Solution
+
+Building from scratch, Johnson eliminated tile-based citizen placement entirely. Instead, rural improvements automatically feed into national stockpiles.
+
+To preserve the valuable aspect of citizen placement—forcing players to balance growth with improvements—Johnson introduced "specialists." Players permanently upgrade citizens into specialists tied to specific improvements, creating meaningful choices without tedious management.
+
+Balancing the Economy
+
+Rather than duplicating Civ's economy where empty improvements produce minimal output, Johnson increased base improvement yields and reduced specialist bonuses to 50-100%. He attached different yields to four specialist types: Farmers provide Growth, Miners provide Training, Stonecutters provide Civics, and Woodcutters provide Science.
+
+This approach maintains terrain-driven city specialization while eliminating busywork.

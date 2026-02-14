@@ -1,0 +1,21 @@
+Old World Designer Notes #11: The End
+By Soren Johnson | October 14, 2021
+Source: https://www.designer-notes.com/old-world-designer-notes-11-the-end/
+
+Soren Johnson explains the design philosophy behind Old World's victory system, addressing what he calls "the hardest part of a 4X to design"—the ending.
+
+The Problem with Traditional Victory Conditions
+
+Johnson argues that 4X games struggle to deliver satisfying conclusions due to their inherent nature. He notes that specialized victory conditions (cultural, religious, diplomatic) force players into predetermined paths from game start. As he explains, players pursuing a religious victory "need to aim for them from the beginning," turning gameplay "into an exercise in predetermination."
+
+The Ambitions System
+
+Rather than specialized victories, Old World uses a dynamic ambitions framework inspired by the mobile game Jetpack Joyride. Players receive randomly-selected missions that reward Legitimacy—a resource representing their dynasty's achievements. These missions adapt in difficulty as players progress, encouraging experimentation with different strategies.
+
+Human-AI Asymmetry
+
+Johnson makes a crucial design argument: 4X games are inherently asymmetrical. He contends that "humans will not accept AIs which behave like humans," citing how players accept ally-betrayals in multiplayer but resent AI aggression. Rather than pretending symmetry exists, Old World embraces this reality by giving AIs different victory conditions entirely.
+
+Final Victory Design
+
+The solution: complete ten ambitions to win. This centers victory on the player's dynasty story while maintaining meaningful challenge through a parallel victory points system for dominant AIs, preventing both stalemate and excessive endgame turns.

@@ -1,0 +1,13 @@
+Old World Designer Notes #4: The Technology Deck
+By Soren Johnson | August 18, 2021
+Source: https://www.designer-notes.com/old-world-designer-notes-4-the-technology-deck/
+
+Soren Johnson explores how Old World reimagined the technology system that originated in the classic Civilization game. While the traditional tech tree offered clarity about advancement paths, it suffered from determinism—players could memorize optimal sequences and repeat the same choices across games.
+
+Johnson explains that the solution drew inspiration from deck-building board games like Dominion. Rather than presenting all available technologies, Old World implements a card-based system where players receive four random tech cards, select one, and discard the others. This ensures discarded techs won't reappear until they cycle through the discard pile, get reshuffled, and are drawn again.
+
+This mechanic creates several design benefits: it eliminates predetermined "golden paths," makes individual technology choices more consequential, and maintains complete transparency about when cards might become available again.
+
+The card metaphor also enabled additional possibilities. Developers introduced "bonus" cards alongside standard technologies—offering immediate benefits like free settlers or resources. These bonus cards are trashed after use rather than recycled, preventing deck clutter.
+
+Johnson concludes that borrowing mechanics from physical board games strengthens strategy games because players often arrive with existing understanding of the systems, while the tangible origins of such mechanics make them inherently easier to explain through game interfaces.

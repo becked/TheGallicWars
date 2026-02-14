@@ -1,0 +1,17 @@
+Old World Designer Notes #8: Opinion
+By Soren Johnson | September 15, 2021
+Source: https://www.designer-notes.com/old-world-designer-notes-8-opinion/
+
+This designer note explores how Soren Johnson implemented the opinion system in Old World. The system addresses a common problem in 4X games where players can face minimal challenge without external pressure, causing gameplay to become repetitive.
+
+Internal Pressure Mechanics
+
+Johnson introduced families and religions as sources of internal conflict, mirroring how foreign powers create pressure. Each faction maintains opinions of the player, directly affecting gameplay. As he explains, "each city and unit could get various bonuses and penalties depending on the opinion of the family itself."
+
+Implementation Details
+
+Cities receive family assignments, which extend to their produced units. Mechanics were split between families and religions to maintain clarity. Different family classes prioritize different things—Champions value military strength, while Clerics prefer cities with religious presence—creating diverse strategic considerations.
+
+Opinion Flow System
+
+Johnson discovered a critical design principle through debugging: opinion flows in one direction only. Character opinions influence nations, tribes, families, and religions, but never reverse. Using a river metaphor, he describes how "opinion only ever flows in one direction," preventing infinite loops while maintaining dynamic gameplay.
