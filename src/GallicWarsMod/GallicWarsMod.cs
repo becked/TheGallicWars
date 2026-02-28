@@ -91,7 +91,10 @@ namespace GallicWars
                 int serverCrc = __instance.ModPath.GetCRC();
 
                 if (controllerCrc == serverCrc)
-                    return; // Already in sync
+                {
+                    Debug.Log("[GallicWars] CRC already in sync (" + controllerCrc + ") — game bug may be fixed, patch not needed");
+                    return;
+                }
 
                 // Copy the controller's updated CRC to the server's ModPath via reflection
                 // (IModPath doesn't expose a CRC setter, only the concrete ModPath class does)
