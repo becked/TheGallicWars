@@ -1,6 +1,6 @@
 .env
 Reference
-GallicWars/GallicWarsMod.dll
-GallicWars/0Harmony.dll
-src/GallicWarsMod/bin/
-src/GallicWarsMod/obj/
+**/GallicWarsMod.dll
+**/0Harmony.dll
+**/GallicWarsMod/bin/
+**/GallicWarsMod/obj/

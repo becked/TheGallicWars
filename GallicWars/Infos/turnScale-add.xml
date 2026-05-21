@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Entry>
+		<zType>TURNSCALE_GALLIC_4DAY</zType>
+		<ScaleSingular>TEXT_TURNSCALE_GALLIC_4DAY_SINGULAR</ScaleSingular>
+		<ScalePlural>TEXT_TURNSCALE_GALLIC_4DAY_PLURAL</ScalePlural>
+		<ScaleShort>TEXT_TURNSCALE_GALLIC_4DAY_SHORT</ScaleShort>
+		<bEnabled>1</bEnabled>
+		<iDivisions>91</iDivisions>
+	</Entry>
+</Root>

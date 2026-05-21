@@ -9,7 +9,6 @@
 		<zModName>GallicWars</zModName>
 		<Nation>NATION_ROME</Nation>
 		<Difficulty>DIFFICULTY_GREAT</Difficulty>
-		<TurnScale>TURNSCALE_GALLIC_4DAY</TurnScale>
 		<EventLevel>EVENTLEVEL_MINIMAL</EventLevel>
 		<ParametersInvalid>
 			<zValue>NumPlayers</zValue>

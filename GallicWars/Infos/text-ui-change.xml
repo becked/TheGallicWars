@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Entry>
+		<zType />
+		<en-US />
+	</Entry>
+	<Entry>
+		<zType>TEXT_UI_TURN_TEXT_YEAR</zType>
+		<en-US>Day {0} (58 BCE)</en-US>
+	</Entry>
+</Root>
