@@ -3,5 +3,6 @@
 	<Entry>
 		<zType>SCENARIOCLASS_GALLIC_WARS</zType>
 		<Name>TEXT_SCENARIOCLASS_GALLIC_WARS</Name>
+		<zIcon>CREST_TRIBE_GAULS</zIcon>
 	</Entry>
 </Root>

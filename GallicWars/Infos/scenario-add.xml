@@ -5,6 +5,7 @@
 		<Name>TEXT_SCENARIO_GALLIC_WARS_1</Name>
 		<SubTitle>TEXT_SCENARIO_GALLIC_WARS_1_SUB</SubTitle>
 		<ScenarioClass>SCENARIOCLASS_GALLIC_WARS</ScenarioClass>
+		<zBackgroundName>PORTRAIT_BACKGROUND_ROME</zBackgroundName>
 		<zMapFile>GallicWars1Map</zMapFile>
 		<zModName>GallicWars</zModName>
 		<Nation>NATION_ROME</Nation>
