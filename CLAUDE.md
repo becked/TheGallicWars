@@ -92,15 +92,12 @@ Urban tile placements and what they represent: see git history / conversation co
 
 **M0: Scaffold smoke test** — DONE. Scenario loads, custom 4-day turn scale active, date display works.
 
-**M1: Cities + tribes + Caesar's starting forces** — next. Add named cities at existing urban tiles (per the list confirmed with the user), define Book 1 tribes (Helvetii as a moving force with no cities, Aedui, Sequani, Allobroges, Arverni, etc.), place Caesar + 1 legion + 2 workers at Genava (134, 59), set up the Vesontio (128, 76) + Burdigala (45, 42) + Samarobriva (81, 114) additions.
-
-**M2: Opening event chain** — Caesar's arrival narration, 3-option bridge decision (burn bridge / retreat / declare war), fort-building + skirmish chain, auxiliary unit delivery events (Massalia slingers, Allobroges horse, Provincial levies).
-
-**M3+**: Mid-book Helvetii pursuit, Bibracte, Aedui plea, Ariovistus campaign, Vesontio, Vosges. Then Books 2-8 as separate scenarios.
+**M1: Cities + tribes + Caesar's starting forces** — next. See `docs/roadmap.md` for the full forward plan (M1 through Books 2–8) including specific city coordinates, tribe definitions, event chain sketches, and cross-cutting deferred items.
 
 ## Key Docs
 
 - `docs/design-pillars.md` — three design pillars with worked examples (book accuracy, event branching, per-turn engagement)
+- `docs/roadmap.md` — forward plan from M1 through Books 2–8 with specific coordinates, tribes, and event sketches
 - `docs/bellum-gallicum.txt`, `docs/1-the-helvetii-campaign.txt` — Caesar source text
 - `docs/event-design-lessons.md` — what made/broke past events
 - `docs/modding-lessons-learned.md` — XML format rules, event system patterns
