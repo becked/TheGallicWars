@@ -4,6 +4,21 @@ A scenario campaign mod for Old World based on Caesar's *Commentarii de Bello Ga
 
 **Current state**: v2 rebuild in progress. v1 is archived under `archive/v1/` for reference. Scaffold smoke test passing — scenario loads, custom 4-day turn scale active, date display shows "Day {N} (58 BCE)".
 
+## Design Pillars
+
+Every gameplay decision is checked against these three pillars. Full examples and the "what a turn feels like" walkthrough are in `docs/design-pillars.md`.
+
+1. **Accuracy to the book.** *Commentarii de Bello Gallico* is the narrative spine. Every major beat should be recognizable to a reader of Caesar. Specifics matter: Helvetii burned their oppida pre-scenario (so Aventicum is ruins, not a city); Caesar's sequence is bridge → envoys → stall → wall → north pursuit → Bibracte → Aedui plea → Ariovistus → Vesontio → Vosges; real dates display on every turn (4-day turns, March–October 58 BCE).
+
+2. **Events as decisions that diverge from history.** Each major beat has 2–3 options; history is one of them, never the only one. Example: turn 1 bridge decision = burn bridge (historical), retreat to Narbo (Helvetii cross peacefully, harder path), or declare war now. Bad calls have *consequences*, not game-overs. Caesar himself worried about the counterfactual ("what if the Helvetii just walked through?") — that becomes our Option A.
+
+3. **Every turn has decisions — events AND units.** Stall periods (like the 14-day wall-building wait) are not dead zones. Two layers run in parallel:
+   - *Event layer*: scripted probe attacks at fort tiles + diplomatic side-events (Diviciacus, Allobroges deal, Dumnorix subplot) + auxiliary unit deliveries
+   - *Unit layer*: worker placement (which fort first?), legion repositioning, Caesar's leadership-aura position, scouting cavalry, tight order budget (~30–50/turn, not v1's inflated 200)
+   - Goal: never "press end turn and wait" — every turn surfaces meaningful choices
+
+When designing new content (Book 2 onward, mid-Book 1 chains, character arcs), check it against all three pillars before writing XML.
+
 ## Project Layout
 
 ```
@@ -85,6 +100,7 @@ Urban tile placements and what they represent: see git history / conversation co
 
 ## Key Docs
 
+- `docs/design-pillars.md` — three design pillars with worked examples (book accuracy, event branching, per-turn engagement)
 - `docs/bellum-gallicum.txt`, `docs/1-the-helvetii-campaign.txt` — Caesar source text
 - `docs/event-design-lessons.md` — what made/broke past events
 - `docs/modding-lessons-learned.md` — XML format rules, event system patterns
