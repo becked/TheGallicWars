@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Entry>
+		<zType>CITYNAME_GENAVA</zType>
+		<Name>TEXT_CITYNAME_GENAVA</Name>
+	</Entry>
+	<Entry>
+		<zType>CITYNAME_BIBRACTE</zType>
+		<Name>TEXT_CITYNAME_BIBRACTE</Name>
+	</Entry>
+	<Entry>
+		<zType>CITYNAME_VIENNA</zType>
+		<Name>TEXT_CITYNAME_VIENNA</Name>
+	</Entry>
+	<Entry>
+		<zType>CITYNAME_GERGOVIA</zType>
+		<Name>TEXT_CITYNAME_GERGOVIA</Name>
+	</Entry>
+	<Entry>
+		<zType>CITYNAME_CENABUM</zType>
+		<Name>TEXT_CITYNAME_CENABUM</Name>
+	</Entry>
+	<Entry>
+		<zType>CITYNAME_AGEDINCUM</zType>
+		<Name>TEXT_CITYNAME_AGEDINCUM</Name>
+	</Entry>
+	<Entry>
+		<zType>CITYNAME_NOVIODUNUM</zType>
+		<Name>TEXT_CITYNAME_NOVIODUNUM</Name>
+	</Entry>
+	<Entry>
+		<zType>CITYNAME_ARELATE</zType>
+		<Name>TEXT_CITYNAME_ARELATE</Name>
+	</Entry>
+	<Entry>
+		<zType>CITYNAME_TOLOSA</zType>
+		<Name>TEXT_CITYNAME_TOLOSA</Name>
+	</Entry>
+	<Entry>
+		<zType>CITYNAME_SAMAROBRIVA</zType>
+		<Name>TEXT_CITYNAME_SAMAROBRIVA</Name>
+	</Entry>
+</Root>

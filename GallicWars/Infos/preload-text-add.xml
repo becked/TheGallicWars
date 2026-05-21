@@ -32,4 +32,188 @@
 		<zType>TEXT_TURNSCALE_GALLIC_4DAY_SHORT</zType>
 		<en-US>Trn</en-US>
 	</Entry>
+	<Entry>
+		<zType>TEXT_CITYNAME_GENAVA</zType>
+		<en-US>Genava</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_CITYNAME_BIBRACTE</zType>
+		<en-US>Bibracte</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_CITYNAME_VIENNA</zType>
+		<en-US>Vienna</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_CITYNAME_GERGOVIA</zType>
+		<en-US>Gergovia</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_CITYNAME_CENABUM</zType>
+		<en-US>Cenabum</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_CITYNAME_AGEDINCUM</zType>
+		<en-US>Agedincum</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_CITYNAME_NOVIODUNUM</zType>
+		<en-US>Noviodunum</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_CITYNAME_ARELATE</zType>
+		<en-US>Arelate</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_CITYNAME_TOLOSA</zType>
+		<en-US>Tolosa</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_CITYNAME_SAMAROBRIVA</zType>
+		<en-US>Samarobriva</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_HELVETII</zType>
+		<en-US>Helvetii~Helvetian~a Helvetian~Helvetii~Helvetian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_HELVETII_F</zType>
+		<en-US>Helvetii~Helvetian~a Helvetian~Helvetii~Helvetian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_HELVETII_NICK</zType>
+		<en-US>the Helvetian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_HELVETII_NICK_F</zType>
+		<en-US>the Helvetian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_SUEBI</zType>
+		<en-US>Suebi~Suebian~a Suebian~Suebi~Suebian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_SUEBI_F</zType>
+		<en-US>Suebi~Suebian~a Suebian~Suebi~Suebian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_SUEBI_NICK</zType>
+		<en-US>the Suebian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_SUEBI_NICK_F</zType>
+		<en-US>the Suebian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_AEDUI</zType>
+		<en-US>Aedui~Aeduan~an Aeduan~Aedui~Aeduan</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_AEDUI_F</zType>
+		<en-US>Aedui~Aeduan~an Aeduan~Aedui~Aeduan</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_AEDUI_NICK</zType>
+		<en-US>the Aeduan</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_AEDUI_NICK_F</zType>
+		<en-US>the Aeduan</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_SEQUANI</zType>
+		<en-US>Sequani~Sequanian~a Sequanian~Sequani~Sequanian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_SEQUANI_F</zType>
+		<en-US>Sequani~Sequanian~a Sequanian~Sequani~Sequanian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_SEQUANI_NICK</zType>
+		<en-US>the Sequanian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_SEQUANI_NICK_F</zType>
+		<en-US>the Sequanian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_BOII</zType>
+		<en-US>Boii~Boian~a Boian~Boii~Boian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_BOII_F</zType>
+		<en-US>Boii~Boian~a Boian~Boii~Boian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_BOII_NICK</zType>
+		<en-US>the Boian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_BOII_NICK_F</zType>
+		<en-US>the Boian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_ALLOBROGES</zType>
+		<en-US>Allobroges~Allobrogian~an Allobrogian~Allobroges~Allobrogian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_ALLOBROGES_F</zType>
+		<en-US>Allobroges~Allobrogian~an Allobrogian~Allobroges~Allobrogian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_ALLOBROGES_NICK</zType>
+		<en-US>the Allobrogian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_ALLOBROGES_NICK_F</zType>
+		<en-US>the Allobrogian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_ARVERNI</zType>
+		<en-US>Arverni~Arvernian~an Arvernian~Arverni~Arvernian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_ARVERNI_F</zType>
+		<en-US>Arverni~Arvernian~an Arvernian~Arverni~Arvernian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_ARVERNI_NICK</zType>
+		<en-US>the Arvernian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_ARVERNI_NICK_F</zType>
+		<en-US>the Arvernian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_MASSILIOTES</zType>
+		<en-US>Massiliotes~Massiliote~a Massiliote~Massiliotes~Massiliote</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_MASSILIOTES_F</zType>
+		<en-US>Massiliotes~Massiliote~a Massiliote~Massiliotes~Massiliote</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_MASSILIOTES_NICK</zType>
+		<en-US>the Massiliote</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_MASSILIOTES_NICK_F</zType>
+		<en-US>the Massiliote</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_VOLCAE</zType>
+		<en-US>Volcae~Volcian~a Volcian~Volcae~Volcian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_VOLCAE_F</zType>
+		<en-US>Volcae~Volcian~a Volcian~Volcae~Volcian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_VOLCAE_NICK</zType>
+		<en-US>the Volcian</en-US>
+	</Entry>
+	<Entry>
+		<zType>TEXT_TRIBE_VOLCAE_NICK_F</zType>
+		<en-US>the Volcian</en-US>
+	</Entry>
 </Root>

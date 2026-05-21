@@ -59,8 +59,8 @@
   <MapSingleOptions />
   <Game>
     <Seed>666877878369320307</Seed>
-    <NextUnitID>0</NextUnitID>
-    <NextCityID>0</NextCityID>
+    <NextUnitID>3</NextUnitID>
+    <NextCityID>17</NextCityID>
     <NextCharacterID>1</NextCharacterID>
     <NextOccurrenceID>0</NextOccurrenceID>
     <MapSize>MAPSIZE_HUGE</MapSize>
@@ -112,6 +112,8 @@
       <TRIBE_AEDUI.0 />
       <TRIBE_SEQUANI.0 />
       <TRIBE_BOII.0 />
+      <TRIBE_ALLOBROGES.0 />
+      <TRIBE_MASSILIOTES.0 />
     </TribeContact>
     <TeamContact>
       <T.0.0 />
@@ -132,6 +134,10 @@
       <TRIBE_SUEBI.0>DIPLOMACY_TRUCE</TRIBE_SUEBI.0>
       <TRIBE_AEDUI.0>DIPLOMACY_TRUCE</TRIBE_AEDUI.0>
       <TRIBE_SEQUANI.0>DIPLOMACY_TRUCE</TRIBE_SEQUANI.0>
+      <TRIBE_ALLOBROGES.0>DIPLOMACY_TRUCE</TRIBE_ALLOBROGES.0>
+      <TRIBE_ARVERNI.0>DIPLOMACY_TRUCE</TRIBE_ARVERNI.0>
+      <TRIBE_MASSILIOTES.0>DIPLOMACY_TRUCE</TRIBE_MASSILIOTES.0>
+      <TRIBE_VOLCAE.0>DIPLOMACY_TRUCE</TRIBE_VOLCAE.0>
     </TribeDiplomacy>
     <TeamDiplomacy>
       <T.0.0>DIPLOMACY_TEAM</T.0.0>
@@ -168,7 +174,7 @@
       <YIELD_CIVICS>3000</YIELD_CIVICS>
       <YIELD_TRAINING>3000</YIELD_TRAINING>
       <YIELD_MONEY>500</YIELD_MONEY>
-      <YIELD_ORDERS>370</YIELD_ORDERS>
+      <YIELD_ORDERS>200</YIELD_ORDERS>
       <YIELD_FOOD>2000</YIELD_FOOD>
       <YIELD_IRON>2000</YIELD_IRON>
       <YIELD_STONE>2000</YIELD_STONE>
@@ -233,6 +239,8 @@
     </Leaders>
     <Families>
       <FAMILY_JULIUS />
+      <FAMILY_FABIUS />
+      <FAMILY_CLAUDIUS />
     </Families>
     <IgnoreCouncilReminder />
     <PlayerOptions>
@@ -278,6 +286,404 @@
       <T1>1</T1>
     </CognomenHistory>
   </Character>
+  <City
+    ID="0"
+    TileID="3330"
+    Player="0"
+    Family="FAMILY_FABIUS"
+    Founded="1">
+    <Name>CITYNAME_NARBO</Name>
+    <Citizens>3</Citizens>
+    <Capital />
+    <FirstPlayer>0</FirstPlayer>
+    <LastPlayer>0</LastPlayer>
+    <YieldProgress />
+    <YieldOverflow />
+    <ProjectCount />
+    <LuxuryTurn />
+    <AgentCharacterID />
+    <TeamCultureStep />
+    <TeamDiscontentLevel />
+    <TeamDiscontentLevelHighest />
+    <Religion />
+    <PlayerFamily>
+      <P.0>FAMILY_FABIUS</P.0>
+    </PlayerFamily>
+    <TeamCulture>
+      <T.0>CULTURE_WEAK</T.0>
+    </TeamCulture>
+  </City>
+  <City
+    ID="1"
+    TileID="10754"
+    Player="0"
+    Family="FAMILY_CLAUDIUS"
+    Founded="1">
+    <Name>CITYNAME_GENAVA</Name>
+    <Citizens>1</Citizens>
+    <FirstPlayer>0</FirstPlayer>
+    <LastPlayer>0</LastPlayer>
+    <YieldProgress />
+    <YieldOverflow />
+    <ProjectCount />
+    <LuxuryTurn />
+    <AgentCharacterID />
+    <TeamCultureStep />
+    <TeamDiscontentLevel />
+    <TeamDiscontentLevelHighest />
+    <Religion />
+    <PlayerFamily>
+      <P.0>FAMILY_CLAUDIUS</P.0>
+    </PlayerFamily>
+    <TeamCulture>
+      <T.0>CULTURE_WEAK</T.0>
+    </TeamCulture>
+  </City>
+  <City
+    ID="2"
+    TileID="13054"
+    Player="-1"
+    Family="NONE"
+    Founded="1">
+    <Name>CITYNAME_BIBRACTE</Name>
+    <Citizens>2</Citizens>
+    <FirstPlayer>0</FirstPlayer>
+    <LastPlayer>0</LastPlayer>
+    <Tribe>TRIBE_AEDUI</Tribe>
+    <YieldProgress />
+    <YieldOverflow />
+    <ProjectCount />
+    <LuxuryTurn />
+    <AgentCharacterID />
+    <TeamCultureStep />
+    <Religion />
+    <PlayerFamily />
+    <TeamCulture>
+      <T.0>CULTURE_WEAK</T.0>
+    </TeamCulture>
+  </City>
+  <City
+    ID="3"
+    TileID="13808"
+    Player="-1"
+    Family="NONE"
+    Founded="1">
+    <Name>CITYNAME_VESONTIO</Name>
+    <Citizens>1</Citizens>
+    <FirstPlayer>0</FirstPlayer>
+    <LastPlayer>0</LastPlayer>
+    <Tribe>TRIBE_SEQUANI</Tribe>
+    <YieldProgress />
+    <YieldOverflow />
+    <ProjectCount />
+    <LuxuryTurn />
+    <AgentCharacterID />
+    <TeamCultureStep />
+    <Religion />
+    <PlayerFamily />
+    <TeamCulture>
+      <T.0>CULTURE_WEAK</T.0>
+    </TeamCulture>
+  </City>
+  <City
+    ID="4"
+    TileID="9475"
+    Player="-1"
+    Family="NONE"
+    Founded="1">
+    <Name>CITYNAME_VIENNA</Name>
+    <Citizens>1</Citizens>
+    <FirstPlayer>0</FirstPlayer>
+    <LastPlayer>0</LastPlayer>
+    <Tribe>TRIBE_ALLOBROGES</Tribe>
+    <YieldProgress />
+    <YieldOverflow />
+    <ProjectCount />
+    <LuxuryTurn />
+    <AgentCharacterID />
+    <TeamCultureStep />
+    <Religion />
+    <PlayerFamily />
+    <TeamCulture>
+      <T.0>CULTURE_WEAK</T.0>
+    </TeamCulture>
+  </City>
+  <City
+    ID="5"
+    TileID="9993"
+    Player="-1"
+    Family="NONE"
+    Founded="1">
+    <Name>CITYNAME_GERGOVIA</Name>
+    <Citizens>1</Citizens>
+    <FirstPlayer>0</FirstPlayer>
+    <LastPlayer>0</LastPlayer>
+    <Tribe>TRIBE_ARVERNI</Tribe>
+    <YieldProgress />
+    <YieldOverflow />
+    <ProjectCount />
+    <LuxuryTurn />
+    <AgentCharacterID />
+    <TeamCultureStep />
+    <Religion />
+    <PlayerFamily />
+    <TeamCulture>
+      <T.0>CULTURE_WEAK</T.0>
+    </TeamCulture>
+  </City>
+  <City
+    ID="6"
+    TileID="3722"
+    Player="-1"
+    Family="NONE"
+    Founded="1">
+    <Name>CITYNAME_MASSALIA</Name>
+    <Citizens>1</Citizens>
+    <FirstPlayer>0</FirstPlayer>
+    <LastPlayer>0</LastPlayer>
+    <Tribe>TRIBE_MASSILIOTES</Tribe>
+    <YieldProgress />
+    <YieldOverflow />
+    <ProjectCount />
+    <LuxuryTurn />
+    <AgentCharacterID />
+    <TeamCultureStep />
+    <Religion />
+    <PlayerFamily />
+    <TeamCulture>
+      <T.0>CULTURE_WEAK</T.0>
+    </TeamCulture>
+  </City>
+  <City
+    ID="7"
+    TileID="4264"
+    Player="-1"
+    Family="NONE"
+    Founded="1">
+    <Name>CITYNAME_ARELATE</Name>
+    <Citizens>1</Citizens>
+    <FirstPlayer>0</FirstPlayer>
+    <LastPlayer>0</LastPlayer>
+    <Tribe>TRIBE_VOLCAE</Tribe>
+    <YieldProgress />
+    <YieldOverflow />
+    <ProjectCount />
+    <LuxuryTurn />
+    <AgentCharacterID />
+    <TeamCultureStep />
+    <Religion />
+    <PlayerFamily />
+    <TeamCulture>
+      <T.0>CULTURE_WEAK</T.0>
+    </TeamCulture>
+  </City>
+  <City
+    ID="8"
+    TileID="4571"
+    Player="-1"
+    Family="NONE"
+    Founded="1">
+    <Name>CITYNAME_TOLOSA</Name>
+    <Citizens>1</Citizens>
+    <FirstPlayer>0</FirstPlayer>
+    <LastPlayer>0</LastPlayer>
+    <Tribe>TRIBE_VOLCAE</Tribe>
+    <YieldProgress />
+    <YieldOverflow />
+    <ProjectCount />
+    <LuxuryTurn />
+    <AgentCharacterID />
+    <TeamCultureStep />
+    <Religion />
+    <PlayerFamily />
+    <TeamCulture>
+      <T.0>CULTURE_WEAK</T.0>
+    </TeamCulture>
+  </City>
+  <City
+    ID="9"
+    TileID="10013"
+    Player="-1"
+    Family="NONE"
+    Founded="1">
+    <Name>CITYNAME_LUGDUNUM</Name>
+    <Citizens>1</Citizens>
+    <FirstPlayer>0</FirstPlayer>
+    <LastPlayer>0</LastPlayer>
+    <Tribe>TRIBE_GAULS</Tribe>
+    <YieldProgress />
+    <YieldOverflow />
+    <ProjectCount />
+    <LuxuryTurn />
+    <AgentCharacterID />
+    <TeamCultureStep />
+    <Religion />
+    <PlayerFamily />
+    <TeamCulture>
+      <T.0>CULTURE_WEAK</T.0>
+    </TeamCulture>
+  </City>
+  <City
+    ID="10"
+    TileID="13405"
+    Player="-1"
+    Family="NONE"
+    Founded="1">
+    <Name>CITYNAME_AVARICUM</Name>
+    <Citizens>1</Citizens>
+    <FirstPlayer>0</FirstPlayer>
+    <LastPlayer>0</LastPlayer>
+    <Tribe>TRIBE_GAULS</Tribe>
+    <YieldProgress />
+    <YieldOverflow />
+    <ProjectCount />
+    <LuxuryTurn />
+    <AgentCharacterID />
+    <TeamCultureStep />
+    <Religion />
+    <PlayerFamily />
+    <TeamCulture>
+      <T.0>CULTURE_WEAK</T.0>
+    </TeamCulture>
+  </City>
+  <City
+    ID="11"
+    TileID="15560"
+    Player="-1"
+    Family="NONE"
+    Founded="1">
+    <Name>CITYNAME_CENABUM</Name>
+    <Citizens>1</Citizens>
+    <FirstPlayer>0</FirstPlayer>
+    <LastPlayer>0</LastPlayer>
+    <Tribe>TRIBE_GAULS</Tribe>
+    <YieldProgress />
+    <YieldOverflow />
+    <ProjectCount />
+    <LuxuryTurn />
+    <AgentCharacterID />
+    <TeamCultureStep />
+    <Religion />
+    <PlayerFamily />
+    <TeamCulture>
+      <T.0>CULTURE_WEAK</T.0>
+    </TeamCulture>
+  </City>
+  <City
+    ID="12"
+    TileID="16296"
+    Player="-1"
+    Family="NONE"
+    Founded="1">
+    <Name>CITYNAME_AGEDINCUM</Name>
+    <Citizens>1</Citizens>
+    <FirstPlayer>0</FirstPlayer>
+    <LastPlayer>0</LastPlayer>
+    <Tribe>TRIBE_GAULS</Tribe>
+    <YieldProgress />
+    <YieldOverflow />
+    <ProjectCount />
+    <LuxuryTurn />
+    <AgentCharacterID />
+    <TeamCultureStep />
+    <Religion />
+    <PlayerFamily />
+    <TeamCulture>
+      <T.0>CULTURE_WEAK</T.0>
+    </TeamCulture>
+  </City>
+  <City
+    ID="13"
+    TileID="17189"
+    Player="-1"
+    Family="NONE"
+    Founded="1">
+    <Name>CITYNAME_NOVIODUNUM</Name>
+    <Citizens>1</Citizens>
+    <FirstPlayer>0</FirstPlayer>
+    <LastPlayer>0</LastPlayer>
+    <Tribe>TRIBE_GAULS</Tribe>
+    <YieldProgress />
+    <YieldOverflow />
+    <ProjectCount />
+    <LuxuryTurn />
+    <AgentCharacterID />
+    <TeamCultureStep />
+    <Religion />
+    <PlayerFamily />
+    <TeamCulture>
+      <T.0>CULTURE_WEAK</T.0>
+    </TeamCulture>
+  </City>
+  <City
+    ID="14"
+    TileID="17905"
+    Player="-1"
+    Family="NONE"
+    Founded="1">
+    <Name>CITYNAME_LUTETIA</Name>
+    <Citizens>1</Citizens>
+    <FirstPlayer>0</FirstPlayer>
+    <LastPlayer>0</LastPlayer>
+    <Tribe>TRIBE_GAULS</Tribe>
+    <YieldProgress />
+    <YieldOverflow />
+    <ProjectCount />
+    <LuxuryTurn />
+    <AgentCharacterID />
+    <TeamCultureStep />
+    <Religion />
+    <PlayerFamily />
+    <TeamCulture>
+      <T.0>CULTURE_WEAK</T.0>
+    </TeamCulture>
+  </City>
+  <City
+    ID="15"
+    TileID="7605"
+    Player="-1"
+    Family="NONE"
+    Founded="1">
+    <Name>CITYNAME_BURDIGALA</Name>
+    <Citizens>1</Citizens>
+    <FirstPlayer>0</FirstPlayer>
+    <LastPlayer>0</LastPlayer>
+    <Tribe>TRIBE_GAULS</Tribe>
+    <YieldProgress />
+    <YieldOverflow />
+    <ProjectCount />
+    <LuxuryTurn />
+    <AgentCharacterID />
+    <TeamCultureStep />
+    <Religion />
+    <PlayerFamily />
+    <TeamCulture>
+      <T.0>CULTURE_WEAK</T.0>
+    </TeamCulture>
+  </City>
+  <City
+    ID="16"
+    TileID="20601"
+    Player="-1"
+    Family="NONE"
+    Founded="1">
+    <Name>CITYNAME_SAMAROBRIVA</Name>
+    <Citizens>1</Citizens>
+    <FirstPlayer>0</FirstPlayer>
+    <LastPlayer>0</LastPlayer>
+    <Tribe>TRIBE_GAULS</Tribe>
+    <YieldProgress />
+    <YieldOverflow />
+    <ProjectCount />
+    <LuxuryTurn />
+    <AgentCharacterID />
+    <TeamCultureStep />
+    <Religion />
+    <PlayerFamily />
+    <TeamCulture>
+      <T.0>CULTURE_WEAK</T.0>
+    </TeamCulture>
+  </City>
   <Tile
     ID="0">
     <Boundary />
@@ -17831,12 +18237,28 @@
     <Road />
     <Terrain>TERRAIN_URBAN</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <RevealedCityTerritory>
+      <Team
+        CityTerritory="0">0</Team>
+    </RevealedCityTerritory>
+    <Revealed>
+      <Team>0</Team>
+    </Revealed>
+    <CityTerritory>0</CityTerritory>
   </Tile>
   <Tile
     ID="3331">
     <Road />
     <Terrain>TERRAIN_URBAN</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <RevealedCityTerritory>
+      <Team
+        CityTerritory="0">0</Team>
+    </RevealedCityTerritory>
+    <Revealed>
+      <Team>0</Team>
+    </Revealed>
+    <CityTerritory>0</CityTerritory>
   </Tile>
   <Tile
     ID="3332">
@@ -18770,6 +19192,14 @@
     <Road />
     <Terrain>TERRAIN_URBAN</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <RevealedCityTerritory>
+      <Team
+        CityTerritory="0">0</Team>
+    </RevealedCityTerritory>
+    <Revealed>
+      <Team>0</Team>
+    </Revealed>
+    <CityTerritory>0</CityTerritory>
   </Tile>
   <Tile
     ID="3512">
@@ -19866,6 +20296,7 @@
     <Road />
     <Terrain>TERRAIN_URBAN</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <CityTerritory>6</CityTerritory>
   </Tile>
   <Tile
     ID="3723">
@@ -22691,6 +23122,7 @@
     <Road />
     <Terrain>TERRAIN_URBAN</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <CityTerritory>7</CityTerritory>
   </Tile>
   <Tile
     ID="4265">
@@ -24296,6 +24728,7 @@
     <Road />
     <Terrain>TERRAIN_URBAN</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <CityTerritory>8</CityTerritory>
   </Tile>
   <Tile
     ID="4572">
@@ -40160,8 +40593,10 @@
   </Tile>
   <Tile
     ID="7605">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Road />
+    <Terrain>TERRAIN_URBAN</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <CityTerritory>15</CityTerritory>
   </Tile>
   <Tile
     ID="7606">
@@ -49806,6 +50241,7 @@
     <Terrain>TERRAIN_URBAN</Terrain>
     <Height>HEIGHT_HILL</Height>
     <RiverW>1</RiverW>
+    <CityTerritory>4</CityTerritory>
   </Tile>
   <Tile
     ID="9476">
@@ -52499,6 +52935,7 @@
     <Road />
     <Terrain>TERRAIN_URBAN</Terrain>
     <Height>HEIGHT_HILL</Height>
+    <CityTerritory>5</CityTerritory>
   </Tile>
   <Tile
     ID="9994">
@@ -52600,8 +53037,10 @@
   </Tile>
   <Tile
     ID="10013">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Road />
+    <Terrain>TERRAIN_URBAN</Terrain>
     <Height>HEIGHT_HILL</Height>
+    <CityTerritory>9</CityTerritory>
   </Tile>
   <Tile
     ID="10014">
@@ -56501,6 +56940,63 @@
     <Road />
     <Terrain>TERRAIN_URBAN</Terrain>
     <Height>HEIGHT_HILL</Height>
+    <RevealedCityTerritory>
+      <Team
+        CityTerritory="1">0</Team>
+    </RevealedCityTerritory>
+    <Revealed>
+      <Team>0</Team>
+    </Revealed>
+    <CityTerritory>1</CityTerritory>
+    <Unit
+      ID="0"
+      Type="UNIT_HASTATUS"
+      Player="0"
+      Tribe="NONE"
+      Seed="58100000000000100">
+      <CreateTurn>1</CreateTurn>
+      <Facing>NE</Facing>
+      <GeneralID>0</GeneralID>
+      <OriginalPlayer>0</OriginalPlayer>
+      <RaidTurn />
+      <PlayerFamily>
+        <P.0>FAMILY_JULIUS</P.0>
+      </PlayerFamily>
+      <QueueList />
+      <AI />
+    </Unit>
+    <Unit
+      ID="1"
+      Type="UNIT_WORKER"
+      Player="0"
+      Tribe="NONE"
+      Seed="58100000000000101">
+      <CreateTurn>1</CreateTurn>
+      <Facing>NE</Facing>
+      <OriginalPlayer>0</OriginalPlayer>
+      <RaidTurn />
+      <PlayerFamily>
+        <P.0>FAMILY_JULIUS</P.0>
+      </PlayerFamily>
+      <QueueList />
+      <AI />
+    </Unit>
+    <Unit
+      ID="2"
+      Type="UNIT_WORKER"
+      Player="0"
+      Tribe="NONE"
+      Seed="58100000000000102">
+      <CreateTurn>1</CreateTurn>
+      <Facing>NE</Facing>
+      <OriginalPlayer>0</OriginalPlayer>
+      <RaidTurn />
+      <PlayerFamily>
+        <P.0>FAMILY_JULIUS</P.0>
+      </PlayerFamily>
+      <QueueList />
+      <AI />
+    </Unit>
   </Tile>
   <Tile
     ID="10755">
@@ -59346,6 +59842,8 @@
     ID="11298">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_HILL</Height>
+    <Improvement>IMPROVEMENT_RUINS_2</Improvement>
+    <ImprovementDevelopTurns>0</ImprovementDevelopTurns>
   </Tile>
   <Tile
     ID="11299">
@@ -63962,6 +64460,8 @@
     ID="12204">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_HILL</Height>
+    <Improvement>IMPROVEMENT_RUINS_4</Improvement>
+    <ImprovementDevelopTurns>0</ImprovementDevelopTurns>
   </Tile>
   <Tile
     ID="12205">
@@ -66723,6 +67223,8 @@
     ID="12741">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_HILL</Height>
+    <Improvement>IMPROVEMENT_RUINS_4</Improvement>
+    <ImprovementDevelopTurns>0</ImprovementDevelopTurns>
   </Tile>
   <Tile
     ID="12742">
@@ -66783,6 +67285,8 @@
     ID="12753">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_HILL</Height>
+    <Improvement>IMPROVEMENT_RUINS_1</Improvement>
+    <ImprovementDevelopTurns>0</ImprovementDevelopTurns>
   </Tile>
   <Tile
     ID="12754">
@@ -68334,6 +68838,7 @@
     <Height>HEIGHT_FLAT</Height>
     <RiverW>0</RiverW>
     <RiverSW>0</RiverSW>
+    <CityTerritory>2</CityTerritory>
   </Tile>
   <Tile
     ID="13055">
@@ -69537,6 +70042,8 @@
     ID="13288">
     <Terrain>TERRAIN_TEMPERATE</Terrain>
     <Height>HEIGHT_HILL</Height>
+    <Improvement>IMPROVEMENT_RUINS_2</Improvement>
+    <ImprovementDevelopTurns>0</ImprovementDevelopTurns>
   </Tile>
   <Tile
     ID="13289">
@@ -70135,6 +70642,7 @@
     <Road />
     <Terrain>TERRAIN_URBAN</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <CityTerritory>10</CityTerritory>
   </Tile>
   <Tile
     ID="13406">
@@ -72196,9 +72704,11 @@
   </Tile>
   <Tile
     ID="13808">
-    <Terrain>TERRAIN_TEMPERATE</Terrain>
+    <Road />
+    <Terrain>TERRAIN_URBAN</Terrain>
     <Height>HEIGHT_HILL</Height>
     <RiverSE>1</RiverSE>
+    <CityTerritory>3</CityTerritory>
   </Tile>
   <Tile
     ID="13809">
@@ -81403,6 +81913,7 @@
     <Height>HEIGHT_FLAT</Height>
     <RiverSW>0</RiverSW>
     <RiverSE>0</RiverSE>
+    <CityTerritory>11</CityTerritory>
   </Tile>
   <Tile
     ID="15561">
@@ -85313,6 +85824,7 @@
     <Road />
     <Terrain>TERRAIN_URBAN</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <CityTerritory>12</CityTerritory>
   </Tile>
   <Tile
     ID="16297">
@@ -90102,6 +90614,7 @@
     <Terrain>TERRAIN_URBAN</Terrain>
     <Height>HEIGHT_FLAT</Height>
     <RiverSW>0</RiverSW>
+    <CityTerritory>13</CityTerritory>
   </Tile>
   <Tile
     ID="17190">
@@ -93906,6 +94419,7 @@
     <Height>HEIGHT_FLAT</Height>
     <RiverSW>0</RiverSW>
     <RiverSE>0</RiverSE>
+    <CityTerritory>14</CityTerritory>
   </Tile>
   <Tile
     ID="17906">
@@ -108186,8 +108700,10 @@
   </Tile>
   <Tile
     ID="20601">
-    <Terrain>TERRAIN_LUSH</Terrain>
+    <Road />
+    <Terrain>TERRAIN_URBAN</Terrain>
     <Height>HEIGHT_FLAT</Height>
+    <CityTerritory>16</CityTerritory>
   </Tile>
   <Tile
     ID="20602">
